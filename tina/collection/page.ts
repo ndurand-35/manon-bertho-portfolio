@@ -1,8 +1,10 @@
 import type { Collection } from "tinacms";
 import { heroBlockSchema } from "../../components/blocks/hero";
+import { presentationBlockSchema } from "../../components/blocks/presentation";
 import { contentBlockSchema } from "../../components/blocks/content";
 import { testimonialBlockSchema } from "../../components/blocks/testimonial";
 import { featureBlockSchema } from "../../components/blocks/features";
+import { numberFeatureBlockSchema } from "../../components/blocks/number_features";
 
 const Page: Collection = {
   label: "Pages",
@@ -39,11 +41,13 @@ const Page: Collection = {
       },
       templates: [
         heroBlockSchema,
+        presentationBlockSchema,
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         featureBlockSchema,
         contentBlockSchema,
         testimonialBlockSchema,
+        numberFeatureBlockSchema,
       ],
     },
   ],
