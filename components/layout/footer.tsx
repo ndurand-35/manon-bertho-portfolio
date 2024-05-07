@@ -67,7 +67,7 @@ export const Footer = ({ data, icon, rawData }) => {
                 const isRelative = isUrlRelative(item.href);
                 const activeItem = isUrlActive(item.href);
                 return (
-                  <>
+                  <li key={i}>
                     {isRelative ? (
                       <Link
                         href={`/${item.href}`}
@@ -87,7 +87,7 @@ export const Footer = ({ data, icon, rawData }) => {
                         {item.label}
                       </a>
                     )}
-                  </>
+                  </li>
                 );
               })}
           </ul>

@@ -15,28 +15,34 @@ export const Layout = ({
   data?: Omit<Global, "id" | "_sys" | "_values">;
   children: React.ReactNode;
 }) => {
+  console.log(data.theme);
   return (
     <>
       <Head>
         <title>Tina</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-        {data.theme.font_title === "montserrat" ||
-          (data.theme.font_content === "montserrat" && (
-            <link href="/font/Montserrat.ttf" rel="stylesheet"></link>
-          ))}
-        {data.theme.font_title === "guavast" ||
-          (data.theme.font_content === "guavast" && (
-            <link href="/font/Guavast.otf" rel="stylesheet"></link>
-          ))}
+        {(data.theme.font_title === "montserrat" ||
+          data.theme.font_content === "montserrat") && (
+          <>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+              rel="stylesheet"
+            />
+          </>
+        )}
+        {(data.theme.font_title === "guavast" ||
+          data.theme.font_content === "guavast") && (
+          <>
+            <link href="/font/Guavast/Guavast.otf" rel="stylesheet"></link>
+            <link href="/font/Guavast/guavast.css" rel="stylesheet"></link>
+          </>
+        )}
       </Head>
       <Theme data={data?.theme}>
-        <div
-          className={`min-h-screen flex flex-col 
-          ${data.theme.font === "nunito" && "font-nunito"} 
-          ${data.theme.font === "lato" && "font-lato"} 
-          ${data.theme.font === "sans" && "font-sans"}`}
-        >
+        <div className={`min-h-screen flex flex-col font-body`}>
           <Header data={data?.header} />
           <div className="flex-1 text-gray-800 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000 flex flex-col">
             {children}

@@ -38,12 +38,12 @@ blocks:
       et mémorable à votre image.
 
 
-      Que vous soyez particulier ou professionnel, explorez mon portfolio pour
+      Que vous soyez particulier ou professionnel, explorez mon projet pour
       découvrir comment nous pouvons travailler ensemble.
     image:
       src: /uploads/Homepage/1701333708754_GAGABRIT PHOTO SITE.png
       alt: Manon Bertho
-    color: ''
+    color: ""
     _template: presentation
   - title: Pourquoi travailer avec moi ?
     color: lunar-green
@@ -108,4 +108,3 @@ blocks:
     color: link-water
     _template: cta
 ---
-

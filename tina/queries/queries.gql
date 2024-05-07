@@ -18,6 +18,26 @@ query pageQuery {
       }
     }
   }
+  projetConnection {
+    edges {
+      node {
+        id
+        title
+        imgCentre {
+          src
+          alt
+        }
+        type {
+          ... on ProjetType {
+            ...ProjetTypeParts
+          }
+        }
+        _sys {
+          filename
+        }
+      }
+    }
+  }
 }
 
 query contentQuery($relativePath: String!) {
@@ -40,12 +60,12 @@ query blogPostQuery($relativePath: String!) {
   }
 }
 
-query portfolioQuery($relativePath: String!) {
+query projetQuery($relativePath: String!) {
   ...LayoutQueryFragment
-  portfolio(relativePath: $relativePath) {
-    ...PortfolioParts
-    portfolioType {
-      ... on PortfolioType {
+  projet(relativePath: $relativePath) {
+    ...ProjetParts
+    type {
+      ... on ProjetType {
         name
       }
     }

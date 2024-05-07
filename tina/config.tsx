@@ -4,7 +4,7 @@ import Post from "./collection/post";
 import Global from "./collection/global";
 import Author from "./collection/author";
 import Page from "./collection/page";
-import Portfolio, { PortfolioType } from "./collection/portfolio";
+import Projet, { ProjetType } from "./collection/projet";
 
 const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -30,7 +30,7 @@ const config = defineConfig({
     outputFolder: "admin", // within the public folder
   },
   schema: {
-    collections: [Post, Global, Author, Page, PortfolioType, Portfolio],
+    collections: [Post, Global, Author, Page, ProjetType, Projet],
   },
 });
 

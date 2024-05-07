@@ -80,4 +80,4 @@ These are rebuilt when your `tina` config changes.
 ## LICENSE
 
 Licensed under the [Apache 2.0 license](./LICENSE).
-"# manon-bertho-portfolio" 
+"# manon-bertho-projet"
