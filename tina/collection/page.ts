@@ -3,8 +3,10 @@ import { heroBlockSchema } from "../../components/blocks/hero";
 import { presentationBlockSchema } from "../../components/blocks/presentation";
 import { contentBlockSchema } from "../../components/blocks/content";
 import { testimonialBlockSchema } from "../../components/blocks/testimonial";
+import { ctaBlockSchema } from "../../components/blocks/cta";
 import { featureBlockSchema } from "../../components/blocks/features";
 import { numberFeatureBlockSchema } from "../../components/blocks/number_features";
+import { shopBlockSchema } from "../../components/blocks/shop";
 
 const Page: Collection = {
   label: "Pages",
@@ -48,6 +50,8 @@ const Page: Collection = {
         contentBlockSchema,
         testimonialBlockSchema,
         numberFeatureBlockSchema,
+        ctaBlockSchema,
+        shopBlockSchema,
       ],
     },
   ],

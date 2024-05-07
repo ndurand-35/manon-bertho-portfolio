@@ -16,7 +16,23 @@ const Global: Collection = {
       label: "Header",
       name: "header",
       fields: [
-        iconSchema as any,
+        {
+          type: "object",
+          label: "Logo",
+          name: "logo",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
         {
           type: "string",
           label: "Name",
@@ -27,8 +43,8 @@ const Global: Collection = {
           label: "Color",
           name: "color",
           options: [
-            { label: "Default", value: "default" },
-            { label: "Primary", value: "primary" },
+            { label: "Lunar", value: "lunar-green" },
+            { label: "Water", value: "link-water" },
           ],
         },
         {
@@ -70,34 +86,34 @@ const Global: Collection = {
           label: "Color",
           name: "color",
           options: [
-            { label: "Default", value: "default" },
-            { label: "Primary", value: "primary" },
+            { label: "Lunar", value: "lunar-green" },
+            { label: "Water", value: "link-water" },
           ],
         },
         {
           type: "object",
-          label: "Social Links",
-          name: "social",
+          label: "Nav Links",
+          name: "nav",
+          list: true,
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.label };
+            },
+            defaultItem: {
+              href: "home",
+              label: "Home",
+            },
+          },
           fields: [
             {
               type: "string",
-              label: "Facebook",
-              name: "facebook",
+              label: "Link",
+              name: "href",
             },
             {
               type: "string",
-              label: "Twitter",
-              name: "twitter",
-            },
-            {
-              type: "string",
-              label: "Instagram",
-              name: "instagram",
-            },
-            {
-              type: "string",
-              label: "Github",
-              name: "github",
+              label: "Label",
+              name: "label",
             },
           ],
         },

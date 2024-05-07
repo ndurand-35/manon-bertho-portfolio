@@ -1,62 +1,45 @@
 import React from "react";
-import { Container } from "../util/container";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { PageBlocksTestimonial } from "../../tina/__generated__/types";
-import { tinaField } from "tinacms/dist/react";
 
 export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
   return (
     <Section color={data.color}>
-      <Container size="large">
-        <blockquote>
-          <div
-            className={`relative z-10 max-w-3xl mx-auto text-4xl lg:text-5xl font-bold tracking-normal text-center title-font ${
-              data.color === "primary"
-                ? `text-white`
-                : `text-gray-700 dark:text-gray-50`
-            }`}
-          >
-            <span
-              className={`block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-2	-left-4 leading-4 -z-1`}
-            >
-              &ldquo;
-            </span>
-            <p
-              data-tina-field={tinaField(data, `quote`)}
-              className="relative opacity-95"
-            >
-              {data.quote}
-            </p>
-            <span
-              className={`block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-3	-right-4 leading-4 -z-1`}
-            >
-              &rdquo;
-            </span>
-          </div>
-          <div className={`my-8 flex-grow-0`}>
-            <span
-              className={`block mx-auto h-0.5 w-1/6 ${
-                data.color === "primary"
-                  ? `bg-blue-600`
-                  : `bg-gray-200 dark:bg-gray-700`
-              }`}
-            ></span>
-          </div>
-          <footer className="text-center">
-            <p
-              data-tina-field={tinaField(data, `author`)}
-              className={`tracking-wide title-font font-bold text-lg ${
-                data.color === "primary"
-                  ? `text-blue-200`
-                  : `text-blue-500 dark:text-blue-300`
-              }`}
-            >
-              {data.author}
-            </p>
-          </footer>
-        </blockquote>
-      </Container>
+      <div className="py-8 space-y-8">
+        <h3 className="font-title text-3xl text-center font-semibold">
+          {data.title}
+        </h3>
+        <div className="grid grid-cols-1  gap-8  px-16 sm:px-32 md:grid-cols-12">
+          {data.testimonials &&
+            data.testimonials.map((testimonial, i) => (
+              <div
+                className="col-span-1 space-y-4 md:col-span-4 flex flex-col items-center"
+                key={`testimonial_${i}`}
+              >
+                <img
+                  className="rounded-xl"
+                  src={testimonial.image?.src}
+                  alt={testimonial.image?.alt}
+                />
+                <div className="h-full space-y-4 flex flex-col justify-between">
+                  <p
+                    className="text-center"
+                    dangerouslySetInnerHTML={{
+                      __html: testimonial.description,
+                    }}
+                  ></p>
+                  <p
+                    className="text-end text-gray-400 "
+                    style={{ fontVariant: "small-caps" }}
+                  >
+                    {testimonial.author}
+                  </p>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
     </Section>
   );
 };
@@ -76,25 +59,61 @@ export const testimonialBlockSchema: TinaTemplate = {
   fields: [
     {
       type: "string",
-      ui: {
-        component: "textarea",
-      },
-      label: "Quote",
-      name: "quote",
-    },
-    {
-      type: "string",
-      label: "Author",
-      name: "author",
+      label: "Titre",
+      name: "title",
     },
     {
       type: "string",
       label: "Color",
       name: "color",
       options: [
-        { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
-        { label: "Primary", value: "primary" },
+        { label: "Lunar", value: "lunar-green" },
+        { label: "Water", value: "link-water" },
+      ],
+    },
+    {
+      type: "object",
+      label: "Testimonial",
+      name: "testimonials",
+      list: true,
+      ui: {
+        itemProps: (item) => {
+          return {
+            label: item?.title,
+          };
+        },
+      },
+      fields: [
+        {
+          type: "string",
+          label: "Text",
+          name: "description",
+          ui: {
+            component: "textarea",
+          },
+        },
+        {
+          type: "string",
+          label: "Auteur",
+          name: "author",
+        },
+        {
+          type: "object",
+          label: "Image",
+          name: "image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
       ],
     },
   ],

@@ -1,34 +1,34 @@
 import type { TinaTemplate } from "tinacms";
+import { Section } from "../util/section";
 
 export const NumberFeatures = ({ data }: { data: any }) => {
   return (
-    <div className="space-y-16 bg-primary-300 px-4 py-16 sm:px-8 md:px-16 xl:px-32">
-      <h2 className="text-center font-title text-4xl font-semibold text-white">
-        {data.title}
-      </h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-        {data.items &&
-          data.items.map((block, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center space-y-8 text-white"
-            >
-              <div className="relative">
-                <img src={"/" + block.image} className="h-48 w-48	" />
-                <p
-                  className={`absolute left-[42%] top-[37%] font-title text-6xl font-black`}
-                >
-                  {i + 1}
-                </p>
+    <Section color={data.color}>
+      <div className="space-y-16  px-4 py-16 sm:px-8 md:px-16 xl:px-32">
+        <h2 className="text-center font-title text-4xl font-semibold">
+          {data.title}
+        </h2>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {data.items &&
+            data.items.map((block, i) => (
+              <div key={i} className="flex flex-col items-center space-y-8">
+                <div className="relative">
+                  <img src={block.image?.src} className="h-48 w-48	" />
+                  <p
+                    className={`absolute left-[42%] top-[37%] font-title text-6xl font-black`}
+                  >
+                    {i + 1}
+                  </p>
+                </div>
+                <div
+                  className="whitespace-pre-line px-4 text-center"
+                  dangerouslySetInnerHTML={{ __html: block.text }}
+                ></div>
               </div>
-              <div
-                className="whitespace-pre-line px-4 text-center text-white"
-                dangerouslySetInnerHTML={{ __html: block.text }}
-              ></div>
-            </div>
-          ))}
+            ))}
+        </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
@@ -37,7 +37,7 @@ const defaultFeature = {
 };
 
 export const numberFeatureBlockSchema: TinaTemplate = {
-  name: "number_features",
+  name: "numberFeatures",
   label: "Number Features",
   ui: {
     previewSrc: "/blocks/features.png",
@@ -52,17 +52,26 @@ export const numberFeatureBlockSchema: TinaTemplate = {
       name: "title",
     },
     {
+      type: "string",
+      label: "Color",
+      name: "color",
+      options: [
+        { label: "Lunar", value: "lunar-green" },
+        { label: "Water", value: "link-water" },
+      ],
+    },
+    {
       type: "object",
       label: "Feature Items",
       name: "items",
       list: true,
-      //   ui: {
-      //     itemProps: (item) => {
-      //       return {
-      //         label: item?.title,
-      //       };
-      //     },
-      //   },
+      ui: {
+        itemProps: (item) => {
+          return {
+            label: item?.title,
+          };
+        },
+      },
       fields: [
         {
           type: "string",
@@ -71,6 +80,23 @@ export const numberFeatureBlockSchema: TinaTemplate = {
           ui: {
             component: "textarea",
           },
+        },
+        {
+          type: "object",
+          label: "Image",
+          name: "image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
         },
       ],
     },

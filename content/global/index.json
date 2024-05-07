@@ -1,12 +1,11 @@
 {
   "header": {
-    "icon": {
-      "name": "Tina",
-      "color": "orange",
-      "style": "float"
+    "logo": {
+      "src": "/uploads/Layout/logo-dark-QSdct_QZ.png",
+      "alt": "Logo Manon Bertho Studio"
     },
-    "name": "Tina Starter",
-    "color": "default",
+    "name": "Manon Bertho",
+    "color": "lunar-green",
     "nav": [
       {
         "href": "",
@@ -17,18 +16,31 @@
         "label": "About"
       },
       {
-        "href": "posts",
-        "label": "Blog"
+        "href": "https://www.etsy.com/fr/shop/ManonBerthoStudio",
+        "label": "Boutique"
       }
     ]
   },
   "footer": {
-    "color": "default",
-    "social": {
-      "facebook": "/",
-      "twitter": "/",
-      "instagram": "/"
-    }
+    "color": "lunar-green",
+    "nav": [
+      {
+        "href": "/service",
+        "label": "Services"
+      },
+      {
+        "href": "/portfolio",
+        "label": "Portfolio"
+      },
+      {
+        "href": "https://www.etsy.com/fr/shop/ManonBerthoStudio",
+        "label": "Boutique"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      }
+    ]
   },
   "theme": {
     "color": "blue",

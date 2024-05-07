@@ -43,24 +43,69 @@ blocks:
     image:
       src: /uploads/Homepage/1701333708754_GAGABRIT PHOTO SITE.png
       alt: Manon Bertho
+    color: ''
     _template: presentation
   - title: Pourquoi travailer avec moi ?
+    color: lunar-green
     items:
       - text: >-
           Je capture l'instant, fige l'émotion. Que ce soit pour des événements
           spéciaux, des portraits ou des moments du quotidien. Je vous offre, à
           travers mon objectif, des souvenirs intemporels à chérir pour
           l'éternité.
+        image:
+          src: /uploads/Homepage/1701189152201_dot-bleu.svg
+          alt: Point bleu
       - text: >-
           Je combine la photographie, l’illustration et le graphisme pour créer
           une papeterie exceptionnelle, personnalisée et minutieusement conçue,
           transformant chaque événement en une expérience inoubliable grâce à
           des faire-part et des invitations uniques.
+        image:
+          src: /uploads/Homepage/1701189182711_dot-rose.svg
       - text: >-
           Je fusionne l'art photographique et le design graphique pour créer une
           identité visuelle distinctive, captivante et mémorable, révélant
           l'histoire et la personnalité uniques de votre entreprise, afin de
           marquer une impression durable sur le marché.
-    _template: number_features
+        image:
+          src: /uploads/Homepage/1701189191118_dot-rouge.svg
+    _template: numberFeatures
+  - title: Vos mots doux
+    testimonials:
+      - description: >-
+          Je remercie Manon pour son travail. D'abord pour cette séance photo
+          grossesse, je ne me suis jamais sentie aussi à l'aise face à un
+          objectif et quels beaux souvenirs elle a immortalisés ! Elle a su
+          s'adapter à ma demande et le rendu est encore mieux que ce que
+          j'imaginais.
+        author: Louise
+        image:
+          src: /uploads/Homepage/Testimonial/1701206961870_louise2.webp
+          alt: Shooting de Louise
+      - description: >-
+          J'ai eu le plaisir de faire une séance photo avec Manon. Dès le début,
+          elle a su me mettre à l'aise devant l'objectif. Je suis enchantée du
+          résultat final et je recommande vivement Manon pour toutes vos séances
+          photo.
+        author: Berenice
+        image:
+          src: /uploads/Homepage/Testimonial/1701207261039_berenice.webp
+          alt: Shooting de Berenice
+      - description: >-
+          La séance photo avec mon cheval, capturé par Manon, a été magique.
+          Elle a su saisir la complicité entre mon cheval et moi de manière
+          remarquable. Chaque cliché exprimait la beauté de notre lien unique.
+          Des moments précieux immortalisés avec professionnalisme. Une
+          expérience inoubliable !
+        author: Maelle
+        image:
+          src: /uploads/Homepage/Testimonial/1701344699544_DSC_0212.jpg
+          alt: Shooting de Tornado & Maelle
+    _template: testimonial
+  - title: Mon univers vous inspire ?
+    button_text: Contactez-moi
+    color: link-water
+    _template: cta
 ---
 
