@@ -40,6 +40,21 @@ const Portfolio: Collection = {
       name: "type",
       collections: ["portfolioType"],
     },
+    {
+      type: "image",
+      name: "imgGauche",
+      label: "Image Gauche",
+    },
+    {
+      type: "image",
+      name: "imageCentre",
+      label: "Image Centre",
+    },
+    {
+      type: "image",
+      name: "imageDroite",
+      label: "Image Droite",
+    },
   ],
 };
 

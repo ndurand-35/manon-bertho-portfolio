@@ -39,3 +39,15 @@ query blogPostQuery($relativePath: String!) {
     }
   }
 }
+
+query portfolioQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  portfolio(relativePath: $relativePath) {
+    ...PortfolioParts
+    portfolioType {
+      ... on PortfolioType {
+        name
+      }
+    }
+  }
+}
