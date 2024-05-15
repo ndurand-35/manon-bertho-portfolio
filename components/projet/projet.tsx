@@ -1,5 +1,4 @@
 import { tinaField } from "tinacms/dist/react";
-import { ProjetType } from "../../pages/projet/[filename]";
 import {
   Components,
   TinaMarkdown,
@@ -7,6 +6,7 @@ import {
 } from "tinacms/dist/rich-text";
 import React from "react";
 import { CTA } from "../blocks/cta";
+import { ProjetType } from "../../pages/projets/[filename]";
 
 const components: Components<{
   BlockQuote: {
@@ -175,7 +175,15 @@ export const Projet = (props: ProjetType) => {
         </div>
       )}
       {/* {portfolio.mansonery && <Mansonery data={portfolio.mansonery} />} */}
-      {props.cta && <CTA data={props.cta} />}
+      {props.cta && (
+        <CTA
+          data={{
+            title: props.cta.title,
+            color: props.cta.color,
+            button_text: props.cta.button_text,
+          }}
+        />
+      )}
     </div>
   );
 };

@@ -49,7 +49,7 @@ export const Layout = ({
           <Footer
             rawData={rawData}
             data={data?.footer}
-            icon={data?.header.icon}
+            icon={data?.footer.logo}
           />
         </div>
       </Theme>

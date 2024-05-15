@@ -47,7 +47,13 @@ export const Theme = ({ data, children }) => {
     return;
   }, [setSystemDarkMode]);
 
-  const { color = "blue", font = "sans", darkMode = "system" } = data;
+  const {
+    color = "blue",
+    font = "sans",
+    font_title = "sans",
+    font_content = "sans",
+    darkMode = "system",
+  } = data;
 
   React.useEffect(() => {
     updateRenderColorMode(
@@ -64,6 +70,8 @@ export const Theme = ({ data, children }) => {
       value={{
         color,
         font,
+        font_title,
+        font_content,
         darkMode,
       }}
     >
