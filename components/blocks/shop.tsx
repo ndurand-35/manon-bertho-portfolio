@@ -74,7 +74,7 @@ export const shopBlockSchema: TinaTemplate = {
       name: "title",
     },
     {
-      type: "string",
+      type: "rich-text",
       label: "Description",
       name: "description",
     },

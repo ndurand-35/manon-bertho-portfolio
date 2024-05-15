@@ -1,10 +1,10 @@
 import React from "react";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
-import { PageBlocksCTA } from "../../tina/__generated__/types";
+import { PageBlocksCta } from "../../tina/__generated__/types";
 import Link from "next/link";
 
-export const CTA = ({ data }: { data: PageBlocksCTA }) => {
+export const CTA = ({ data }: { data: PageBlocksCta }) => {
   return (
     <Section color={data.color}>
       <div className="px-4 py-8 sm:py-16 lg:px-6">
