@@ -22,7 +22,7 @@ export const Projets = ({ data }: { data: ProjetType[] }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16 mx-8">
         {data.map((projetData) => {
           const projet = projetData.node;
-    
+
           return (
             <Link
               key={projet._sys.filename}
@@ -32,7 +32,10 @@ export const Projets = ({ data }: { data: ProjetType[] }) => {
               <h1 className="font-title text-3xl font-semibold">
                 {projet.title}
               </h1>
-              <img className="rounded-lg" src={`${projet?.imgCentre?.src}`} />
+              <img
+                className="rounded-lg"
+                src={`${projet?.mainImg?.imgCentre?.src}`}
+              />
             </Link>
           );
         })}

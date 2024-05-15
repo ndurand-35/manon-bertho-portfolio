@@ -23,9 +23,11 @@ query pageQuery {
       node {
         id
         title
-        imgCentre {
-          src
-          alt
+        mainImg {
+          imgCentre {
+            src
+            alt
+          }
         }
         type {
           ... on ProjetType {

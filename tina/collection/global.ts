@@ -82,6 +82,28 @@ const Global: Collection = {
       name: "footer",
       fields: [
         {
+          type: "object",
+          label: "Logo",
+          name: "logo",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
+        {
+          type: "string",
+          label: "Name",
+          name: "name",
+        },
+        {
           type: "string",
           label: "Color",
           name: "color",

@@ -3,6 +3,7 @@ import { client } from "../../tina/__generated__/client";
 import { useTina } from "tinacms/dist/react";
 import { Layout } from "../../components/layout";
 import { InferGetStaticPropsType } from "next";
+import { Section } from "../../components/util/section";
 
 // Use the props returned by get static props
 export default function BlogPostPage(
@@ -16,7 +17,9 @@ export default function BlogPostPage(
   if (data && data.projet) {
     return (
       <Layout rawData={data} data={data.global}>
-        <Projet {...data.projet} />
+        <Section className="flex-1">
+          <Projet {...data.projet} />
+        </Section>
       </Layout>
     );
   }

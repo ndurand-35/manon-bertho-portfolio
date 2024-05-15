@@ -81,7 +81,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                   ? router.asPath === "/"
                   : router.asPath.includes(item.href)) && isClient;
               return (
-                <>
+                <li key={i}>
                   {isRelative ? (
                     <Link
                       href={`/${item.href}`}
@@ -101,7 +101,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                       {item.label}
                     </a>
                   )}
-                </>
+                </li>
               );
             })}
         </ul>

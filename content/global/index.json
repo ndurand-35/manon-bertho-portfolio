@@ -8,8 +8,12 @@
     "color": "lunar-green",
     "nav": [
       {
-        "href": "",
+        "href": "home",
         "label": "Home"
+      },
+      {
+        "href": "projets",
+        "label": "Portfolio"
       },
       {
         "href": "about",
@@ -22,6 +26,11 @@
     ]
   },
   "footer": {
+    "logo": {
+      "src": "/uploads/Layout/logo-dark-QSdct_QZ.png",
+      "alt": "Logo Manon"
+    },
+    "name": "Manon Bertho",
     "color": "lunar-green",
     "nav": [
       {
