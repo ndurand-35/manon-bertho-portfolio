@@ -7,7 +7,7 @@ import { tinaField } from "tinacms/dist/react";
 
 export const Hero = ({ data }: { data: PageBlocksHero }) => {
   return (
-    <Section color={data.color}>
+    <Section color={data.color} className="overflow-visible">
       <div className="relative flex h-spe-height justify-center overflow-hidden">
         <img
           data-tina-field={tinaField(data, "image_top_left")}
@@ -40,7 +40,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
         data-tina-field={tinaField(data, "image_bottom_left")}
         alt={data.image_bottom_left?.alt}
         src={data.image_bottom_left?.src}
-        className="absolute -left-12 bottom-8 md:-bottom-20 w-64 rotate-90 md:left-0 md:w-96 xl:left-32"
+        className="absolute -left-12 bottom-8 z-10 md:-bottom-20 w-64 rotate-90 md:left-0 md:w-96 xl:left-32"
       />
       <img
         data-tina-field={tinaField(data, "image_bottom_right")}
