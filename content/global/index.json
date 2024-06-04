@@ -8,20 +8,20 @@
     "color": "lunar-green",
     "nav": [
       {
-        "href": "home",
-        "label": "Home"
-      },
-      {
         "href": "projets",
         "label": "Portfolio"
       },
       {
-        "href": "about",
-        "label": "About"
+        "href": "projet",
+        "label": "Projet"
       },
       {
         "href": "https://www.etsy.com/fr/shop/ManonBerthoStudio",
         "label": "Boutique"
+      },
+      {
+        "href": "contact",
+        "label": "Contact"
       }
     ]
   },
