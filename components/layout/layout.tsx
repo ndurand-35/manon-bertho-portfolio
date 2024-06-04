@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { Theme } from "./theme";
@@ -18,6 +19,8 @@ export const Layout = ({
 }) => {
   return (
     <>
+      <SpeedInsights />
+      <Analytics />
       <Head>
         <title>Tina</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
