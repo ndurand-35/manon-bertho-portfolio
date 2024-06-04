@@ -1,11 +1,16 @@
 import type { TinaTemplate } from "tinacms";
 import { Section } from "../util/section";
+import { tinaField } from "tinacms/dist/react";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const NumberFeatures = ({ data }: { data: any }) => {
   return (
     <Section color={data.color}>
       <div className="space-y-16  px-4 py-16 sm:px-8 md:px-16 xl:px-32">
-        <h2 className="text-center font-title text-4xl font-semibold">
+        <h2
+          className="text-center font-title text-4xl font-semibold"
+          data-tina-field={tinaField(data, "title")}
+        >
           {data.title}
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -13,7 +18,11 @@ export const NumberFeatures = ({ data }: { data: any }) => {
             data.items.map((block, i) => (
               <div key={i} className="flex flex-col items-center space-y-8">
                 <div className="relative">
-                  <img src={block.image?.src} className="h-48 w-48	" />
+                  <img
+                    src={block.image?.src}
+                    className="h-48 w-48"
+                    data-tina-field={tinaField(block, "image")}
+                  />
                   <p
                     className={`absolute left-[42%] top-[37%] font-title text-6xl font-black`}
                   >
@@ -22,6 +31,7 @@ export const NumberFeatures = ({ data }: { data: any }) => {
                 </div>
                 <div
                   className="whitespace-pre-line px-4 text-center"
+                  data-tina-field={tinaField(block, "text")}
                   dangerouslySetInnerHTML={{ __html: block.text }}
                 ></div>
               </div>

@@ -2,12 +2,16 @@ import React from "react";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { PageBlocksTestimonial } from "../../tina/__generated__/types";
+import { tinaField } from "tinacms/dist/react";
 
 export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
   return (
     <Section color={data.color}>
       <div className="py-8 space-y-8">
-        <h3 className="font-title text-3xl text-center font-semibold">
+        <h3
+          className="font-title text-3xl text-center font-semibold"
+          data-tina-field={tinaField(data, "title")}
+        >
           {data.title}
         </h3>
         <div className="grid grid-cols-1  gap-8  px-16 sm:px-32 md:grid-cols-12">
@@ -19,12 +23,14 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
               >
                 <img
                   className="rounded-xl"
+                  data-tina-field={tinaField(testimonial, "image")}
                   src={testimonial.image?.src}
                   alt={testimonial.image?.alt}
                 />
                 <div className="h-full space-y-4 flex flex-col justify-between">
                   <p
                     className="text-center"
+                    data-tina-field={tinaField(testimonial, "description")}
                     dangerouslySetInnerHTML={{
                       __html: testimonial.description,
                     }}
@@ -32,6 +38,7 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
                   <p
                     className="text-end text-gray-400 "
                     style={{ fontVariant: "small-caps" }}
+                    data-tina-field={tinaField(testimonial, "author")}
                   >
                     {testimonial.author}
                   </p>

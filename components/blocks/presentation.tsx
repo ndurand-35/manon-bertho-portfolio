@@ -9,12 +9,16 @@ export const Presentation = ({ data }: { data: any }) => {
       <div className="grid min-h-spe-height grid-cols-12 gap-8 overflow-x-hidden py-16 lg:px-32">
         <div className=" col-span-12 mx-8 my-auto md:col-span-8 md:mx-16">
           <h4
+            data-tina-field={tinaField(data, "surtitle")}
             className="text-sm text-ternary"
             style={{ fontVariant: "small-caps" }}
           >
             {data.surtitle}
           </h4>
-          <h1 className="mt-4 font-title text-3xl font-semibold">
+          <h1
+            className="mt-4 font-title text-3xl font-semibold"
+            data-tina-field={tinaField(data, "title")}
+          >
             {data.title}
           </h1>
           <div
@@ -28,6 +32,7 @@ export const Presentation = ({ data }: { data: any }) => {
           <img
             src={data.image?.src}
             alt={data.image?.alt}
+            data-tina-field={tinaField(data, "image")}
             className="rounded-full"
             style={{
               boxShadow: "#fff -20px 20px 0px -3px, #3B4F43 -20px 20px",

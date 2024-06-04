@@ -22,7 +22,7 @@ export const Layout = ({
       <SpeedInsights />
       <Analytics />
       <Head>
-        <title>Tina</title>
+        <title>Manon Bertho Studio - Graphiste et Photographe Freelance</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         {(data.theme.font_title === "montserrat" ||
