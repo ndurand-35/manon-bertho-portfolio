@@ -10,12 +10,14 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
     <Section color={data.color}>
       <div className="relative flex h-spe-height justify-center overflow-hidden">
         <img
+          data-tina-field={tinaField(data, "image_top_left")}
           alt={data.image_top_left?.alt}
           src={data.image_top_left?.src}
           className="absolute -top-16 left-4 w-6/12 md:-left-64"
         />
         <div className="relative m-auto text-center">
           <img
+            data-tina-field={tinaField(data, "image")}
             alt={data.image?.alt}
             src={data.image?.src}
             className="mx-auto w-full md:w-8/12"
@@ -28,17 +30,20 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
           </div>
         </div>
         <img
+          data-tina-field={tinaField(data, "image_top_right")}
           alt={data.image_top_right?.alt}
           src={data.image_top_right?.src}
           className="absolute -right-12 w-4/12 rotate-180 sm:-right-24 md:block"
         />
       </div>
       <img
+        data-tina-field={tinaField(data, "image_bottom_left")}
         alt={data.image_bottom_left?.alt}
         src={data.image_bottom_left?.src}
         className="absolute -left-12 bottom-8 md:-bottom-20 w-64 rotate-90 md:left-0 md:w-96 xl:left-32"
       />
       <img
+        data-tina-field={tinaField(data, "image_bottom_right")}
         alt={data.image_bottom_right?.alt}
         src={data.image_bottom_right?.src}
         className="absolute -bottom-2 right-8 z-10 w-32 rotate-45 md:-bottom-8 md:right-64"

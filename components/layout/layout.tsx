@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { Theme } from "./theme";
