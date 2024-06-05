@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Instagram, Linkedin } from "iconoir-react";
 import { Section } from "../util/section";
 import { useRouter } from "next/router";
+import { tinaField } from "tinacms/dist/react";
 
 export const Footer = ({ data, icon, rawData }) => {
   const router = useRouter();
@@ -32,6 +33,7 @@ export const Footer = ({ data, icon, rawData }) => {
           <div className="flex flex-col items-center justify-center space-y-2">
             <Link href="/" className="mb-4 flex items-center sm:mb-0">
               <img
+                data-tina-field={tinaField(data, "logo")}
                 src={data.logo?.src}
                 alt={data.logo?.alt}
                 className="mr-3 h-16 py-2"
@@ -70,6 +72,7 @@ export const Footer = ({ data, icon, rawData }) => {
                   <li key={i}>
                     {isRelative ? (
                       <Link
+                        data-tina-field={tinaField(item, "href")}
                         href={`/${item.href}`}
                         className={`block py-2 text-center transition ease-in-out hover:text-secondary md:p-0 ${
                           activeItem && "text-secondary"
@@ -80,6 +83,7 @@ export const Footer = ({ data, icon, rawData }) => {
                       </Link>
                     ) : (
                       <a
+                        data-tina-field={tinaField(item, "href")}
                         href={item.href}
                         target="_blank"
                         className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"

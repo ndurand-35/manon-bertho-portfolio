@@ -143,8 +143,8 @@ const Service: Collection = {
         {
           type: "object",
           list: true,
-          name: "Type de prix",
-          label: "type",
+          name: "type",
+          label: "Type de prix",
           fields: [
             {
               type: "string",
@@ -154,8 +154,8 @@ const Service: Collection = {
             {
               type: "object",
               list: true,
-              name: "Prix",
-              label: "price",
+              name: "price",
+              label: "Prix",
               fields: [
                 {
                   type: "string",
@@ -164,6 +164,45 @@ const Service: Collection = {
                 },
               ],
             },
+          ],
+        },
+      ],
+    },
+    {
+      type: "object",
+      label: "Gallery",
+      name: "gallery",
+      fields: [
+        {
+          type: "string",
+          label: "Titre",
+          name: "title",
+        },
+        {
+          type: "object",
+          list: true,
+          name: "img",
+          label: "Image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+            {
+              name: "colSpan",
+              label: "Affichage",
+              type: "string",
+              options: [
+                { label: "1 Colonne", value: "col-span-1" },
+                { label: "2 Colonnes", value: "col-span-2" },
+              ],
+            }
           ],
         },
       ],

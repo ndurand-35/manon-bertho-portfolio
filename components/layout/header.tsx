@@ -58,6 +58,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
           <img
             src={data.logo?.src}
             alt={data.logo?.alt}
+            data-tina-field={tinaField(data, "logo")}
             className="mr-3 h-16 py-2"
           />
           <span
@@ -84,6 +85,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                 <li key={i}>
                   {isRelative ? (
                     <Link
+                      data-tina-field={tinaField(item, "href")}
                       href={`/${item.href}`}
                       className={`block py-2 text-center transition ease-in-out hover:text-secondary md:p-0 ${
                         activeItem && "text-secondary"
@@ -94,6 +96,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                     </Link>
                   ) : (
                     <a
+                      data-tina-field={tinaField(item, "href")}
                       href={item.href}
                       target="_blank"
                       className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"

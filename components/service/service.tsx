@@ -8,6 +8,7 @@ import React from "react";
 import { CTA } from "../blocks/cta";
 import { ServiceType } from "../../pages/services/[filename]";
 import { NumberFeatures } from "../blocks/number_features";
+import Link from "next/link";
 
 const components: Components<{
   BlockQuote: {
@@ -125,8 +126,90 @@ export const Service = (props: ServiceType) => {
       </div>
       {props.seance && <NumberFeatures data={props.seance} />}
 
+      {props.pricing && (
+        <div className="space-y-4 py-16 lg:px-32">
+          <h3
+            className="text-center font-title text-4xl font-semibold text-ternary"
+            data-tina-field={tinaField(props.pricing, "title")}
+          >
+            {props.pricing.title}
+          </h3>
+          {props.pricing.type && props.pricing.type.length !== 0 ? (
+            <div
+              className={`md:grid-cols-${props.pricing.type.length} grid grid-cols-1 gap-16`}
+            >
+              {props.pricing.type.map((pricingData) => (
+                <div className="flex flex-col items-center justify-center">
+                  <h4
+                    className="whitespace-pre-line px-16 text-center text-xl text-ternary"
+                    data-tina-field={tinaField(pricingData, "title")}
+                  >
+                    {pricingData.title}
+                  </h4>
+                  <ul className="mt-4">
+                    {pricingData.price.map((liItem, liIndex: number) => (
+                      <li
+                        data-tina-field={tinaField(liItem, "text")}
+                        className="flex flex-row items-center space-x-2"
+                        key={liIndex}
+                      >
+                        <div className="h-4 w-4 rounded-full bg-ternary" />
+                        <p className="font-semibold">{liItem.text}</p>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-8 text-sm text-gray-600">
+                    {pricingData.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center space-y-4">
+              <p>
+                Chaque projet étant unique et spécifique à vos besoins, mes
+                tarifs sont déterminés sur mesure. Je m'engage à fournir des
+                services personnalisés pour répondre parfaitement à vos
+                attentes. Pour obtenir un devis adapté à votre projet et
+                discuter des tarifs, veuillez me contacter. Je serais ravi(e)
+                d'échanger avec vous et de vous fournir toutes les informations
+                nécessaires pour concrétiser votre vision graphique.
+              </p>
+              <div>
+                <Link
+                  href={`/about`}
+                  className="mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium 
+                  text-white hover:bg-ternary-500 focus:ring-4 focus:ring-ternary-500"
+                >
+                  Contactez moi
+                </Link>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
-      {/* {portfolio.mansonery && <Mansonery data={portfolio.mansonery} />} */}
+      <div className="text-center">
+        <h1
+          className="mt-2 font-title text-3xl font-semibold"
+          data-tina-field={tinaField(props.gallery, "title")}
+        >
+          {props.gallery?.title}
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {props?.gallery?.img?.map((img) => (
+            <div className={img?.largeur}>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                data-tina-field={tinaField(img, "src")}
+                src={img?.src}
+                alt={img?.alt}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
       {props.cta && (
         <CTA
           data={{
