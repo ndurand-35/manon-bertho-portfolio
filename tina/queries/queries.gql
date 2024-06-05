@@ -73,3 +73,15 @@ query projetQuery($relativePath: String!) {
     }
   }
 }
+
+query serviceQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  service(relativePath: $relativePath) {
+    ...ServiceParts
+    type {
+      ... on ServiceType {
+        name
+      }
+    }
+  }
+}

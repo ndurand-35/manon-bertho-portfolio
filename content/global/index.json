@@ -8,6 +8,10 @@
     "color": "lunar-green",
     "nav": [
       {
+        "href": "service",
+        "label": "Services"
+      },
+      {
         "href": "projets",
         "label": "Portfolio"
       },
