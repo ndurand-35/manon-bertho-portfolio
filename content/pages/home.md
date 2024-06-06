@@ -62,8 +62,6 @@ blocks:
     _template: marquee
   - title: Mon univers vous inspire ?
     cardList:
-      - title: IDENTITE VISUELLE
-        description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
       - image:
           src: /uploads/Homepage/NO2.jpg
           alt: Portrait
@@ -81,6 +79,10 @@ blocks:
           src: /uploads/Homepage/Mockup 2-2.jpg
         title: PAPETERIE
         description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
+      - image:
+          src: /uploads/Homepage/maison suzon.jpg
+        title: IDENTITE VISUELLE
+        description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
     color: ''
     _template: prestation
   - title: Pourquoi travailer avec moi ?
