@@ -1,6 +1,11 @@
 import React from "react";
 
-export const Section = ({ children, color = "", className = "" }) => {
+export const Section = ({
+  children,
+  color = "",
+  className = "",
+  style = {},
+}) => {
   const sectionColor = {
     default: "text-gray-800 bg-white",
     "lunar-green": "text-white bg-lunar-green",
@@ -15,6 +20,7 @@ export const Section = ({ children, color = "", className = "" }) => {
     <section
       className={`flex-1 relative transition duration-150 ease-out body-font 
       overflow-hidden ${sectionColorCss} ${className}`}
+      style={style}
     >
       {children}
     </section>

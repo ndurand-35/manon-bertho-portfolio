@@ -173,6 +173,10 @@ const Global: Collection = {
               label: "Guavast",
               value: "guavast",
             },
+            {
+              label: "BadScrpit",
+              value: "badscript",
+            },
           ],
         },
         {

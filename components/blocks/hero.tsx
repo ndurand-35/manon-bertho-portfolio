@@ -7,7 +7,11 @@ import { tinaField } from "tinacms/dist/react";
 
 export const Hero = ({ data }: { data: PageBlocksHero }) => {
   return (
-    <Section color={data.color} className="overflow-visible">
+    <Section
+      color={data.color}
+      className="overflow-visible"
+      style={{ backgroundImage: `url(${data.backgroundImg?.src})` }}
+    >
       <div className="relative flex h-spe-height justify-center overflow-hidden">
         <img
           data-tina-field={tinaField(data, "image_top_left")}
@@ -68,6 +72,18 @@ export const heroBlockSchema: TinaTemplate = {
       type: "rich-text",
       label: "Headline",
       name: "headline",
+    },
+    {
+      type: "object",
+      label: "Image de fond",
+      name: "backgroundImg",
+      fields: [
+        {
+          name: "src",
+          label: "Image Source",
+          type: "image",
+        },
+      ],
     },
     {
       type: "object",

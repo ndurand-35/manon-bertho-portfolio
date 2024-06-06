@@ -23,17 +23,15 @@ export const Layout = ({
       <Head>
         <title>Manon Bertho Studio - Graphiste et Photographe Freelance</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
 
         {(data.theme.font_title === "montserrat" ||
           data.theme.font_content === "montserrat") && (
-          <>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link
-              href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-              rel="stylesheet"
-            />
-          </>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+          />
         )}
         {(data.theme.font_title === "guavast" ||
           data.theme.font_content === "guavast") && (
@@ -41,6 +39,13 @@ export const Layout = ({
             <link href="/font/Guavast/Guavast.otf" rel="stylesheet"></link>
             <link href="/font/Guavast/guavast.css" rel="stylesheet"></link>
           </>
+        )}
+        {(data.theme.font_title === "badscript" ||
+          data.theme.font_content === "badscript") && (
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+            rel="stylesheet"
+          />
         )}
       </Head>
       <Theme data={data?.theme}>
