@@ -90,15 +90,13 @@ blocks:
           photo.
         author: Berenice
         image:
-          src: /uploads/Homepage/Testimonial/1701207261039_berenice.webp
+          src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE6.jpg
           alt: Shooting de Berenice
       - description: >-
-          La séance photo avec mon cheval, capturé par Manon, a été magique.
-          Elle a su saisir la complicité entre mon cheval et moi de manière
-          remarquable. Chaque cliché exprimait la beauté de notre lien unique.
-          Des moments précieux immortalisés avec professionnalisme. Une
-          expérience inoubliable !
-        author: Maelle
+          Le Shooting photo s’est très bien déroulé avec Manon. Elle est très
+          professionnelle, réactive et rapide. Le rendu final est d’une qualité
+          incroyable ! Je recommande les yeux fermés
+        author: Julie & Estelle
         image:
           src: /uploads/Homepage/Testimonial/1701344699544_DSC_0212.jpg
           alt: Shooting de Tornado & Maelle
