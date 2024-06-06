@@ -14,11 +14,11 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
         >
           {data.title}
         </h3>
-        <div className="grid grid-cols-1  gap-8  px-16 sm:px-32 md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-8 px-16 sm:px-32 md:grid-cols-12">
           {data.testimonials &&
             data.testimonials.map((testimonial, i) => (
               <div
-                className="col-span-1 space-y-4 md:col-span-4 flex flex-col items-center"
+                className="col-span-1 space-y-4 md:col-span-3 flex flex-col items-center"
                 key={`testimonial_${i}`}
               >
                 <img

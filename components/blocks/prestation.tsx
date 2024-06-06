@@ -18,11 +18,8 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {data?.cardList?.map((card, i) => (
-              <Link href={card?.link}>
-                <div
-                  className="max-w-sm bg-white border border-gray-200 rounded shadow"
-                  key={i}
-                >
+              <Link href={card?.link ?? ""} key={i}>
+                <div className="max-w-sm bg-white border border-gray-200 rounded shadow">
                   <a href="#">
                     <img
                       className="rounded-t-lg"
