@@ -62,7 +62,9 @@ blocks:
     _template: marquee
   - title: Mon univers vous inspire ?
     cardList:
-      - title: COMMERCIAL
+      - image:
+          src: /uploads/Homepage/INAE BIJOUX (7).jpg
+        title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
           src: /uploads/Homepage/NO2.jpg
