@@ -57,7 +57,7 @@ blocks:
         - Mariage
         - Set Design
     separator: '· '
-    fontSize: text-6xl
+    fontSize: text-4xl
     _template: marquee
   - title: Mon univers vous inspire ?
     cardList:
