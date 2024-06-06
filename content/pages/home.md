@@ -98,7 +98,9 @@ blocks:
           incroyable ! Je recommande les yeux fermés
         author: Julie & Estelle
         image:
-          src: /uploads/Homepage/Testimonial/1701344699544_DSC_0212.jpg
+          src: >-
+            /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie
+            (20).jpg
           alt: Shooting de Tornado & Maelle
     _template: testimonial
   - title: Mon univers vous inspire ?
