@@ -63,8 +63,8 @@ blocks:
   - title: Mon univers vous inspire ?
     cardList:
       - image:
-          src: /uploads/DSC_0210.jpg
-          alt: Manon
+          src: /uploads/Homepage/NO2.jpg
+          alt: Portrait
         title: Prestation
         description: Oui
     color: ''
