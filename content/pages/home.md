@@ -13,7 +13,7 @@ blocks:
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
     image_top_left:
-      src: /uploads/Homepage/IDENTITE VISUELLE 2024-13.png
+      src: ''
     image_top_right:
       src: /uploads/Homepage/IDENTITE VISUELLE 2024-12.png
     image_bottom_left:
