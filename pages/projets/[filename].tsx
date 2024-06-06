@@ -14,11 +14,11 @@ export default function BlogPostPage(
     variables: props.variables,
     data: props.data,
   });
-  if (data && data.projet) {
+  if (data && data.projets) {
     return (
       <Layout rawData={data} data={data.global}>
         <Section className="flex-1">
-          <Projet {...data.projet} />
+          <Projet {...data.projets} />
         </Section>
       </Layout>
     );
@@ -60,4 +60,4 @@ export const getStaticPaths = async () => {
 
 export type ProjetType = InferGetStaticPropsType<
   typeof getStaticProps
->["data"]["projet"];
+>["data"]["projets"];

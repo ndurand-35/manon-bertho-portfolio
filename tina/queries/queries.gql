@@ -40,6 +40,22 @@ query pageQuery {
       }
     }
   }
+    servicesConnection {
+    edges {
+      node {
+        id
+        title
+        type {
+          ... on ServiceType {
+            ...ServiceTypeParts
+          }
+        }
+        _sys {
+          filename
+        }
+      }
+    }
+  }
 }
 
 query contentQuery($relativePath: String!) {
