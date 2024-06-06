@@ -19,14 +19,13 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
             {data?.cardList?.map((card, i) => (
               <Link href={card?.link ?? ""} key={i}>
-                <div className="max-w-sm bg-white border border-gray-200 shadow">
-                  <a href="#">
-                    <img
-                      data-tina-field={tinaField(card, "image")}
-                      src={card.image?.src}
-                      alt={card.image?.alt}
-                    />
-                  </a>
+                <div className="bg-white border border-gray-200 rounded shadow">
+                  <img
+                    className="rounded-t-lg"
+                    data-tina-field={tinaField(card, "image")}
+                    src={card.image?.src}
+                    alt={card.image?.alt}
+                  />
                   <div className="p-5">
                     <a href="#">
                       <h5

@@ -17,7 +17,7 @@ export const Marquee = ({ data }: { data: PageBlocksMarquee }) => {
 
   return (
     <div className={sectionColorCss} data-tina-field={tinaField(data)}>
-      <RFMarquee>
+      <RFMarquee style={{ overflowY: "hidden" }}>
         {data?.marquee?.text.map((text, i) => (
           <h3
             key={i}
