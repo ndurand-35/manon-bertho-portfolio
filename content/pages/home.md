@@ -5,19 +5,22 @@ blocks:
       De la capture de vos instants précieux,
 
       à la création minutieuse de vos projets graphiques
+
+      ```javascript
+      ```
     image:
-      src: /uploads/Homepage/LOGO PRINCIPAL.png
+      src: /uploads/Homepage/IDENTITE VISUELLE 2024_Plan de travail 1-04.png
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
     image_top_left:
-      src: /uploads/Homepage/fleur_rouge.svg
+      src: /uploads/Homepage/IDENTITE VISUELLE 2024-07.png
     image_top_right:
-      src: /uploads/Homepage/fleur_orange.svg
+      src: /uploads/Homepage/IDENTITE VISUELLE 2024-12.png
     image_bottom_left:
-      src: /uploads/Homepage/fleur_verte.svg
+      src: /uploads/IDENTITE VISUELLE 2024-12.png
     image_bottom_right:
-      src: /uploads/Homepage/fleur_rouge.svg
+      src: /uploads/Homepage/IDENTITE VISUELLE 2024-07.png
     color: link-water
     _template: hero
   - surtitle: Manon Bertho | Studio Creatif
