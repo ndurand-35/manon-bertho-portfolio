@@ -6,7 +6,7 @@ blocks:
 
       à la création minutieuse de vos projets graphiques
     image:
-      src: /uploads/Homepage/logo-h-aTTjQX.svg
+      src: /uploads/Homepage/LOGO PRINCIPAL.png
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
