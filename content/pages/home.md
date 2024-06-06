@@ -47,12 +47,15 @@ blocks:
     _template: presentation
   - marquee:
       text:
+        - Packshot
+        - Identité visuelle
+        - Papeterie
         - Portrait
         - Maternité
         - Couple
         - Famille
         - Mariage
-        - Commercial
+        - Set Design
     separator: '· '
     fontSize: text-6xl
     _template: marquee
