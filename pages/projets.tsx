@@ -8,7 +8,7 @@ import { Projets } from "../components/projet/projets";
 export default function HomePage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  const projets = props.data.projetConnection.edges;
+  const projets = props.data.projetsConnection.edges;
 
   return (
     <Layout>
@@ -30,4 +30,4 @@ export const getStaticProps = async () => {
 
 export type ProjetType = InferGetStaticPropsType<
   typeof getStaticProps
->["data"]["projetConnection"]["edges"][number];
+>["data"]["projetsConnection"]["edges"][number];

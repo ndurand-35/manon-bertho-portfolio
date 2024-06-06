@@ -20,7 +20,7 @@ export const ServiceType: Collection = {
 
 const Service: Collection = {
   label: "Service",
-  name: "service",
+  name: "services",
   path: "content/services",
   format: "mdx",
   ui: {

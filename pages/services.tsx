@@ -8,7 +8,7 @@ import { InferGetStaticPropsType } from "next";
 export default function HomePage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  const services = props.data.serviceConnection.edges;
+  const services = props.data.servicesConnection.edges;
 
   return (
     <Layout>
@@ -31,4 +31,4 @@ export const getStaticProps = async () => {
 
 export type ProjetType = InferGetStaticPropsType<
   typeof getStaticProps
->["data"]["serviceConnection"]["edges"][number];
+>["data"]["servicesConnection"]["edges"][number];

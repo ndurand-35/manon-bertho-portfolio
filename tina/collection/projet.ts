@@ -19,7 +19,7 @@ export const ProjetType: Collection = {
 
 const Projet: Collection = {
   label: "Projets",
-  name: "projet",
+  name: "projets",
   path: "content/projets",
   format: "mdx",
   ui: {

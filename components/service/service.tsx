@@ -198,7 +198,7 @@ export const Service = (props: ServiceType) => {
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {props?.gallery?.img?.map((img) => (
-            <div className={img?.largeur}>
+            <div className={img?.colSpan}>
               <img
                 className="h-auto max-w-full rounded-lg"
                 data-tina-field={tinaField(img, "src")}

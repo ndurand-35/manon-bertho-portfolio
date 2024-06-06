@@ -49,9 +49,9 @@ export const getStaticProps = async ({ params }) => {
  * be viewable at http://localhost:3000/posts/hello
  */
 export const getStaticPaths = async () => {
-  const projetListData = await client.queries.projetConnection();
+  const projetListData = await client.queries.projetsConnection();
   return {
-    paths: projetListData.data.projetConnection.edges.map((post) => ({
+    paths: projetListData.data.projetsConnection.edges.map((post) => ({
       params: { filename: post.node._sys.filename },
     })),
     fallback: "blocking",
