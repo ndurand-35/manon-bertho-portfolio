@@ -62,6 +62,8 @@ blocks:
     _template: marquee
   - title: Mon univers vous inspire ?
     cardList:
+      - title: COMMERCIAL
+        description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
           src: /uploads/Homepage/NO2.jpg
           alt: Portrait
