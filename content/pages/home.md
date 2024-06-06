@@ -14,13 +14,13 @@ blocks:
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
     image_top_left:
-      src: /uploads/Homepage/IDENTITE VISUELLE 2024-07.png
+      src: /uploads/Homepage/Plante 2.png
     image_top_right:
       src: /uploads/Homepage/IDENTITE VISUELLE 2024-12.png
     image_bottom_left:
       src: /uploads/IDENTITE VISUELLE 2024-12.png
     image_bottom_right:
-      src: /uploads/Homepage/IDENTITE VISUELLE 2024-07.png
+      src: /uploads/Plante 1.png
     color: link-water
     _template: hero
   - surtitle: Manon Bertho | Studio Creatif
