@@ -73,7 +73,7 @@ blocks:
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
           src: /uploads/Homepage/MPU (284).jpg
-        title: EVENEMENT
+        title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
           src: /uploads/Homepage/Mockup 2-2.jpg
