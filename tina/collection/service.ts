@@ -1,22 +1,5 @@
 import { Collection } from "tinacms";
 import { ctaBlockSchema } from "../../components/blocks/cta";
-import { list } from "postcss";
-
-export const ServiceType: Collection = {
-  label: "Type de Service",
-  name: "serviceType",
-  path: "content/serviceType",
-  format: "md",
-  fields: [
-    {
-      type: "string",
-      label: "Name",
-      name: "name",
-      isTitle: true,
-      required: true,
-    },
-  ],
-};
 
 const Service: Collection = {
   label: "Service",
@@ -29,12 +12,6 @@ const Service: Collection = {
     },
   },
   fields: [
-    {
-      type: "reference",
-      label: "Type",
-      name: "type",
-      collections: ["serviceType"],
-    },
     {
       type: "string",
       label: "Title",

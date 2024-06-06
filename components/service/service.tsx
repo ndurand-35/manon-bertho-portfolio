@@ -100,13 +100,6 @@ export const Service = (props: ServiceType) => {
           />
         </div>
         <div className="order-last col-span-12 mx-16 my-auto sm:order-none md:col-span-6 md:mx-8 xl:col-span-8">
-          <h4
-            className="text-sm text-ternary"
-            style={{ fontVariant: "small-caps" }}
-            data-tina-field={tinaField(props, "type")}
-          >
-            {props.type.name}
-          </h4>
           <div className="space-y-4">
             <h1
               className="mt-2 font-title text-3xl font-semibold"

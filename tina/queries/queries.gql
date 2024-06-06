@@ -40,16 +40,11 @@ query pageQuery {
       }
     }
   }
-    servicesConnection {
+  servicesConnection {
     edges {
       node {
         id
         title
-        type {
-          ... on ServiceType {
-            ...ServiceTypeParts
-          }
-        }
         _sys {
           filename
         }
@@ -94,10 +89,5 @@ query serviceQuery($relativePath: String!) {
   ...LayoutQueryFragment
   services(relativePath: $relativePath) {
     ...ServicesParts
-    type {
-      ... on ServiceType {
-        name
-      }
-    }
   }
 }

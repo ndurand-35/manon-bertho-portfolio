@@ -19,7 +19,6 @@ export const Layout = ({
 }) => {
   return (
     <>
-      <SpeedInsights />
       <Analytics />
       <Head>
         <title>Manon Bertho Studio - Graphiste et Photographe Freelance</title>
@@ -56,6 +55,7 @@ export const Layout = ({
             icon={data?.footer.logo}
           />
         </div>
+        <SpeedInsights />
       </Theme>
     </>
   );
