@@ -23,22 +23,22 @@ blocks:
   - surtitle: Manon Bertho | Studio Creatif
     title: Manon - Graphiste et Photographe Freelance
     headline: >
-      Bienvenue dans mon univers , où la créativité rencontre la précision. En
+      Bienvenue dans mon univers où créativité et précision se rencontrent. En
       tant que photographe et graphiste, je façonne des images et des univers
-      graphiques saisissants, alignés sur votre personnalité.
+      graphiques captivants, parfaitement alignés sur votre personnalité.
 
 
-      Vous souhaitez uniquement une séance photo pour vous faire plaisir, ou
-      retravailler votre image en tant que marque, je suis à l’écoute de vos
-      envies.
+      Que vous souhaitiez une séance photo pour le plaisir,  la création de
+      papeterie personnalisée ou une refonte complète de votre image de marque,
+      je suis à votre écoute et prêt à réaliser vos projets.
 
 
-      Grâce à mon expertise, je donne vie à des supports percutants (Print ou
-      Digital). Maîtrisant les codes visuels, je crée une esthétique cohérente
-      et mémorable à votre image.
+      Grâce à mon expertise, je donne vie à des supports percutants, qu'ils
+      soient imprimés ou numériques. Je crée une esthétique douce et mémorable
+      qui reflète votre identité unique.
 
 
-      Que vous soyez particulier ou professionnel, explorez mon projet pour
+      Que vous soyez particulier ou professionnel, explorez mon portfolio pour
       découvrir comment nous pouvons travailler ensemble.
     image:
       src: /uploads/Homepage/PHOTO PROFIL.jpg
