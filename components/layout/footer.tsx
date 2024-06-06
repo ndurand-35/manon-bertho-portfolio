@@ -27,7 +27,7 @@ export const Footer = ({ data, icon, rawData }) => {
   };
 
   return (
-    <Section color={data.color}>
+    <Section color={data.color} className="hidden md:flex">
       <div className="w-full p-4 md:py-8 px-32">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex flex-col items-center justify-center space-y-2">

@@ -44,7 +44,7 @@ export const Layout = ({
         )}
       </Head>
       <Theme data={data?.theme}>
-        <div className={`min-h-screen flex flex-col font-body`}>
+        <div className={`min-h-screen flex flex-col font-body mb-16 md:mb-0`}>
           <Header data={data?.header} />
           <div className="flex-1 text-gray-800 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000 flex flex-col">
             {children}

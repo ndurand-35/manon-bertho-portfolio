@@ -21,7 +21,7 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
               <Link
                 href={card?.link ?? ""}
                 key={i}
-                className="bg-white border border-gray-200 rounded shadow"
+                className="bg-white border border-gray-200 rounded shadow hover:-translate-y-2 transition"
               >
                 <img
                   className="rounded-t-lg"
