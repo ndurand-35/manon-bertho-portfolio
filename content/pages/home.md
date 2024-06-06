@@ -5,9 +5,6 @@ blocks:
       De la capture de vos instants précieux,
 
       à la création minutieuse de vos projets graphiques
-
-      ```javascript
-      ```
     image:
       src: /uploads/Homepage/IDENTITE VISUELLE 2024_Plan de travail 1-04.png
       alt: >-

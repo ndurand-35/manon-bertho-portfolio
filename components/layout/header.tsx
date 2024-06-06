@@ -21,6 +21,10 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
     setIsClient(true);
   }, []);
 
+  const isPathRelative = (path) => {
+    return path.indexOf("http://") === 0 || path.indexOf("https://") === 0;
+  };
+
   return (
     <div
       className={`fixed bottom-0 left-0 z-20 h-16 w-full md:top-0 ${headerColorCss}`}
