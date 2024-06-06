@@ -65,7 +65,7 @@ blocks:
       - image:
           src: /uploads/Homepage/NO2.jpg
           alt: Portrait
-        title: SEANCE PHOTOS
+        title: SÉANCE PHOTOS
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
       - image:
           src: /uploads/Homepage/INAE BIJOUX (7).jpg
