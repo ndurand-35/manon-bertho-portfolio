@@ -5,6 +5,8 @@ blocks:
       De la capture de vos instants précieux,
 
       à la création minutieuse de vos projets graphiques
+    backgroundImg:
+      src: /uploads/Homepage/ANAIS 03 NB.jpg
     image:
       src: /uploads/Homepage/LOGO BLANC.png
       alt: >-
