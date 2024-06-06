@@ -9,18 +9,18 @@ blocks:
       ```javascript
       ```
     image:
-      src: /uploads/Homepage/IDENTITE VISUELLE 2024_Plan de travail 1-04.png
+      src: /uploads/Homepage/LOGO BLANC.png
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
     image_top_left:
-      src: /uploads/Homepage/Plante 2.png
+      src: /uploads/Homepage/IDENTITE VISUELLE 2024-13.png
     image_top_right:
       src: /uploads/Homepage/IDENTITE VISUELLE 2024-12.png
     image_bottom_left:
       src: /uploads/IDENTITE VISUELLE 2024-12.png
     image_bottom_right:
-      src: /uploads/Plante 1.png
+      src: /uploads/Homepage/IDENTITE VISUELLE 2024-07.png
     color: link-water
     _template: hero
   - surtitle: Manon Bertho | Studio Creatif
