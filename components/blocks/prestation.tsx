@@ -8,7 +8,7 @@ import { tinaField } from "tinacms/dist/react";
 export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
   return (
     <Section color={data.color}>
-      <div className="px-4 py-8 sm:py-16 lg:px-6">
+      <div className="px-4 py-8 sm:py-16 lg:px-32">
         <div className="text-center">
           <h4
             className="mb-4 font-title text-4xl font-extrabold leading-tight tracking-tight"
@@ -18,30 +18,30 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
           </h4>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
             {data?.cardList?.map((card, i) => (
-              <Link href={card?.link ?? ""} key={i}>
-                <div className="bg-white border border-gray-200 rounded shadow">
-                  <img
-                    className="rounded-t-lg"
-                    data-tina-field={tinaField(card, "image")}
-                    src={card.image?.src}
-                    alt={card.image?.alt}
-                  />
-                  <div className="p-5">
-                    <a href="#">
-                      <h5
-                        className="mb-2 text-2xl font-bold tracking-tight text-gray-900"
-                        data-tina-field={tinaField(card, "title")}
-                      >
-                        {card.title}
-                      </h5>
-                    </a>
-                    <p
-                      className="mb-3 font-normal text-gray-700"
-                      data-tina-field={tinaField(card, "description")}
-                    >
-                      {card.description}
-                    </p>
-                  </div>
+              <Link
+                href={card?.link ?? ""}
+                key={i}
+                className="bg-white border border-gray-200 rounded shadow"
+              >
+                <img
+                  className="rounded-t-lg"
+                  data-tina-field={tinaField(card, "image")}
+                  src={card.image?.src}
+                  alt={card.image?.alt}
+                />
+                <div className="p-5">
+                  <h5
+                    className="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                    data-tina-field={tinaField(card, "title")}
+                  >
+                    {card.title}
+                  </h5>
+                  <p
+                    className="mb-3 font-normal text-gray-700"
+                    data-tina-field={tinaField(card, "description")}
+                  >
+                    {card.description}
+                  </p>
                 </div>
               </Link>
             ))}
