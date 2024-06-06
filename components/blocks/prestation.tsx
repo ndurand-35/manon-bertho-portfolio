@@ -18,35 +18,37 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {data?.cardList?.map((card, i) => (
-              <div
-                className="max-w-sm bg-white border border-gray-200 rounded shadow"
-                key={i}
-              >
-                <a href="#">
-                  <img
-                    className="rounded-t-lg"
-                    data-tina-field={tinaField(card, "image")}
-                    src={card.image?.src}
-                    alt={card.image?.alt}
-                  />
-                </a>
-                <div className="p-5">
+              <Link href={card?.link}>
+                <div
+                  className="max-w-sm bg-white border border-gray-200 rounded shadow"
+                  key={i}
+                >
                   <a href="#">
-                    <h5
-                      className="mb-2 text-2xl font-bold tracking-tight text-gray-900"
-                      data-tina-field={tinaField(card, "title")}
-                    >
-                      {card.title}
-                    </h5>
+                    <img
+                      className="rounded-t-lg"
+                      data-tina-field={tinaField(card, "image")}
+                      src={card.image?.src}
+                      alt={card.image?.alt}
+                    />
                   </a>
-                  <p
-                    className="mb-3 font-normal text-gray-700"
-                    data-tina-field={tinaField(card, "description")}
-                  >
-                    {card.description}
-                  </p>
+                  <div className="p-5">
+                    <a href="#">
+                      <h5
+                        className="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                        data-tina-field={tinaField(card, "title")}
+                      >
+                        {card.title}
+                      </h5>
+                    </a>
+                    <p
+                      className="mb-3 font-normal text-gray-700"
+                      data-tina-field={tinaField(card, "description")}
+                    >
+                      {card.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -93,6 +95,11 @@ export const prestationBlockSchema: TinaTemplate = {
               type: "string",
             },
           ],
+        },
+        {
+          type: "string",
+          label: "Lien",
+          name: "link",
         },
         {
           type: "string",
