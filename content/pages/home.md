@@ -45,6 +45,26 @@ blocks:
       alt: Manon Bertho
     color: ''
     _template: presentation
+  - marquee:
+      text:
+        - Portrait
+        - Maternité
+        - Couple
+        - Famille
+        - Mariage
+        - Commercial
+    separator: '· '
+    fontSize: text-6xl
+    _template: marquee
+  - title: Mon univers vous inspire ?
+    cardList:
+      - image:
+          src: /uploads/DSC_0210.jpg
+          alt: Manon
+        title: Prestation
+        description: Oui
+    color: ''
+    _template: prestation
   - title: Pourquoi travailer avec moi ?
     color: lunar-green
     items:

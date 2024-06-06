@@ -127,7 +127,7 @@ export const Service = (props: ServiceType) => {
       {props.seance && <NumberFeatures data={props.seance} />}
 
       {props.pricing && (
-        <div className="space-y-4 py-16 lg:px-32">
+        <div className="space-y-4 py-16 px-4 lg:px-32">
           <h3
             className="text-center font-title text-4xl font-semibold text-ternary"
             data-tina-field={tinaField(props.pricing, "title")}
@@ -189,7 +189,7 @@ export const Service = (props: ServiceType) => {
         </div>
       )}
 
-      <div className="text-center">
+      <div className="space-y-4 py-16 px-4 lg:px-32 text-center">
         <h1
           className="mt-2 font-title text-3xl font-semibold"
           data-tina-field={tinaField(props.gallery, "title")}
@@ -200,7 +200,7 @@ export const Service = (props: ServiceType) => {
           {props?.gallery?.img?.map((img) => (
             <div className={img?.colSpan}>
               <img
-                className="h-auto max-w-full rounded-lg"
+                className="h-full max-w-full rounded-lg"
                 data-tina-field={tinaField(img, "src")}
                 src={img?.src}
                 alt={img?.alt}

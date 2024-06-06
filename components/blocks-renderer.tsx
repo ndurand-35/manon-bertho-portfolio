@@ -3,8 +3,10 @@ import { Content } from "./blocks/content";
 import { CTA } from "./blocks/cta";
 import { Features } from "./blocks/features";
 import { Hero } from "./blocks/hero";
+import { Marquee } from "./blocks/marquee";
 import { NumberFeatures } from "./blocks/number_features";
 import { Presentation } from "./blocks/presentation";
+import { Prestation } from "./blocks/prestation";
 import { Shop } from "./blocks/shop";
 import { Testimonial } from "./blocks/testimonial";
 import { tinaField } from "tinacms/dist/react";
@@ -43,6 +45,10 @@ const Block = (block: PageBlocks) => {
       return <CTA data={block} />;
     case "PageBlocksShop":
       return <Shop data={block} />;
+    case "PageBlocksPrestation":
+      return <Prestation data={block} />;
+      case "PageBlocksMarquee":
+        return <Marquee data={block} />;
     default:
       return null;
   }

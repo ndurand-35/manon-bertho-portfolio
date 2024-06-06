@@ -7,6 +7,8 @@ import { ctaBlockSchema } from "../../components/blocks/cta";
 import { featureBlockSchema } from "../../components/blocks/features";
 import { numberFeatureBlockSchema } from "../../components/blocks/number_features";
 import { shopBlockSchema } from "../../components/blocks/shop";
+import { prestationBlockSchema } from "../../components/blocks/prestation";
+import { marqueeBlockSchema } from "../../components/blocks/marquee";
 
 const Page: Collection = {
   label: "Pages",
@@ -52,6 +54,8 @@ const Page: Collection = {
         numberFeatureBlockSchema,
         ctaBlockSchema,
         shopBlockSchema,
+        prestationBlockSchema,
+        marqueeBlockSchema
       ],
     },
   ],
