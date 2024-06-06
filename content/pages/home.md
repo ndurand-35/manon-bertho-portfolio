@@ -114,6 +114,14 @@ blocks:
   - title: Vos mots doux
     testimonials:
       - description: >-
+          Nous avons eu la chance de pouvoir faire un shooting couple incroyable
+          avec Manon, de l'accompagnement lors de la séance au rendu tout était
+          absolument parfait ! Nous y retournerons avec grand plaisir, un énorme
+          merci! Hâte de repasser sous son objectif
+        author: Lauralie
+        image:
+          src: /uploads/Homepage/Testimonial/lauralie.jpg
+      - description: >-
           Je remercie Manon pour son travail. D'abord pour cette séance photo
           grossesse, je ne me suis jamais sentie aussi à l'aise face à un
           objectif et quels beaux souvenirs elle a immortalisés ! Elle a su
@@ -138,10 +146,8 @@ blocks:
           incroyable ! Je recommande les yeux fermés
         author: Julie & Estelle
         image:
-          src: >-
-            /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie
-            (20).jpg
-          alt: Shooting de Tornado & Maelle
+          src: /uploads/Homepage/Testimonial/Pole.jpg
+          alt: Shooting pole dance julie et estelle
     _template: testimonial
   - title: Mon univers vous inspire ?
     button_text: Contactez-moi
