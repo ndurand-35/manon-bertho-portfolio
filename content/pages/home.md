@@ -63,14 +63,18 @@ blocks:
   - title: Mon univers vous inspire ?
     cardList:
       - image:
-          src: /uploads/Homepage/INAE BIJOUX (7).jpg
-        title: COMMERCIAL
-        description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
+          src: /uploads/Homepage/MPU (284).jpg
+        title: EVENEMENT
+        description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
           src: /uploads/Homepage/NO2.jpg
           alt: Portrait
         title: SEANCE PHOTOS
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
+      - image:
+          src: /uploads/Homepage/INAE BIJOUX (7).jpg
+        title: COMMERCIAL
+        description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
     color: ''
     _template: prestation
   - title: Pourquoi travailer avec moi ?
