@@ -58,6 +58,7 @@ blocks:
         - Set Design
     separator: '· '
     fontSize: text-4xl
+    color: ''
     _template: marquee
   - title: Mon univers vous inspire ?
     cardList:
