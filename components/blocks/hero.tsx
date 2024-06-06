@@ -10,7 +10,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
     <Section
       color={data.color}
       className="overflow-visible"
-      style={{ backgroundImage: `url(${data.backgroundImg?.src})` }}
+      style={{ backgroundImage: `url('${data.backgroundImg?.src}')` }}
     >
       <div className="relative flex h-spe-height justify-center overflow-hidden">
         <img
