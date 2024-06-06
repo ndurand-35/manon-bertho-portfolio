@@ -62,10 +62,8 @@ blocks:
     _template: marquee
   - title: Mon univers vous inspire ?
     cardList:
-      - image:
-          src: /uploads/Homepage/Mockup 2-2.jpg
-        title: PAPETERIE
-        description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
+      - title: IDENTITE VISUELLE
+        description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
       - image:
           src: /uploads/Homepage/NO2.jpg
           alt: Portrait
@@ -79,6 +77,10 @@ blocks:
           src: /uploads/Homepage/MPU (284).jpg
         title: EVENEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
+      - image:
+          src: /uploads/Homepage/Mockup 2-2.jpg
+        title: PAPETERIE
+        description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
     color: ''
     _template: prestation
   - title: Pourquoi travailer avec moi ?
