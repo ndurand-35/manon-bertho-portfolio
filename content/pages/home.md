@@ -74,7 +74,7 @@ blocks:
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
-          src: /uploads/Homepage/MPU (284).jpg
+          src: /uploads/Homepage/MARIAGE B&B (98).jpg
         title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
