@@ -72,6 +72,33 @@ const Global: Collection = {
               label: "Label",
               name: "label",
             },
+            {
+              type: "object",
+              label: "Nav Links",
+              name: "nav",
+              list: true,
+              ui: {
+                itemProps: (item) => {
+                  return { label: item?.label };
+                },
+                defaultItem: {
+                  href: "home",
+                  label: "Home",
+                },
+              },
+              fields: [
+                {
+                  type: "string",
+                  label: "Link",
+                  name: "href",
+                },
+                {
+                  type: "string",
+                  label: "Label",
+                  name: "label",
+                },
+              ],
+            },
           ],
         },
       ],
@@ -148,14 +175,6 @@ const Global: Collection = {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       fields: [
-        {
-          type: "string",
-          label: "Primary Color",
-          name: "color",
-          ui: {
-            component: ColorPickerInput,
-          },
-        },
         {
           type: "string",
           name: "font_title",

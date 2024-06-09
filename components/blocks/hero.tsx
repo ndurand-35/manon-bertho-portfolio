@@ -9,7 +9,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
   return (
     <Section
       color={data.color}
-      className="overflow-visible"
+      className="overflow-visible bg-cover bg-no-repeat"
       style={{ backgroundImage: `url('${data.backgroundImg?.src}')` }}
     >
       <div className="relative flex h-spe-height justify-center overflow-hidden">
@@ -28,7 +28,9 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
           />
           <div
             data-tina-field={tinaField(data, "headline")}
-            className={`relative mx-auto text-lg md:text-2xl text-primary`}
+            className={`relative mx-auto text-lg md:text-2xl  ${
+              data.backgroundImg ? "text-white" : "text-primary"
+            }`}
           >
             <TinaMarkdown content={data.headline} />
           </div>

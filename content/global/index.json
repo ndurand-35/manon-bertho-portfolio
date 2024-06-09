@@ -9,7 +9,13 @@
     "nav": [
       {
         "href": "services",
-        "label": "Prestations"
+        "label": "Prestations",
+        "nav": [
+          {
+            "href": "home",
+            "label": "Home"
+          }
+        ]
       },
       {
         "href": "projets",
@@ -52,7 +58,6 @@
     ]
   },
   "theme": {
-    "color": "blue",
     "font_title": "guavast",
     "font_content": "montserrat",
     "font": "sans",

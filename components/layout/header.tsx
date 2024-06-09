@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useTheme } from ".";
 import { tinaField } from "tinacms/dist/react";
 import { GlobalHeader } from "../../tina/__generated__/types";
+import { HeaderLink } from "./component/header_link";
 
 export const Header = ({ data }: { data: GlobalHeader }) => {
   const router = useRouter();
@@ -50,39 +51,9 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
         <ul className="flex gap-6 sm:gap-8 lg:gap-10 tracking-[.002em] -mx-4">
           {data.nav &&
             data.nav.map((item, i) => {
-              let isRelative = true;
-              if (
-                item.href.indexOf("http://") === 0 ||
-                item.href.indexOf("https://") === 0
-              )
-                isRelative = false;
-              const activeItem =
-                (item.href === ""
-                  ? router.asPath === "/"
-                  : router.asPath.includes(item.href)) && isClient;
               return (
-                <li key={i}>
-                  {isRelative ? (
-                    <Link
-                      data-tina-field={tinaField(item, "href")}
-                      href={`/${item.href}`}
-                      className={`block py-2 text-center transition ease-in-out hover:text-secondary md:p-0 ${
-                        activeItem && "text-secondary"
-                      }`}
-                      aria-current="page"
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <a
-                      data-tina-field={tinaField(item, "href")}
-                      href={item.href}
-                      target="_blank"
-                      className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"
-                    >
-                      {item.label}
-                    </a>
-                  )}
+                <li key={i} className="flex items-center">
+                  <HeaderLink item={item} />
                 </li>
               );
             })}
