@@ -97,11 +97,7 @@ export const Icon = ({
       ? iconSizeClass[size]
       : iconSizeClass[Object.keys(iconSizeClass)[size]];
 
-  const iconColor = color
-    ? color === "primary"
-      ? theme.color
-      : color
-    : theme.color;
+  const iconColor = color;
 
   if (style == "circle") {
     return (
@@ -114,12 +110,7 @@ export const Icon = ({
     );
   } else {
     const iconColorClasses =
-      iconColorClass[
-        parentColor === "primary" &&
-        (iconColor === theme.color || iconColor === "primary")
-          ? "white"
-          : iconColor
-      ].regular;
+      iconColorClass[parentColor === "primary" && "white"].regular;
     return (
       <IconSVG
         data-tina-field={tinaField}

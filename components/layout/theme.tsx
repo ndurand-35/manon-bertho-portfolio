@@ -48,7 +48,6 @@ export const Theme = ({ data, children }) => {
   }, [setSystemDarkMode]);
 
   const {
-    color = "blue",
     font = "sans",
     font_title = "sans",
     font_content = "sans",
@@ -68,7 +67,6 @@ export const Theme = ({ data, children }) => {
   return (
     <ThemeContext.Provider
       value={{
-        color,
         font,
         font_title,
         font_content,

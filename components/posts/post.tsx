@@ -142,9 +142,7 @@ export const Post = (props: PostType) => {
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
           <span
-            className={`bg-clip-text text-transparent bg-gradient-to-r ${
-              titleColorClasses[theme.color]
-            }`}
+            className={`bg-clip-text text-transparent bg-gradient-to-r`}
           >
             {props.title}
           </span>
