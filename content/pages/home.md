@@ -8,7 +8,7 @@ blocks:
     backgroundImg:
       src: /uploads/Homepage/ANAIS 03 NB (1).jpg
     image:
-      src: /uploads/Homepage/LOGO BLANC.png
+      src: /uploads/Homepage/LOGO BLANC MB.png
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
