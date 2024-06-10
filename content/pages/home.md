@@ -134,11 +134,11 @@ blocks:
           src: /uploads/Homepage/Testimonial/1701206961870_louise2.webp
           alt: Shooting de Louise
       - description: >-
-          J'ai eu le plaisir de faire une séance photo avec Manon. Dès le début,
-          elle a su me mettre à l'aise devant l'objectif. Je suis enchantée du
-          résultat final et je recommande vivement Manon pour toutes vos séances
-          photo.
-        author: Berenice
+          Nous avons eu le plaisir de faire une séance photo avec Manon. Dès le
+          début, elle a su nous mettre à l'aise devant l'objectif. Je suis
+          enchantée du résultat final et je recommande vivement Manon pour
+          toutes vos séances photo.
+        author: Berenice & Baptiste
         image:
           src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE6.jpg
           alt: Shooting de Berenice
