@@ -74,7 +74,7 @@ blocks:
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
-          src: /uploads/Homepage/MARIAGE B&B (98).jpg
+          src: /uploads/Service/EVENEMENT/MARIAGE B&B (98) (1).jpg
         title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
@@ -122,7 +122,7 @@ blocks:
           merci! Hâte de repasser sous son objectif
         author: Lauralie
         image:
-          src: /uploads/Homepage/Testimonial/lauralie.jpg
+          src: /uploads/Homepage/LAURALIE 2 (1).jpg
       - description: >-
           Je remercie Manon pour son travail. D'abord pour cette séance photo
           grossesse, je ne me suis jamais sentie aussi à l'aise face à un
@@ -140,7 +140,7 @@ blocks:
           toutes vos séances photo.
         author: Berenice & Baptiste
         image:
-          src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE6.jpg
+          src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE2.jpg
           alt: Shooting de Berenice
       - description: >-
           Le Shooting photo s’est très bien déroulé avec Manon. Elle est très
@@ -148,7 +148,9 @@ blocks:
           incroyable ! Je recommande les yeux fermés
         author: Julie & Estelle
         image:
-          src: /uploads/Homepage/Testimonial/Pole.jpg
+          src: >-
+            /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie
+            (15).jpg
           alt: Shooting pole dance julie et estelle
     _template: testimonial
   - title: Mon univers vous inspire ?
