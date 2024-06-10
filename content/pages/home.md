@@ -65,7 +65,7 @@ blocks:
   - title: Mes prestations
     cardList:
       - image:
-          src: /uploads/Homepage/NO2.jpg
+          src: /uploads/Service/Photographie/LUCIE ET TIMON  (74).jpg
           alt: Portrait
         title: SÉANCE PHOTOS
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
