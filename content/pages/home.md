@@ -15,11 +15,11 @@ blocks:
     image_top_left:
       src: ''
     image_top_right:
-      src: /uploads/Homepage/IDENTITE VISUELLE 2024-12.png
+      src: ''
     image_bottom_left:
-      src: /uploads/IDENTITE VISUELLE 2024-12.png
+      src: ''
     image_bottom_right:
-      src: /uploads/Homepage/IDENTITE VISUELLE 2024-07.png
+      src: ''
     color: link-water
     _template: hero
   - surtitle: Manon Bertho | Studio Creatif
