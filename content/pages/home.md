@@ -136,7 +136,7 @@ blocks:
       - description: >-
           Nous avons eu le plaisir de faire une séance photo avec Manon. Dès le
           début, elle a su nous mettre à l'aise devant l'objectif. Je suis
-          enchantée du résultat final et je recommande vivement Manon pour
+          enchantée du résultat final et on recommande vivement Manon pour
           toutes vos séances photo.
         author: Berenice & Baptiste
         image:
