@@ -12,8 +12,16 @@
         "label": "Prestations",
         "nav": [
           {
-            "href": "home",
-            "label": "Home"
+            "href": "services/seances-photos",
+            "label": "Séances photos"
+          },
+          {
+            "href": "prestations/photos-evenements",
+            "label": "Photos d'évènements"
+          },
+          {
+            "href": "services/photos-commerciales",
+            "label": "Photos commerciales"
           }
         ]
       },
@@ -45,7 +53,7 @@
       },
       {
         "href": "projets",
-        "label": "Projet"
+        "label": "Portfolio"
       },
       {
         "href": "https://www.etsy.com/fr/shop/ManonBerthoStudio",
