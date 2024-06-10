@@ -145,7 +145,7 @@ blocks:
       - description: >-
           Le Shooting photo s’est très bien déroulé avec Manon. Elle est très
           professionnelle, réactive et rapide. Le rendu final est d’une qualité
-          incroyable ! Je recommande les yeux fermés
+          incroyable ! On recommande les yeux fermés
         author: Julie & Estelle
         image:
           src: >-
