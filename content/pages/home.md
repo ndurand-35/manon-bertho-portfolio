@@ -74,7 +74,7 @@ blocks:
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
-          src: /uploads/Homepage/MARIAGE B&B (98).jpg
+          src: /uploads/Service/EVENEMENT/MARIAGE B&B (98) (1).jpg
         title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
@@ -140,7 +140,7 @@ blocks:
           toutes vos séances photo.
         author: Berenice & Baptiste
         image:
-          src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE6.jpg
+          src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE2.jpg
           alt: Shooting de Berenice
       - description: >-
           Le Shooting photo s’est très bien déroulé avec Manon. Elle est très
