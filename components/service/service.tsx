@@ -193,7 +193,7 @@ export const Service = (props: ServiceType) => {
           {props?.gallery?.img?.map((img) => (
             <div className={img?.colSpan}>
               <img
-                className="h-full max-w-full rounded-lg"
+                className="h-full max-w-full"
                 data-tina-field={tinaField(img, "src")}
                 src={img?.src}
                 alt={img?.alt}

@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       height: { "spe-height": "calc(100vh - 4rem)" },
       minHeight: { "spe-height": "calc(100vh - 4rem)" },
-      fontFamily: { title: ["Guavast", "Georgia"], body: "Montserrat" },
+      fontFamily: { title: ["Bad Script", "Georgia"], body: "Montserrat" },
       colors: {
         "lunar-green": {
           DEFAULT: "#3B4F43",

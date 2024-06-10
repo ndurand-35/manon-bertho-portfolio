@@ -58,9 +58,9 @@
     ]
   },
   "theme": {
-    "font_title": "guavast",
+    "font_title": "badscript",
     "font_content": "montserrat",
     "font": "sans",
-    "darkMode": "system"
+    "darkMode": "light"
   }
 }

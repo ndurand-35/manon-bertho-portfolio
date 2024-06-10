@@ -17,6 +17,7 @@ export const Layout = ({
   data?: Omit<Global, "id" | "_sys" | "_values">;
   children: React.ReactNode;
 }) => {
+  console.log(data.theme.font_title );
   return (
     <>
       <Analytics />
