@@ -6,7 +6,7 @@ blocks:
 
       à la création minutieuse de vos projets graphiques
     backgroundImg:
-      src: /uploads/Homepage/ANAIS 03 NB (1).jpg
+      src: /uploads/Homepage/DSC_0316-2.jpg
     image:
       src: /uploads/Homepage/LOGO BLANC MB.png
       alt: >-
