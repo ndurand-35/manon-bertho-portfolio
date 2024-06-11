@@ -120,9 +120,26 @@ const Service: Collection = {
         {
           type: "object",
           list: true,
-          name: "type",
-          label: "Type de prix",
+          name: "column",
+          label: "Colonne",
           fields: [
+            {
+              type: "object",
+              label: "Image",
+              name: "img",
+              fields: [
+                {
+                  name: "src",
+                  label: "Image Source",
+                  type: "image",
+                },
+                {
+                  name: "alt",
+                  label: "Alt Text",
+                  type: "string",
+                },
+              ],
+            },
             {
               type: "string",
               label: "Titre",
@@ -179,7 +196,7 @@ const Service: Collection = {
                 { label: "1 Colonne", value: "col-span-1" },
                 { label: "2 Colonnes", value: "col-span-2" },
               ],
-            }
+            },
           ],
         },
       ],

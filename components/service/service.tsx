@@ -127,20 +127,30 @@ export const Service = (props: ServiceType) => {
           >
             {props.pricing.title}
           </h3>
-          {props.pricing.type && props.pricing.type.length !== 0 ? (
+          <p
+            data-tina-field={tinaField(props.pricing, "subtitle")}
+            className="text-center"
+          >
+            {props.pricing.subtitle}
+          </p>
+          {props.pricing.column && props.pricing.column.length !== 0 && (
             <div
-              className={`md:grid-cols-${props.pricing.type.length} grid grid-cols-1 gap-16`}
+              className={`md:grid-cols-${props.pricing.column.length} grid grid-cols-1 gap-16`}
             >
-              {props.pricing.type.map((pricingData) => (
-                <div className="flex flex-col items-center justify-center">
+              {props.pricing.column.map((pricingData) => (
+                <div className="flex flex-col items-center justify-center shadow">
+                  <img
+                    src={pricingData?.img?.src}
+                    alt={pricingData?.img?.alt}
+                  />
                   <h4
                     className="whitespace-pre-line px-16 text-center text-xl text-ternary"
                     data-tina-field={tinaField(pricingData, "title")}
                   >
-                    {pricingData.title}
+                    {pricingData?.title}
                   </h4>
                   <ul className="mt-4">
-                    {pricingData.price.map((liItem, liIndex: number) => (
+                    {pricingData?.price?.map((liItem, liIndex: number) => (
                       <li
                         data-tina-field={tinaField(liItem, "text")}
                         className="flex flex-row items-center space-x-2"
@@ -151,32 +161,8 @@ export const Service = (props: ServiceType) => {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-8 text-sm text-gray-600">
-                    {pricingData.title}
-                  </p>
                 </div>
               ))}
-            </div>
-          ) : (
-            <div className="text-center space-y-4">
-              <p>
-                Chaque projet étant unique et spécifique à vos besoins, mes
-                tarifs sont déterminés sur mesure. Je m'engage à fournir des
-                services personnalisés pour répondre parfaitement à vos
-                attentes. Pour obtenir un devis adapté à votre projet et
-                discuter des tarifs, veuillez me contacter. Je serais ravi(e)
-                d'échanger avec vous et de vous fournir toutes les informations
-                nécessaires pour concrétiser votre vision graphique.
-              </p>
-              <div>
-                <Link
-                  href={`/about`}
-                  className="mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium 
-                  text-white hover:bg-ternary-500 focus:ring-4 focus:ring-ternary-500"
-                >
-                  Contactez moi
-                </Link>
-              </div>
             </div>
           )}
         </div>
@@ -190,8 +176,8 @@ export const Service = (props: ServiceType) => {
           {props.gallery?.title}
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {props?.gallery?.img?.map((img) => (
-            <div className={img?.colSpan}>
+          {props?.gallery?.img?.map((img, i) => (
+            <div className={img?.colSpan} key={i}>
               <img
                 className="h-full max-w-full"
                 data-tina-field={tinaField(img, "src")}
