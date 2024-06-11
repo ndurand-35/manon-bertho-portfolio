@@ -122,7 +122,7 @@ blocks:
           merci! Hâte de repasser sous son objectif
         author: Lauralie
         image:
-          src: /uploads/Homepage/LAURALIE 2 (1).jpg
+          src: /uploads/Homepage/Testimonial/lauralie couple (1).jpg
       - description: >-
           Je remercie Manon pour son travail. D'abord pour cette séance photo
           grossesse, je ne me suis jamais sentie aussi à l'aise face à un
