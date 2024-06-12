@@ -72,6 +72,7 @@ blocks:
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
       - image:
           src: /uploads/Homepage/INAE BIJOUX (7).jpg
+        link: /services/photos-commerciales
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
