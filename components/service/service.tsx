@@ -179,7 +179,7 @@ export const Service = (props: ServiceType) => {
                     alt={pricingData?.img?.alt}
                   />
                   <h4
-                    className="whitespace-pre-line px-16 text-center text-xl text-ternary"
+                    className="whitespace-pre-line px-16 mt-4 text-center text-xl text-ternary"
                     data-tina-field={tinaField(pricingData, "title")}
                   >
                     {pricingData?.title}
