@@ -12,20 +12,24 @@
         "label": "Prestations",
         "nav": [
           {
-            "href": "/services/papeterie",
-            "label": "Papeterie"
-          },
-          {
             "href": "services/seances-photos",
             "label": "Séances photos"
+          },
+          {
+            "href": "services/photos-commerciales",
+            "label": "Photos commerciales"
           },
           {
             "href": "prestations/photos-evenements",
             "label": "Photos d'évènements"
           },
           {
-            "href": "services/photos-commerciales",
-            "label": "Photos commerciales"
+            "href": "/services/papeterie",
+            "label": "Papeterie"
+          },
+          {
+            "href": "/services/identite-visuelle",
+            "label": "Identité visuelle"
           }
         ]
       },
