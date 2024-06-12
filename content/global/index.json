@@ -8,9 +8,13 @@
     "color": "lunar-green",
     "nav": [
       {
-        "href": "/#services",
+        "href": "services",
         "label": "Prestations",
         "nav": [
+          {
+            "href": "/services/papeterie",
+            "label": "Papeterie"
+          },
           {
             "href": "services/seances-photos",
             "label": "Séances photos"
