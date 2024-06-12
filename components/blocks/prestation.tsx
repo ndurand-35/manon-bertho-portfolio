@@ -9,7 +9,7 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
   return (
     <Section color={data.color}>
       <div className="px-4 py-8 sm:py-16 lg:px-32">
-        <div className="text-center">
+        <div className="text-center" id="services">
           <h4
             className="mb-4 font-title text-4xl font-extrabold leading-tight tracking-tight"
             data-tina-field={tinaField(data, "title")}
