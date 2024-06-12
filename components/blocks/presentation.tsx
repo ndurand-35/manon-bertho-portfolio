@@ -6,8 +6,11 @@ import { Section } from "../util/section";
 export const Presentation = ({ data }: { data: any }) => {
   return (
     <Section color={data.color}>
-      <div className="grid min-h-spe-height grid-cols-12 gap-8 lg:gap-16 overflow-x-hidden px-16 py-16 lg:px-48">
-        <div className=" col-span-12 my-auto md:col-span-8">
+      <div
+        className="grid min-h-spe-height grid-cols-12 gap-8 lg:gap-16 
+        overflow-x-hidden px-16 py-16 md:px-24 lg:px-48"
+      >
+        <div className=" col-span-12 my-auto md:col-span-7 lg:col-span-8">
           <h4
             data-tina-field={tinaField(data, "surtitle")}
             className="text-sm text-ternary"
@@ -28,7 +31,7 @@ export const Presentation = ({ data }: { data: any }) => {
             <TinaMarkdown content={data.headline} />
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4 md:mx-8 flex items-center">
+        <div className="col-span-12 md:col-span-5 lg:col-span-4 md:mx-8 flex items-center">
           <img
             src={data.image?.src}
             alt={data.image?.alt}

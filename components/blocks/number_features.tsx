@@ -24,7 +24,7 @@ export const NumberFeatures = ({ data }: { data: any }) => {
                     data-tina-field={tinaField(block, "image")}
                   />
                   <p
-                    className={`absolute left-[42%] top-[37%] font-title text-6xl font-black`}
+                    className={`absolute left-[42%] top-[34%] font-title text-6xl font-black`}
                   >
                     {i + 1}
                   </p>
