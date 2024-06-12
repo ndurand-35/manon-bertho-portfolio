@@ -82,6 +82,7 @@ blocks:
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
           src: /uploads/Homepage/Mockup 2-2.jpg
+        link: /services/papeterie
         title: PAPETERIE
         description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
       - image:
