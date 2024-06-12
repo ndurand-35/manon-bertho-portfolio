@@ -146,15 +146,25 @@ const Service: Collection = {
               name: "title",
             },
             {
+              name: "description",
+              label: "Description",
+              type: "rich-text",
+            },
+            {
+              name: "subitem",
+              label: "Items",
               type: "object",
               list: true,
-              name: "price",
-              label: "Prix",
               fields: [
                 {
                   type: "string",
-                  label: "Texte",
-                  name: "text",
+                  label: "Titre",
+                  name: "title",
+                },
+                {
+                  name: "description",
+                  label: "Description",
+                  type: "rich-text",
                 },
               ],
             },

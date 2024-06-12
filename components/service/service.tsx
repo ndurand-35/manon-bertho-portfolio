@@ -9,6 +9,41 @@ import { CTA } from "../blocks/cta";
 import { ServiceType } from "../../pages/services/[filename]";
 import { NumberFeatures } from "../blocks/number_features";
 import Link from "next/link";
+import { Accordion, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
+
+const customTheme: CustomFlowbiteTheme = {
+  accordion: {
+    root: {
+      base: "py-2 px-4",
+      flush: {
+        off: "",
+        on: "",
+      },
+    },
+    content: {
+      base: "py-5",
+    },
+    title: {
+      arrow: {
+        base: "h-6 w-6 shrink-0 transition",
+        open: {
+          off: "",
+          on: "rotate-180",
+        },
+      },
+      base: "flex w-full items-center justify-between text-left font-medium text-gray-500 rounded-none",
+      flush: {
+        off: "",
+        on: "",
+      },
+      heading: "",
+      open: {
+        off: "",
+        on: "",
+      },
+    },
+  },
+};
 
 const components: Components<{
   BlockQuote: {
@@ -113,7 +148,6 @@ export const Service = (props: ServiceType) => {
             >
               <TinaMarkdown content={props?.description} />
             </div>
-            <div></div>
           </div>
         </div>
       </div>
@@ -135,11 +169,12 @@ export const Service = (props: ServiceType) => {
           </p>
           {props.pricing.column && props.pricing.column.length !== 0 && (
             <div
-              className={`md:grid-cols-${props.pricing.column.length} grid grid-cols-1 gap-16`}
+              className={`md:grid-cols-${props.pricing.column.length} grid grid-cols-1 gap-2`}
             >
               {props.pricing.column.map((pricingData) => (
-                <div className="flex flex-col items-center justify-center shadow">
+                <div className="flex flex-col items-center shadow h-fit">
                   <img
+                    data-tina-field={tinaField(pricingData.img, "src")}
                     src={pricingData?.img?.src}
                     alt={pricingData?.img?.alt}
                   />
@@ -149,18 +184,31 @@ export const Service = (props: ServiceType) => {
                   >
                     {pricingData?.title}
                   </h4>
-                  <ul className="mt-4">
-                    {pricingData?.price?.map((liItem, liIndex: number) => (
-                      <li
-                        data-tina-field={tinaField(liItem, "text")}
-                        className="flex flex-row items-center space-x-2"
-                        key={liIndex}
-                      >
-                        <div className="h-4 w-4 rounded-full bg-ternary" />
-                        <p className="font-semibold">{liItem.text}</p>
-                      </li>
-                    ))}
-                  </ul>
+                  <div
+                    data-tina-field={tinaField(pricingData, "description")}
+                    className="prose w-full px-4 py-4"
+                  >
+                    <TinaMarkdown content={pricingData?.description} />
+                  </div>
+                  <Flowbite theme={{ theme: customTheme, mode: "light" }}>
+                    {pricingData.subitem && (
+                      <Accordion className="w-full">
+                        {pricingData.subitem.map((item) => (
+                          <Accordion.Panel>
+                            <Accordion.Title>{item.title}</Accordion.Title>
+                            <Accordion.Content>
+                              <div
+                                data-tina-field={tinaField(item, "description")}
+                                className="prose w-full"
+                              >
+                                <TinaMarkdown content={item?.description} />
+                              </div>
+                            </Accordion.Content>
+                          </Accordion.Panel>
+                        ))}
+                      </Accordion>
+                    )}
+                  </Flowbite>
                 </div>
               ))}
             </div>
