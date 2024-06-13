@@ -27,7 +27,7 @@ export const MobileMenu = ({ isOpen, data }) => {
     <>
       {isOpen && (
         <div className="bg-lunar-green h-screen z-10 w-screen fixed pt-8 pb-24 flex flex-col items-center justify-between ">
-          <span className="block text-sm text-gray-300  sm:text-center">
+          <span className="block text-sm text-gray-300 px-4 sm:text-center">
             © {currentYear}{" "}
             <Link href="/" className="hover:underline">
               Manon Bertho Studio
