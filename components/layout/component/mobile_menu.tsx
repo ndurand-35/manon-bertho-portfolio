@@ -26,7 +26,7 @@ export const MobileMenu = ({ isOpen, data }) => {
   return (
     <>
       {isOpen && (
-        <div className="bg-lunar-green h-screen z-10 w-screen fixed pt-8 pb-24 flex flex-col items-center justify-between ">
+        <div className="bg-lunar-green h-screen z-10 w-screen fixed pt-8 pb-32 flex flex-col items-center justify-between ">
           <span className="block text-sm text-gray-300 px-4 sm:text-center">
             © {currentYear}{" "}
             <Link href="/" className="hover:underline">
@@ -54,12 +54,14 @@ export const MobileMenu = ({ isOpen, data }) => {
               </a>
             </li>
           </ul>
-          <img
-            src={data.logo?.src}
-            alt={data.logo?.alt}
-            data-tina-field={tinaField(data, "logo")}
-            className={`h-48 py-2}`}
-          />
+          <Link href="/">
+            <img
+              src={data.logo?.src}
+              alt={data.logo?.alt}
+              data-tina-field={tinaField(data, "logo")}
+              className={`h-48 py-2}`}
+            />
+          </Link>
           <ul className="flex flex-col gap-2 justify-center text-white text-xl">
             {data.nav &&
               data.nav.map((item, i) => {

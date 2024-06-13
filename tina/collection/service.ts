@@ -118,7 +118,7 @@ const Service: Collection = {
           name: "subtitle",
         },
         {
-          type: "object",
+          type: "object",       
           list: true,
           name: "column",
           label: "Colonne",
