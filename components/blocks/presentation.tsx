@@ -8,7 +8,7 @@ export const Presentation = ({ data }: { data: any }) => {
     <Section color={data.color}>
       <div
         className="grid min-h-spe-height grid-cols-12 gap-8 lg:gap-16 
-        overflow-x-hidden px-16 py-16 md:px-24 lg:px-48"
+        overflow-x-hidden px-8 py-16 md:px-24 lg:px-48"
       >
         <div className=" col-span-12 my-auto md:col-span-7 lg:col-span-8">
           <h4

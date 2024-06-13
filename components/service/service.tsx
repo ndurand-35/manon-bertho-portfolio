@@ -193,8 +193,8 @@ export const Service = (props: ServiceType) => {
                   <Flowbite theme={{ theme: customTheme, mode: "light" }}>
                     {pricingData.subitem && (
                       <Accordion className="w-full">
-                        {pricingData.subitem.map((item) => (
-                          <Accordion.Panel>
+                        {pricingData.subitem.map((item, i) => (
+                          <Accordion.Panel key={i}>
                             <Accordion.Title>{item.title}</Accordion.Title>
                             <Accordion.Content>
                               <div
