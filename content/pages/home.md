@@ -82,12 +82,12 @@ blocks:
         title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
-          src: /uploads/Homepage/Mockup 2-2.jpg
+          src: /uploads/Homepage/Mockup 2-2.webp
         link: /services/papeterie
         title: PAPETERIE
         description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
       - image:
-          src: /uploads/Homepage/maison suzon.jpg
+          src: /uploads/Homepage/maison suzon.webp
         link: /services/identite-visuelle
         title: IDENTITÉ VISUELLE
         description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
