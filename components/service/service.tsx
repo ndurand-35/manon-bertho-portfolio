@@ -10,6 +10,7 @@ import { ServiceType } from "../../pages/services/[filename]";
 import { NumberFeatures } from "../blocks/number_features";
 import Link from "next/link";
 import { Accordion, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
+import { Gallery } from "../components/gallery";
 
 const customTheme: CustomFlowbiteTheme = {
   accordion: {
@@ -215,27 +216,7 @@ export const Service = (props: ServiceType) => {
           )}
         </div>
       )}
-
-      <div className="space-y-4 py-16 px-4 lg:px-32 text-center">
-        <h1
-          className="mt-2 font-title text-3xl font-semibold"
-          data-tina-field={tinaField(props.gallery, "title")}
-        >
-          {props.gallery?.title}
-        </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {props?.gallery?.img?.map((img, i) => (
-            <div className={img?.colSpan} key={i}>
-              <img
-                className="h-full max-w-full"
-                data-tina-field={tinaField(img, "src")}
-                src={img?.src}
-                alt={img?.alt}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      {props.gallery && <Gallery gallery={props.gallery} />}
 
       {props.cta && (
         <CTA
