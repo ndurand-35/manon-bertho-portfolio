@@ -28,7 +28,7 @@
             "label": "Papeterie"
           },
           {
-            "href": "/services/identite-visuelle",
+            "href": "services/identite-visuelle",
             "label": "Identité visuelle"
           }
         ]
