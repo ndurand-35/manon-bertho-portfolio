@@ -68,7 +68,7 @@ blocks:
           src: /uploads/Service/Photographie/LUCIE ET TIMON  (74).jpg
           alt: Portrait
         link: /services/seances-photos
-        title: SÉANCES PHOTO
+        title: SÉANCES PHOTOS
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
       - image:
           src: /uploads/Homepage/INAE BIJOUX (7).jpg
