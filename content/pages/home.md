@@ -86,7 +86,7 @@ blocks:
         title: PAPETERIE
         description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
       - image:
-          src: /uploads/Homepage/maison suzon.jpg
+          src: /uploads/Homepage/maison suzon (1).jpg
         link: /services/identite-visuelle
         title: IDENTITÉ VISUELLE
         description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
