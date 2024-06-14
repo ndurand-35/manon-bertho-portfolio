@@ -6,7 +6,7 @@ blocks:
 
       à la création minutieuse de vos projets graphiques
     backgroundImg:
-      src: /uploads/Homepage/Home.jpg
+      src: /uploads/Homepage/Home reduit.jpg
     image:
       src: /uploads/Homepage/LOGO BLANC MB.png
       alt: >-
