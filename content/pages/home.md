@@ -76,7 +76,7 @@ blocks:
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
-          src: /uploads/Service/EVENEMENT/MARIAGE B&B (98) (1).jpg
+          src: /uploads/Homepage/MARIAGE B&B (98) (1).webp
         link: /services/photos-evenements
         title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
