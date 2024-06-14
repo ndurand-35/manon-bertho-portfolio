@@ -155,9 +155,7 @@ blocks:
           incroyable ! On recommande les yeux fermés
         author: Julie & Estelle
         image:
-          src: >-
-            /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie
-            (15).jpg
+          src: /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie.webp
           alt: Shooting pole dance julie et estelle
     _template: testimonial
   - title: Mon univers vous inspire ?
