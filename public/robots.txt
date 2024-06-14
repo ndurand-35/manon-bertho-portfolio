@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: manonbertho-studio.fr/sitemap.xml
+Sitemap: https://manonbertho-studio.fr/sitemap.xml
