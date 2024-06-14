@@ -23,6 +23,10 @@ export const Layout = ({
       <Head>
         <title>Manon Bertho Studio - Graphiste et Photographe Freelance</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Manon - Graphiste et Photographe Freelance - Je façonne des images et des univers graphiques saisissants, alignés sur votre personnalité."
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
