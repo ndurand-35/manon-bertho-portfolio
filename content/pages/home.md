@@ -65,7 +65,7 @@ blocks:
   - title: Mes prestations
     cardList:
       - image:
-          src: /uploads/Service/Photographie/LUCIE ET TIMON  (74).jpg
+          src: /uploads/Homepage/LUCIE ET TIMON  (74).webp
           alt: Portrait
         link: /services/seances-photos
         title: SÉANCES PHOTOS
