@@ -32,7 +32,7 @@ export const Footer = ({ data, icon, rawData }) => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex flex-col items-center justify-center space-y-2">
             <Link href="/" className="mb-4 flex items-center sm:mb-0">
-              <img
+              <img loading="lazy"
                 data-tina-field={tinaField(data, "logo")}
                 src={data.logo?.src}
                 alt={data.logo?.alt}
@@ -74,9 +74,8 @@ export const Footer = ({ data, icon, rawData }) => {
                       <Link
                         data-tina-field={tinaField(item, "href")}
                         href={`/${item.href}`}
-                        className={`block py-2 text-center transition ease-in-out hover:text-secondary md:p-0 ${
-                          activeItem && "text-secondary"
-                        }`}
+                        className={`block py-2 text-center transition ease-in-out hover:text-secondary md:p-0 ${activeItem && "text-secondary"
+                          }`}
                         aria-current="page"
                       >
                         {item.label}

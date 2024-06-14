@@ -23,7 +23,7 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
                 key={i}
                 className="bg-white border border-gray-200 rounded shadow hover:-translate-y-2 transition"
               >
-                <img
+                <img loading="lazy"
                   className="rounded-t-lg"
                   data-tina-field={tinaField(card, "image")}
                   src={card.image?.src}

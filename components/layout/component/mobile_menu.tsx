@@ -55,7 +55,7 @@ export const MobileMenu = ({ isOpen, data }) => {
             </li>
           </ul>
           <Link href="/">
-            <img
+            <img loading="lazy"
               src={data.logo?.src}
               alt={data.logo?.alt}
               data-tina-field={tinaField(data, "logo")}
@@ -73,9 +73,8 @@ export const MobileMenu = ({ isOpen, data }) => {
                       <Link
                         data-tina-field={tinaField(item, "href")}
                         href={`/${item.href}`}
-                        className={`block text-center transition ease-in-out hover:text-secondary md:p-0 ${
-                          activeItem && "text-secondary"
-                        }`}
+                        className={`block text-center transition ease-in-out hover:text-secondary md:p-0 ${activeItem && "text-secondary"
+                          }`}
                         aria-current="page"
                       >
                         {item.label}

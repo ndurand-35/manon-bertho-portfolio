@@ -21,7 +21,7 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
                 className="col-span-1 space-y-4 md:col-span-3 flex flex-col items-center"
                 key={`testimonial_${i}`}
               >
-                <img
+                <img loading="lazy"
                   className="rounded-xl"
                   data-tina-field={tinaField(testimonial, "image")}
                   src={testimonial.image?.src}

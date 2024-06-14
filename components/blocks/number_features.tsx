@@ -18,7 +18,7 @@ export const NumberFeatures = ({ data }: { data: any }) => {
             data.items.map((block, i) => (
               <div key={i} className="flex flex-col items-center space-y-8">
                 <div className="relative">
-                  <img
+                  <img loading="lazy"
                     src={block.image?.src}
                     className="h-48 w-48"
                     data-tina-field={tinaField(block, "image")}

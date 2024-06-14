@@ -115,7 +115,7 @@ const components: Components<{
   },
   img: (props) => (
     <span className="flex items-center justify-center">
-      <img src={props.url} alt={props.alt} />
+      <img loading="lazy" src={props.url} alt={props.alt} />
     </span>
   ),
 };
@@ -125,7 +125,7 @@ export const Service = (props: ServiceType) => {
     <div className="mt-0 md:mt-16 space-y-16">
       <div className="py-8 grid grid-cols-12 gap-8 overflow-x-hidden md:gap-4 xl:gap-8 xl:px-32">
         <div className="col-span-12 mx-16 flex items-center md:col-span-6 md:mx-8 xl:col-span-4">
-          <img
+          <img loading="lazy"
             src={props?.img?.src}
             alt={props?.img?.alt}
             className="mx-auto max-w-xs rounded-full"
@@ -174,7 +174,7 @@ export const Service = (props: ServiceType) => {
             >
               {props.pricing.column.map((pricingData) => (
                 <div className="flex flex-col items-center shadow h-fit">
-                  <img
+                  <img loading="lazy"
                     data-tina-field={tinaField(pricingData.img, "src")}
                     src={pricingData?.img?.src}
                     alt={pricingData?.img?.alt}

@@ -38,7 +38,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
             href="/"
             className={`flex gap-1 items-center whitespace-nowrap tracking-[.002em]`}
           >
-            <img
+            <img loading="lazy"
               src={data.logo?.src}
               alt={data.logo?.alt}
               data-tina-field={tinaField(data, "logo")}
@@ -46,9 +46,8 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
             />
             <span
               data-tina-field={tinaField(data, "name")}
-              className={`self-center whitespace-nowrap font-title text-2xl font-semibold ${
-                isOpen && "hidden"
-              }`}
+              className={`self-center whitespace-nowrap font-title text-2xl font-semibold ${isOpen && "hidden"
+                }`}
             >
               {data.name}
             </span>
@@ -68,17 +67,15 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
-              className={`${genericHamburgerLine} ${
-                isOpen ? "rotate-45 translate-y-3" : ""
-              }`}
+              className={`${genericHamburgerLine} ${isOpen ? "rotate-45 translate-y-3" : ""
+                }`}
             />
             <div
               className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : ""}`}
             />
             <div
-              className={`${genericHamburgerLine} ${
-                isOpen ? "-rotate-45 -translate-y-3" : ""
-              }`}
+              className={`${genericHamburgerLine} ${isOpen ? "-rotate-45 -translate-y-3" : ""
+                }`}
             />
           </button>
         </div>

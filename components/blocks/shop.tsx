@@ -30,7 +30,7 @@ export const Shop = ({ data }: { data: PageBlocksShop }) => {
           </a>
         </div>
       </div>
-      <img
+      <img loading="lazy"
         src={data.image?.src}
         alt={data.image?.alt}
         className="w-auto md:w-2/5 object-cover"

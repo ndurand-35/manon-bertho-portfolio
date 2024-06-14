@@ -12,7 +12,7 @@ export const Gallery = ({ gallery }) => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {gallery?.img?.map((img, i) => (
                     <div className={img?.colSpan} key={i}>
-                        <img
+                        <img loading="lazy"
                             className="h-full max-w-full"
                             data-tina-field={tinaField(img, "src")}
                             src={img?.src}

@@ -32,7 +32,7 @@ export const Projets = ({ data }: { data: ProjetType[] }) => {
               <h1 className="font-title text-3xl font-semibold">
                 {projet.title}
               </h1>
-              <img
+              <img loading="lazy"
                 className="rounded-lg"
                 src={`${projet?.mainImg?.imgCentre?.src}`}
               />

@@ -32,7 +32,7 @@ export const Presentation = ({ data }: { data: any }) => {
           </div>
         </div>
         <div className="col-span-12 md:col-span-5 lg:col-span-4 md:mx-8 flex items-center">
-          <img
+          <img loading="lazy"
             src={data.image?.src}
             alt={data.image?.alt}
             data-tina-field={tinaField(data, "image")}

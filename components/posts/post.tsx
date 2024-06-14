@@ -107,7 +107,7 @@ const components: Components<{
   },
   img: (props) => (
     <span className="flex items-center justify-center">
-      <img src={props.url} alt={props.alt} />
+      <img loading="lazy" src={props.url} alt={props.alt} />
     </span>
   ),
 };
@@ -154,7 +154,7 @@ export const Post = (props: PostType) => {
           {props.author && (
             <>
               <div className="flex-shrink-0 mr-4">
-                <img
+                <img loading="lazy"
                   data-tina-field={tinaField(props.author, "avatar")}
                   className="h-14 w-14 object-cover rounded-full shadow-sm"
                   src={props.author.avatar}
@@ -186,12 +186,12 @@ export const Post = (props: PostType) => {
             data-tina-field={tinaField(props, "heroImg")}
             className="relative max-w-4xl lg:max-w-5xl mx-auto"
           >
-            <img
+            <img loading="lazy"
               src={props.heroImg}
               className="absolute block rounded-lg w-full h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
               aria-hidden="true"
             />
-            <img
+            <img loading="lazy"
               src={props.heroImg}
               alt={props.title}
               className="relative z-10 mb-14 block rounded-lg w-full h-auto opacity-100"

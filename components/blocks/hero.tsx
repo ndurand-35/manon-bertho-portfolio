@@ -14,6 +14,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
     >
       <div className="relative flex h-spe-height justify-center overflow-hidden">
         <img
+          loading="lazy"
           data-tina-field={tinaField(data, "image_top_left")}
           alt={data.image_top_left?.alt}
           src={data.image_top_left?.src}
@@ -21,6 +22,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
         />
         <div className="relative m-auto text-center">
           <img
+            loading="lazy"
             data-tina-field={tinaField(data, "image")}
             alt={data.image?.alt}
             src={data.image?.src}
@@ -36,6 +38,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
           </div>
         </div>
         <img
+          loading="lazy"
           data-tina-field={tinaField(data, "image_top_right")}
           alt={data.image_top_right?.alt}
           src={data.image_top_right?.src}
@@ -43,12 +46,14 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
         />
       </div>
       <img
+        loading="lazy"
         data-tina-field={tinaField(data, "image_bottom_left")}
         alt={data.image_bottom_left?.alt}
         src={data.image_bottom_left?.src}
         className="absolute -left-12 bottom-8 z-10 md:-bottom-20 w-64 rotate-90 md:left-0 md:w-96 xl:left-32"
       />
       <img
+        loading="lazy"
         data-tina-field={tinaField(data, "image_bottom_right")}
         alt={data.image_bottom_right?.alt}
         src={data.image_bottom_right?.src}

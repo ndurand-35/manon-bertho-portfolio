@@ -32,7 +32,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgGauche?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <img loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgGauche?.src}
               alt={props.mainImg?.imgGauche?.alt}
@@ -42,7 +42,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgCentre?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <img loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgCentre?.src}
               alt={props.mainImg?.imgCentre?.alt}
@@ -52,7 +52,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgDroite?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <img loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgDroite?.src}
               alt={props.mainImg?.imgDroite?.alt}
@@ -82,7 +82,7 @@ export const Projet = (props: ProjetType) => {
                   key={`other-image-${imgObj.ID}`}
                   className="flex justify-center"
                 >
-                  <img
+                  <img loading="lazy" 
                     className="max-h-auto rounded-lg md:max-h-96"
                     src={`/${imgObj.img}`}
                   />
