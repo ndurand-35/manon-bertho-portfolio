@@ -7,6 +7,7 @@ import {
 import React from "react";
 import { CTA } from "../blocks/cta";
 import { ProjetType } from "../../pages/projets/[filename]";
+import { Gallery } from "../components/gallery";
 
 export const Projet = (props: ProjetType) => {
   return (
@@ -99,7 +100,7 @@ export const Projet = (props: ProjetType) => {
           </div>
         </div>
       )}
-      {/* {portfolio.mansonery && <Mansonery data={portfolio.mansonery} />} */}
+      {props.gallery && <Gallery gallery={props.gallery} />}
       {props.cta && (
         <CTA
           data={{

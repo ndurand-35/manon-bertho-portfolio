@@ -24,7 +24,7 @@ const Projet: Collection = {
   format: "mdx",
   ui: {
     router: ({ document }) => {
-      return `/projet/${document._sys.filename}`;
+      return `/projets/${document._sys.filename}`;
     },
   },
   fields: [
@@ -130,82 +130,43 @@ const Projet: Collection = {
           name: "description",
           label: "Description",
           type: "rich-text",
-          templates: [
+        },
+      ],
+    },
+    {
+      type: "object",
+      label: "Gallery",
+      name: "gallery",
+      fields: [
+        {
+          type: "string",
+          label: "Titre",
+          name: "title",
+        },
+        {
+          type: "object",
+          list: true,
+          name: "img",
+          label: "Image",
+          fields: [
             {
-              name: "BlockQuote",
-              label: "Block Quote",
-              fields: [
-                {
-                  name: "children",
-                  label: "Quote",
-                  type: "rich-text",
-                },
-                {
-                  name: "authorName",
-                  label: "Author",
-                  type: "string",
-                },
-              ],
+              name: "src",
+              label: "Image Source",
+              type: "image",
             },
             {
-              name: "Mansonery",
-              label: "Mansonery",
-              fields: [
-                {
-                  type: "object",
-                  label: "Colonne",
-                  name: "column",
-                  list: true,
-                  fields: [
-                    {
-                      type: "object",
-                      label: "Nav Links",
-                      name: "nav",
-                      list: true,
-
-                      fields: [
-                        {
-                          type: "image",
-                          label: "Image",
-                          name: "image",
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
             },
             {
-              name: "NewsletterSignup",
-              label: "Newsletter Sign Up",
-              fields: [
-                {
-                  name: "children",
-                  label: "CTA",
-                  type: "rich-text",
-                },
-                {
-                  name: "placeholder",
-                  label: "Placeholder",
-                  type: "string",
-                },
-                {
-                  name: "buttonText",
-                  label: "Button Text",
-                  type: "string",
-                },
-                {
-                  name: "disclaimer",
-                  label: "Disclaimer",
-                  type: "rich-text",
-                },
+              name: "colSpan",
+              label: "Affichage",
+              type: "string",
+              options: [
+                { label: "1 Colonne", value: "col-span-1" },
+                { label: "2 Colonnes", value: "col-span-2" },
               ],
-              ui: {
-                defaultItem: {
-                  placeholder: "Enter your email",
-                  buttonText: "Notify Me",
-                },
-              },
             },
           ],
         },
