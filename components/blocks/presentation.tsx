@@ -31,7 +31,7 @@ export const Presentation = ({ data }: { data: any }) => {
             <TinaMarkdown content={data.headline} />
           </div>
         </div>
-        <div className="col-span-12 md:col-span-5 lg:col-span-4 mx-4 md:mx-8 flex items-center">
+        <div className="col-span-12 md:col-span-5 lg:col-span-4 ml-4 mr-8 md:mx-8 flex items-center">
           <img
             loading="lazy"
             src={data.image?.src}
