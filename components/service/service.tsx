@@ -50,7 +50,7 @@ export const Service = (props: ServiceType) => {
   return (
     <div className="mt-0 md:mt-16 space-y-16">
       <div className="py-8 grid grid-cols-12 gap-8 overflow-x-hidden md:gap-4 xl:gap-8 xl:px-32">
-        <div className="col-span-12 mx-16 flex items-center md:col-span-6 ml-4 mr-8 md:mx-8 xl:col-span-4">
+        <div className="col-span-12 mx-16 flex items-center md:col-span-6 mr-4 ml-8 md:mx-8 xl:col-span-4">
           <img
             loading="lazy"
             src={props?.img?.src}
