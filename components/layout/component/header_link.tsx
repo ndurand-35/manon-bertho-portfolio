@@ -29,6 +29,37 @@ const customTheme: CustomFlowbiteTheme = {
     },
     inlineWrapper: "flex items-center",
   },
+  accordion: {
+    root: {
+      base: "py-2 px-4",
+      flush: {
+        off: "",
+        on: "",
+      },
+    },
+    content: {
+      base: "py-5",
+    },
+    title: {
+      arrow: {
+        base: "h-6 w-6 shrink-0 transition",
+        open: {
+          off: "",
+          on: "rotate-180",
+        },
+      },
+      base: "flex w-full items-center justify-between text-left font-medium text-gray-500 rounded-none",
+      flush: {
+        off: "",
+        on: "",
+      },
+      heading: "",
+      open: {
+        off: "",
+        on: "",
+      },
+    },
+  },
 };
 
 export const HeaderLink = ({ item }) => {
