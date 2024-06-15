@@ -23,6 +23,7 @@ const customTheme: CustomFlowbiteTheme = {
       style: {
         light:
           "border border-lunar-green bg-lunar-green text-gray-900 hover:text-secondary",
+        auto: "border border-lunar-green bg-lunar-green text-gray-900 hover:text-secondary",
       },
       target: "w-fit",
     },
