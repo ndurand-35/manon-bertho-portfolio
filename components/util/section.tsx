@@ -18,8 +18,7 @@ export const Section = ({
 
   return (
     <section
-      className={`flex-1 relative transition duration-150 ease-out body-font 
-      overflow-hidden ${sectionColorCss} ${className}`}
+      className={`flex-1 relative transition body-font overflow-hidden ${sectionColorCss} ${className}`}
       style={style}
     >
       {children}

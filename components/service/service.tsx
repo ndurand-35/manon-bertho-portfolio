@@ -11,6 +11,7 @@ import { NumberFeatures } from "../blocks/number_features";
 import Link from "next/link";
 import { Accordion, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import { Gallery } from "../components/gallery";
+import { TextImage } from "../components/text_image";
 
 const customTheme: CustomFlowbiteTheme = {
   dropdown: {
@@ -73,36 +74,14 @@ const customTheme: CustomFlowbiteTheme = {
 export const Service = (props: ServiceType) => {
   return (
     <div className="mt-0 md:mt-16 space-y-16">
-      <div className="py-8 grid grid-cols-12 gap-8 overflow-x-hidden md:gap-4 xl:gap-8 xl:px-32">
-        <div className="col-span-12 mx-16 flex items-center md:col-span-6 mx-16 md:mx-8 xl:col-span-4">
-          <img
-            loading="lazy"
-            src={props?.img?.src}
-            alt={props?.img?.alt}
-            className="mx-auto rounded-full"
-            style={{
-              boxShadow: "#fff -20px 20px 0px -3px, #3B4F43 -20px 20px",
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
-          />
-        </div>
-        <div className="order-last col-span-12 mx-16 my-auto sm:order-none md:col-span-6 md:mx-8 xl:col-span-8">
-          <div className="space-y-4">
-            <h1
-              className="mt-2 font-title text-3xl font-semibold"
-              data-tina-field={tinaField(props, "title")}
-            >
-              {props.title}
-            </h1>
-            <div
-              data-tina-field={tinaField(props, "description")}
-              className="prose dark:prose-dark w-full max-w-none space-y-4"
-            >
-              <TinaMarkdown content={props?.description} />
-            </div>
-          </div>
-        </div>
-      </div>
+      <TextImage
+        data={{
+          surtitle: "",
+          title: props.title,
+          image: props.img,
+          headline: props.description,
+        }}
+      />
       {props.seance && <NumberFeatures data={props.seance} />}
 
       {props.pricing && (
@@ -145,7 +124,7 @@ export const Service = (props: ServiceType) => {
                   </div>
                   <Flowbite theme={{ theme: customTheme, mode: "light" }}>
                     {pricingData.subitem && (
-                      <Accordion className="w-full">
+                      <Accordion className="w-full" collapseAll>
                         {pricingData.subitem.map((item, i) => (
                           <Accordion.Panel key={i}>
                             <Accordion.Title>{item.title}</Accordion.Title>
