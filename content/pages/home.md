@@ -71,7 +71,7 @@ blocks:
         title: SÉANCES PHOTOS
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
       - image:
-          src: /uploads/Homepage/INAE BIJOUX (7).jpg
+          src: /uploads/INAE BIJOUX (7).webp
         link: /services/photos-commerciales
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
