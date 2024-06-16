@@ -74,12 +74,12 @@ export const Service = (props: ServiceType) => {
   return (
     <div className="mt-0 md:mt-16 space-y-16">
       <div className="py-8 grid grid-cols-12 gap-8 overflow-x-hidden md:gap-4 xl:gap-8 xl:px-32">
-        <div className="col-span-12 mx-16 flex items-center md:col-span-6 mr-4 ml-8 md:mx-8 xl:col-span-4">
+        <div className="col-span-12 mx-16 flex items-center md:col-span-6 mx-16 md:mx-8 xl:col-span-4">
           <img
             loading="lazy"
             src={props?.img?.src}
             alt={props?.img?.alt}
-            className="mx-auto max-w-xs rounded-full"
+            className="mx-auto rounded-full"
             style={{
               boxShadow: "#fff -20px 20px 0px -3px, #3B4F43 -20px 20px",
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
