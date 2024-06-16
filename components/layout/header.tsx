@@ -29,7 +29,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
 
   return (
     <>
-      <MobileMenu isOpen={isOpen} data={data} />
+      <MobileMenu isOpen={isOpen} data={data} setIsOpen={setIsOpen} />
       <div
         className={`fixed bottom-0 left-0 z-20 h-16 w-full md:top-0 ${headerColorCss}`}
       >

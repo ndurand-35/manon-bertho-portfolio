@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { tinaField } from "tinacms/dist/react";
 
-export const MobileMenu = ({ isOpen, data }) => {
+export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
   const router = useRouter();
   const [isClient, setIsClient] = useState(false);
   useEffect(() => setIsClient(true), []);
@@ -55,7 +55,8 @@ export const MobileMenu = ({ isOpen, data }) => {
             </li>
           </ul>
           <Link href="/">
-            <img loading="lazy"
+            <img
+              loading="lazy"
               src={data.logo?.src}
               alt={data.logo?.alt}
               data-tina-field={tinaField(data, "logo")}
@@ -71,10 +72,12 @@ export const MobileMenu = ({ isOpen, data }) => {
                   <li key={i}>
                     {isRelative ? (
                       <Link
+                        onClick={() => setIsOpen(false)}
                         data-tina-field={tinaField(item, "href")}
                         href={`/${item.href}`}
-                        className={`block text-center transition ease-in-out hover:text-secondary md:p-0 ${activeItem && "text-secondary"
-                          }`}
+                        className={`block text-center transition ease-in-out hover:text-secondary md:p-0 ${
+                          activeItem && "text-secondary"
+                        }`}
                         aria-current="page"
                       >
                         {item.label}
@@ -83,6 +86,7 @@ export const MobileMenu = ({ isOpen, data }) => {
                       <a
                         data-tina-field={tinaField(item, "href")}
                         href={item.href}
+                        onClick={() => setIsOpen(false)}
                         target="_blank"
                         className="block text-center transition ease-in-out hover:text-secondary md:p-0"
                       >
