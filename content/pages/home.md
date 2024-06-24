@@ -6,7 +6,7 @@ blocks:
 
       à la création minutieuse de vos projets graphiques
     backgroundImg:
-      src: /uploads/Homepage/Home reduit.jpg
+      src: /uploads/Homepage/SEANCE_COUPLE_B&B_ST_MALO_(62) home test.webp
     image:
       src: /uploads/Homepage/LOGO BLANC MB.png
       alt: >-
