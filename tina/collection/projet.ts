@@ -43,7 +43,7 @@ const Projet: Collection = {
     },
     {
       type: "object",
-      label: "Images Principales",
+      label: "Images Secondaires",
       name: "mainImg",
       fields: [
         {
@@ -113,6 +113,64 @@ const Projet: Collection = {
           name: "description",
           label: "Description",
           type: "rich-text",
+        },
+      ],
+    },
+    {
+      type: "object",
+      label: "Images Secondaires",
+      name: "secondaryImg",
+      fields: [
+        {
+          type: "object",
+          label: "Image Gauche",
+          name: "imgGauche",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
+        {
+          type: "object",
+          label: "Image Centre",
+          name: "imgCentre",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
+        },
+        {
+          type: "object",
+          label: "Image Droite",
+          name: "imgDroite",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string",
+            },
+          ],
         },
       ],
     },

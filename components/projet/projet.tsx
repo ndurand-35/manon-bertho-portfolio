@@ -32,7 +32,8 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgGauche?.alt}`}
             className="flex justify-center"
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgGauche?.src}
               alt={props.mainImg?.imgGauche?.alt}
@@ -42,7 +43,8 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgCentre?.alt}`}
             className="flex justify-center"
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgCentre?.src}
               alt={props.mainImg?.imgCentre?.alt}
@@ -52,7 +54,8 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgDroite?.alt}`}
             className="flex justify-center"
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgDroite?.src}
               alt={props.mainImg?.imgDroite?.alt}
@@ -69,7 +72,43 @@ export const Projet = (props: ProjetType) => {
           </div>
         </div>
       </div>
-
+      {props.secondaryImg && (
+        <div className="grid grid-cols-1 gap-4 px-8 sm:grid-cols-3 md:px-16 lg:px-32 xl:px-72">
+          <div
+            key={`image-${props.secondaryImg?.imgGauche?.alt}`}
+            className="flex justify-center"
+          >
+            <img
+              loading="lazy"
+              className="max-h-auto rounded-lg md:max-h-96"
+              src={props.secondaryImg?.imgGauche?.src}
+              alt={props.secondaryImg?.imgGauche?.alt}
+            />
+          </div>
+          <div
+            key={`image-${props.mainImg?.imgCentre?.alt}`}
+            className="flex justify-center"
+          >
+            <img
+              loading="lazy"
+              className="max-h-auto rounded-lg md:max-h-96"
+              src={props.secondaryImg?.imgCentre?.src}
+              alt={props.secondaryImg?.imgCentre?.alt}
+            />
+          </div>
+          <div
+            key={`image-${props.secondaryImg?.imgDroite?.alt}`}
+            className="flex justify-center"
+          >
+            <img
+              loading="lazy"
+              className="max-h-auto rounded-lg md:max-h-96"
+              src={props.secondaryImg?.imgDroite?.src}
+              alt={props.secondaryImg?.imgDroite?.alt}
+            />
+          </div>
+        </div>
+      )}
       {props.other && (
         <div>
           <div className="space-y-4 px-8 text-center">
@@ -93,9 +132,7 @@ export const Projet = (props: ProjetType) => {
               data-tina-field={tinaField(props, "other")}
               className="space-y-4 px-8 text-center md:px-16 lg:px-32 xl:px-64"
             >
-              <TinaMarkdown
-                content={props.other.description}
-              />
+              <TinaMarkdown content={props.other.description} />
             </div>
           </div>
         </div>
