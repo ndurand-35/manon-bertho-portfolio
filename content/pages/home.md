@@ -32,7 +32,7 @@ blocks:
 
       Que vous souhaitiez une séance photo pour le plaisir,  la création de
       papeterie personnalisée ou une refonte complète de votre image de marque,
-      je suis à votre écoute et prêt à réaliser vos projets.
+      je suis à votre écoute et prête à réaliser vos projets.
 
 
       Grâce à mon expertise, je donne vie à des supports percutants, qu'ils
