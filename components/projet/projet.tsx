@@ -13,7 +13,7 @@ export const Projet = (props: ProjetType) => {
   return (
     <div className="mt-0 md:mt-16 space-y-16">
       <div className="space-y-16 py-16">
-        <div className="text-center">
+        <div className="text-center space-y-4">
           <p
             className="text-sm text-ternary"
             data-tina-field={tinaField(props, "type")}
