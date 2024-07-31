@@ -30,13 +30,11 @@ blocks:
       graphiques captivants, parfaitement alignés sur votre personnalité.
 
 
-      Je n'aurais jamais imaginé qu'être introvertie serait un avantage lorsque
-      j'étais petite. Puis, en découvrant la photographie et l'illustration,
-      j'ai trouvé un nouvel échappatoire : celui de figer des instants et des
-      émotions dans le temps. J'observe silencieusement depuis les coulisses.
-      C'est l'essence de ma façon de travailler : je laisse les moments se
-      dérouler naturellement sous mes yeux et je capture leur beauté
-      authentique.
+      En découvrant la photographie et l'illustration, j'ai trouvé un nouvel
+      échappatoire : celui de figer des instants et des émotions dans le temps.
+      J'observe silencieusement depuis les coulisses. C'est l'essence de ma
+      façon de travailler : je laisse les moments se dérouler naturellement sous
+      mes yeux et je capture leur beauté authentique.
 
 
       Que vous souhaitiez une séance photo pour capturer des moments précieux ou
