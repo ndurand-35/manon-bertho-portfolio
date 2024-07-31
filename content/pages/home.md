@@ -30,18 +30,29 @@ blocks:
       graphiques captivants, parfaitement alignés sur votre personnalité.
 
 
-      Que vous souhaitiez une séance photo pour le plaisir,  la création de
-      papeterie personnalisée ou une refonte complète de votre image de marque,
-      je suis à votre écoute et prête à réaliser vos projets.
+      Je n'aurais jamais imaginé qu'être introvertie serait un avantage lorsque
+      j'étais petite. Puis, en découvrant la photographie et l'illustration,
+      j'ai trouvé un nouvel échappatoire : celui de figer des instants et des
+      émotions dans le temps. J'observe silencieusement depuis les coulisses.
+      C'est l'essence de ma façon de travailler : je laisse les moments se
+      dérouler naturellement sous mes yeux et je capture leur beauté
+      authentique.
 
 
-      Grâce à mon expertise, je donne vie à des supports percutants, qu'ils
-      soient imprimés ou numériques. Je crée une esthétique douce et mémorable
-      qui reflète votre identité unique.
+      Que vous souhaitiez une séance photo pour capturer des moments précieux ou
+      créer des images artistiques, la création de papeterie personnalisée pour
+      des occasions spéciales, ou une refonte complète de votre image de marque
+      avec des visuels percutants, je suis à votre écoute et prête à réaliser
+      vos projets.
 
 
-      Que vous soyez particulier ou professionnel, explorez mon portfolio pour
-      découvrir comment nous pouvons travailler ensemble.
+      Chaque photo raconte une histoire, et chaque création graphique
+      s'harmonise avec une esthétique douce et mémorable qui reflète votre
+      identité unique.
+
+
+      Que vous soyez particulier ou professionnel, découvrez comment nous
+      pouvons travailler ensemble.
     image:
       src: /uploads/Homepage/PHOTO PROFIL.jpg
       alt: Manon Bertho
