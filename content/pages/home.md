@@ -80,11 +80,6 @@ blocks:
         title: SÉANCES PHOTOS
         description: 'Lumière sur Vous :  Capturer l''essence de chaque instant'
       - image:
-          src: /uploads/INAE BIJOUX (7).webp
-        link: /services/photos-commerciales
-        title: COMMERCIAL
-        description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
-      - image:
           src: /uploads/Homepage/MARIAGE B&B (98) (1).webp
           alt: Mariage
         link: /services/photos-evenements
@@ -95,6 +90,11 @@ blocks:
         link: /services/papeterie
         title: PAPETERIE
         description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
+      - image:
+          src: /uploads/INAE BIJOUX (7).webp
+        link: /services/photos-commerciales
+        title: COMMERCIAL
+        description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
           src: /uploads/Homepage/maison suzon.webp
         link: /services/identite-visuelle
