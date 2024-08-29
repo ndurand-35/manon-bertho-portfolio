@@ -34,8 +34,14 @@
         ]
       },
       {
-        "href": "projets",
-        "label": "Artisans"
+        "href": "#services",
+        "label": "Artisans",
+        "nav": [
+          {
+            "href": "services/photos-commerciales",
+            "label": "Photos commerciales"
+          }
+        ]
       },
       {
         "href": "https://www.etsy.com/fr/shop/ManonBerthoStudio",
