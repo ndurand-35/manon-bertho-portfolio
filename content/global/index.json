@@ -9,15 +9,11 @@
     "nav": [
       {
         "href": "#services",
-        "label": "Prestations",
+        "label": "Les particuliers",
         "nav": [
           {
             "href": "services/seances-photos",
             "label": "Séances photos"
-          },
-          {
-            "href": "services/photos-commerciales",
-            "label": "Photos commerciales"
           },
           {
             "href": "services/photos-evenements",
@@ -26,10 +22,6 @@
           {
             "href": "services/papeterie",
             "label": "Papeterie"
-          },
-          {
-            "href": "services/identite-visuelle",
-            "label": "Identité visuelle"
           }
         ]
       },
