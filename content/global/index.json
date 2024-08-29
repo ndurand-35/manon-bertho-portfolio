@@ -35,8 +35,12 @@
       },
       {
         "href": "#services",
-        "label": "Artisans",
+        "label": "Pro & Artisans",
         "nav": [
+          {
+            "href": "services/identite-visuelle",
+            "label": "Identité visuelle"
+          },
           {
             "href": "services/photos-commerciales",
             "label": "Photos commerciales"
