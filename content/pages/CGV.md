@@ -144,11 +144,13 @@ blocks:
 
       moment de la signature du devis.
 
+
+
       Les prestations de photographie sont soumises aux tarifs indiqués sur le
       site
 
-      [www.manonbertho-studio.fr]() ou soumises à des devis personnalisés en
-      fonction des besoins
+      [www.manonbertho-studio.fr](www.manonbertho-studio.fr) ou soumises à des
+      devis personnalisés en fonction des besoins
 
       spécifiques du client. Les prestations graphiques, telles que la création
       de logo, d’identité
@@ -157,6 +159,8 @@ blocks:
       fonction des
 
       besoins spécifiques du client.
+
+
 
       Un acompte de 30 % est exigé pour la réservation de toute prestation (
       hors séance photo ),
@@ -181,6 +185,8 @@ blocks:
       sont indiqués au
 
       moment de la commande.
+
+
 
       Les frais de livraison sont à la charge du client et calculés en fonction
       de l’adresse de
@@ -270,6 +276,8 @@ blocks:
       soumis aux
 
       juridictions compétentes françaises.
+
+
 
       Conformément aux articles L.616-1 et R.616-1 du code de la consommation,
       un dispositif de
