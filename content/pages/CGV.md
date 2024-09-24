@@ -34,8 +34,9 @@ blocks:
         numériques, supports graphiques (logos, identités visuelles, maquettes web,
         faire-part, invitations, etc.).
 
+      ### &#xA;2\. Domaine d’application
 
-      2\. Domaine d’application
+
 
       Les présentes CGV s’appliquent à l’ensemble des prestations de services et
       de produits
@@ -48,14 +49,18 @@ blocks:
 
       présentes conditions générales, telles que disponibles sur le site web
 
-      www\.manonbertho-studio.fr et mentionnées dans le devis.
+      [www.manonbertho-studio.fr](www.manonbertho-studio.fr) et mentionnées dans
+      le devis.
 
       Aucune condition d'achat ou autre document émanant du client ne peut
       prévaloir sur les
 
       présentes CGV sans un accord écrit préalable de Manon Bertho Studio.
 
-      3\. Prestations proposées
+
+      ### &#xA;3\. Prestations proposées
+
+
 
       Manon Bertho Studio propose des prestations de photographie (séances
       photo, reportages
@@ -85,7 +90,10 @@ blocks:
 
       et autres supports imprimés pour des événements privés ou professionnels.
 
-      4\. Commande et réservation
+
+      ### &#xA;4\. Commande et réservation
+
+
 
       Toute commande est validée à réception de l’acompte de 30 % du montant
       total de la
@@ -107,7 +115,10 @@ blocks:
 
       l'acceptation des CGV.
 
-      5\. Modifications et annulations
+
+      ### &#xA;5\. Modifications et annulations
+
+
 
       Toute demande de modification de la prestation (date, lieu, contenu) doit
       être communiquée
@@ -123,7 +134,10 @@ blocks:
 
       l’acompte versé ne sera pas remboursé, sauf cas de force majeure.
 
-      6\. Tarification et paiement
+
+      ### &#xA;6\. Tarification et paiement
+
+
 
       Les tarifs sont indiqués en euros, nets, et peuvent être modifiés à tout
       moment. Toutefois,
@@ -155,7 +169,10 @@ blocks:
 
       être effectué par virement bancaire ou espèces.
 
-      7\. Livraison des produits
+
+      ### &#xA;7\. Livraison des produits
+
+
 
       Les délais de livraison sont de 40 jours maximum pour les fichiers
       numériques (photos,
@@ -177,7 +194,10 @@ blocks:
       causes extérieures telles que les retards des prestataires et de service
       de livraison.
 
-      8\. Création et modifications graphiques
+
+      ### &#xA;8\. Création et modifications graphiques
+
+
 
       Dans le cadre de la création de supports graphiques, deux propositions de
       maquette sont
@@ -190,7 +210,10 @@ blocks:
 
       adaptés aux usages spécifiés dans le devis (impression, web, etc.).
 
-      9\. Propriété intellectuelle
+
+      ### &#xA;9\. Propriété intellectuelle
+
+
 
       Les créations graphiques et photographiques réalisées par Manon Bertho
       Studio sont
@@ -206,7 +229,10 @@ blocks:
 
       poursuites judiciaires.
 
-      10\. Droit à l’image et autorisation de diffusion
+
+      ### &#xA;10\. Droit à l’image et autorisation de diffusion
+
+
 
       Sauf refus exprès du client, Manon Bertho Studio se réserve le droit
       d’utiliser les créations
@@ -219,7 +245,10 @@ blocks:
 
       une durée de 2 ans, renouvelable par tacite reconduction.
 
-      11\. Force majeure
+
+      ### &#xA;11\. Force majeure
+
+
 
       En cas de force majeure (maladie, accident, conditions météorologiques
       extrêmes), Manon
@@ -232,7 +261,10 @@ blocks:
 
       entre les parties.
 
-      12\. Loi applicable et médiation
+
+      ### &#xA;12\. Loi applicable et médiation
+
+
 
       Les présentes CGV sont soumises au droit français. En cas de litige, les
       parties s’efforceront
