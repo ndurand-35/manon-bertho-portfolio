@@ -20,16 +20,16 @@ blocks:
       suit :
 
 
-      * La photographe/graphiste : Manon Bertho Studio, immatriculée sous le
+      * La photographe/graphiste: Manon Bertho Studio, immatriculée sous le
       numéro de
         SIRET 980 821 979 00013, dont le siège est situé au 12 avenue des Fontenelles,
         35310 Chavagne.
-      * Le client : Toute personne physique ou morale passant commande auprès de
+      * Le client: Toute personne physique ou morale passant commande auprès de
         Manon Bertho Studio pour une prestation de services en photographie ou en
         graphisme.
-      * Commande : Toute demande de service ou de produit passée par le client
+      * Commande: Toute demande de service ou de produit passée par le client
         (photographie, papeterie, identité visuelle, etc.).
-      * Produit : Ensemble des créations livrées au client : photographies,
+      * Produit: Ensemble des créations livrées au client : photographies,
       tirages, fichiers
         numériques, supports graphiques (logos, identités visuelles, maquettes web,
         faire-part, invitations, etc.).
