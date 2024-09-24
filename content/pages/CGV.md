@@ -73,23 +73,16 @@ blocks:
 
       Pour les prestations de graphisme, les services incluent :
 
-      ● Création de logo et d’identité visuelle : conception d’un logo et des
+
+      * Création de logo et d’identité visuelle: conception d’un logo et des
       éléments
-
-      graphiques associés pour une utilisation en ligne et hors ligne (cartes de
-      visite, têtes
-
-      de lettre, etc.).
-
-      ● Création de maquettes web : design visuel de sites internet (UI/UX) sans
-
-      intégration technique.
-
-      ● Conception de papeterie : réalisation sur mesure de faire-part,
+        graphiques associés pour une utilisation en ligne et hors ligne (cartes de visite, têtes
+        de lettre, etc.).
+      * Création de maquettes web: design visuel de sites internet (UI/UX) sans
+        intégration technique.
+      * Conception de papeterie: réalisation sur mesure de faire-part,
       invitations, menus,
-
-      et autres supports imprimés pour des événements privés ou professionnels.
-
+        et autres supports imprimés pour des événements privés ou professionnels.
 
       ### &#xA;4\. Commande et réservation
 
@@ -103,6 +96,8 @@ blocks:
 
       graphisme. La commande devient ferme et définitive à la réception du devis
       signé.
+
+
 
       Le devis peut être signé et retourné scanné par e-mail à
       contact\@manonbertho-studio.fr, ou
@@ -125,6 +120,8 @@ blocks:
 
       par e-mail au plus tard 7 jours avant la date prévue de la réalisation du
       service.
+
+
 
       Le client dispose d’un droit de rétractation de 14 jours à compter de la
       date de signature du
@@ -150,7 +147,7 @@ blocks:
       Les prestations de photographie sont soumises aux tarifs indiqués sur le
       site
 
-      www\.manonbertho-studio.fr ou soumises à des devis personnalisés en
+      [www.manonbertho-studio.fr]() ou soumises à des devis personnalisés en
       fonction des besoins
 
       spécifiques du client. Les prestations graphiques, telles que la création
