@@ -1,5 +1,5 @@
 ---
-title: CGV
+title: cgv
 blocks:
   - body: >
       # CONDITIONS GENERALES DE VENTE
