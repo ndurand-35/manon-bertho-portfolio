@@ -58,6 +58,10 @@
     "color": "lunar-green",
     "nav": [
       {
+        "href": "cgv",
+        "label": "CGV"
+      },
+      {
         "href": "#services",
         "label": "Services"
       },
