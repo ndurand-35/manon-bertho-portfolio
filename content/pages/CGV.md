@@ -2,7 +2,7 @@
 title: cgv
 blocks:
   - body: >
-      # CONDITIONS GENERALES DE VENTE
+      ## CONDITIONS GENERALES DE VENTE
 
 
       Les présentes conditions générales de vente (CGV) forment un document
