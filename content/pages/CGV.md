@@ -2,6 +2,9 @@
 title: CGV
 blocks:
   - body: >
+      # CONDITIONS GENERALES DE VENTE
+
+
       Les présentes conditions générales de vente (CGV) forment un document
       contractuel
 
@@ -11,9 +14,7 @@ blocks:
       fournies par Manon Bertho Studio.
 
 
-
       ### 1. Définitions
-
 
 
       Dans le cadre des présentes CGV, les termes suivants sont définis comme
@@ -37,7 +38,6 @@ blocks:
       ### &#xA;2\. Domaine d’application
 
 
-
       Les présentes CGV s’appliquent à l’ensemble des prestations de services et
       de produits
 
@@ -59,7 +59,6 @@ blocks:
 
 
       ### &#xA;3\. Prestations proposées
-
 
 
       Manon Bertho Studio propose des prestations de photographie (séances
@@ -87,7 +86,6 @@ blocks:
       ### &#xA;4\. Commande et réservation
 
 
-
       Toute commande est validée à réception de l’acompte de 30 % du montant
       total de la
 
@@ -98,9 +96,8 @@ blocks:
       signé.
 
 
-
       Le devis peut être signé et retourné scanné par e-mail à
-      contact\@manonbertho-studio.fr, ou
+      [contact@manonbertho-studio.fr](mailto:contact@manonbertho-studio.fr), ou
 
       par courrier postal à l'adresse de Manon Bertho Studio. Il est également
       possible de valider
@@ -114,13 +111,11 @@ blocks:
       ### &#xA;5\. Modifications et annulations
 
 
-
       Toute demande de modification de la prestation (date, lieu, contenu) doit
       être communiquée
 
       par e-mail au plus tard 7 jours avant la date prévue de la réalisation du
       service.
-
 
 
       Le client dispose d’un droit de rétractation de 14 jours à compter de la
@@ -135,7 +130,6 @@ blocks:
       ### &#xA;6\. Tarification et paiement
 
 
-
       Les tarifs sont indiqués en euros, nets, et peuvent être modifiés à tout
       moment. Toutefois,
 
@@ -143,7 +137,6 @@ blocks:
       en vigueur au
 
       moment de la signature du devis.
-
 
 
       Les prestations de photographie sont soumises aux tarifs indiqués sur le
@@ -161,7 +154,6 @@ blocks:
       besoins spécifiques du client.
 
 
-
       Un acompte de 30 % est exigé pour la réservation de toute prestation (
       hors séance photo ),
 
@@ -174,7 +166,6 @@ blocks:
       ### &#xA;7\. Livraison des produits
 
 
-
       Les délais de livraison sont de 40 jours maximum pour les fichiers
       numériques (photos,
 
@@ -185,7 +176,6 @@ blocks:
       sont indiqués au
 
       moment de la commande.
-
 
 
       Les frais de livraison sont à la charge du client et calculés en fonction
@@ -201,7 +191,6 @@ blocks:
       ### &#xA;8\. Création et modifications graphiques
 
 
-
       Dans le cadre de la création de supports graphiques, deux propositions de
       maquette sont
 
@@ -215,7 +204,6 @@ blocks:
 
 
       ### &#xA;9\. Propriété intellectuelle
-
 
 
       Les créations graphiques et photographiques réalisées par Manon Bertho
@@ -236,7 +224,6 @@ blocks:
       ### &#xA;10\. Droit à l’image et autorisation de diffusion
 
 
-
       Sauf refus exprès du client, Manon Bertho Studio se réserve le droit
       d’utiliser les créations
 
@@ -250,7 +237,6 @@ blocks:
 
 
       ### &#xA;11\. Force majeure
-
 
 
       En cas de force majeure (maladie, accident, conditions météorologiques
@@ -268,7 +254,6 @@ blocks:
       ### &#xA;12\. Loi applicable et médiation
 
 
-
       Les présentes CGV sont soumises au droit français. En cas de litige, les
       parties s’efforceront
 
@@ -276,7 +261,6 @@ blocks:
       soumis aux
 
       juridictions compétentes françaises.
-
 
 
       Conformément aux articles L.616-1 et R.616-1 du code de la consommation,
