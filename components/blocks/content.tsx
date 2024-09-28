@@ -10,7 +10,7 @@ export const Content = ({ data }: { data: PageBlocksContent }) => {
   return (
     <Section color={data.color}>
       <Container
-        className={`prose prose-lg ${
+        className={`prose prose-lg mx-auto text-center ${
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tina-field={tinaField(data, "body")}
