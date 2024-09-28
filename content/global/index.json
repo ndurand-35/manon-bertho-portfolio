@@ -70,12 +70,12 @@
         "label": "Boutique"
       },
       {
-        "href": "cgv",
-        "label": "CGV"
-      },
-      {
         "href": "contact",
         "label": "Contact"
+      },
+      {
+        "href": "cgv",
+        "label": "CGV"
       }
     ]
   },
