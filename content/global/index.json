@@ -58,10 +58,6 @@
     "color": "lunar-green",
     "nav": [
       {
-        "href": "cgv",
-        "label": "CGV"
-      },
-      {
         "href": "#services",
         "label": "Services"
       },
@@ -72,6 +68,10 @@
       {
         "href": "https://www.etsy.com/fr/shop/ManonBerthoStudio",
         "label": "Boutique"
+      },
+      {
+        "href": "cgv",
+        "label": "CGV"
       },
       {
         "href": "contact",
