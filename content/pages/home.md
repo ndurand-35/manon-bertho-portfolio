@@ -92,6 +92,7 @@ blocks:
         description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
       - image:
           src: /uploads/INAE BIJOUX (7).webp
+          alt: Réalisation de photo commerciale pour inae bijoux
         link: /services/photos-commerciales
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
