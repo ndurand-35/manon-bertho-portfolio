@@ -120,6 +120,7 @@ blocks:
           des faire-part et des invitations uniques.
         image:
           src: /uploads/Homepage/1701189182711_dot-rose.svg
+          alt: Point 2
       - text: >-
           Je fusionne l'art photographique et le design graphique pour créer une
           identité visuelle distinctive, captivante et mémorable, révélant
