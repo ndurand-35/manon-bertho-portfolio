@@ -21,6 +21,7 @@ export const NumberFeatures = ({ data }: { data: any }) => {
                   <img loading="lazy"
                     src={block.image?.src}
                     className="h-48 w-48"
+                    alt={block.image?.alt ?? 'Manon Bertho Studio'}
                     data-tina-field={tinaField(block, "image")}
                   />
                   <p
