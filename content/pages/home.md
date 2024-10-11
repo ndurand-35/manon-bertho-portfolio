@@ -112,7 +112,7 @@ blocks:
           l'éternité.
         image:
           src: /uploads/Homepage/1701189152201_dot-bleu.svg
-          alt: Point bleu
+          alt: Point 1
       - text: >-
           Je combine la photographie, l’illustration et le graphisme pour créer
           une papeterie exceptionnelle, personnalisée et minutieusement conçue,
