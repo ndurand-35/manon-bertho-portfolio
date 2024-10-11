@@ -97,6 +97,7 @@ blocks:
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
           src: /uploads/Homepage/maison suzon.webp
+          alt: Travail d'une Identité visuelle pour le compte d'une bijouterie
         link: /services/identite-visuelle
         title: IDENTITÉ VISUELLE
         description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
