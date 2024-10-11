@@ -128,6 +128,7 @@ blocks:
           marquer une impression durable sur le marché.
         image:
           src: /uploads/Homepage/1701189191118_dot-rouge.svg
+          alt: Point 3
     _template: numberFeatures
   - title: Vos mots doux
     testimonials:
