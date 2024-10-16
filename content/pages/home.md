@@ -105,7 +105,7 @@ blocks:
         description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
     color: ''
     _template: prestation
-  - title: Pourquoi travailer avec moi ?
+  - title: Pourquoi travailler avec moi ?
     color: lunar-green
     items:
       - text: >-
