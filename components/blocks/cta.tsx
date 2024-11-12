@@ -17,7 +17,7 @@ export const CTA = ({ data }: { data: PageBlocksCta }) => {
             {data.title}
           </h4>
           <Link
-            href={`/about`}
+            href={data.button_link}
             data-tina-field={tinaField(data, "button_text")}
             className={
               "mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium text-white hover:bg-ternary-500"
@@ -40,6 +40,7 @@ export const ctaBlockSchema: TinaTemplate = {
     defaultItem: {
       button_text: "Contactez-moi",
       title: "Mon univers vous inspire ?",
+      button_link: "/about",
     },
   },
   fields: [
@@ -52,6 +53,11 @@ export const ctaBlockSchema: TinaTemplate = {
       type: "string",
       label: "Texte du boutton",
       name: "button_text",
+    },
+    {
+      type: "string",
+      label: "Lien du boutton",
+      name: "button_link",
     },
     {
       type: "string",
