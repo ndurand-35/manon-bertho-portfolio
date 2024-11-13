@@ -155,6 +155,7 @@ export const Service = (props: ServiceType) => {
             title: props.cta.title,
             color: props.cta.color,
             button_text: props.cta.button_text,
+            button_link: props.cta.button_link
           }}
         />
       )}
