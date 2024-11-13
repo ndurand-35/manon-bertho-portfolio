@@ -39,7 +39,9 @@ export const CTA = ({ data }: { data: PageBlocksCta }) => {
               href={data.button_link}
               data-tina-field={tinaField(data, "button_text")}
               target="_blank"
-              className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"
+              className={
+                "mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium text-white hover:bg-ternary-500"
+              }
             >
               {data.button_text}
             </a>
