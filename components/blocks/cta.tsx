@@ -23,9 +23,9 @@ export const CTA = ({ data }: { data: PageBlocksCta }) => {
           >
             {data.title}
           </h4>
-          {isUrlRelative(data.button_link) ? (
+          {data.button_link && isUrlRelative(data.button_link) ? (
             <Link
-              href={data.button_link ?? "/about"}
+              href={data.button_link}
               data-tina-field={tinaField(data, "button_text")}
               className={
                 "mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium text-white hover:bg-ternary-500"
