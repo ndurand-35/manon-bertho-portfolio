@@ -6,6 +6,13 @@ import Link from "next/link";
 import { tinaField } from "tinacms/dist/react";
 
 export const CTA = ({ data }: { data: PageBlocksCta }) => {
+  const isUrlRelative = (url: string) => {
+    let isRelative = true;
+    if (url.indexOf("http://") === 0 || url.indexOf("https://") === 0)
+      isRelative = false;
+    return isRelative;
+  };
+
   return (
     <Section color={data.color}>
       <div className="px-4 py-8 sm:py-16 lg:px-6">
@@ -16,16 +23,27 @@ export const CTA = ({ data }: { data: PageBlocksCta }) => {
           >
             {data.title}
           </h4>
-          <Link
-            href={data.button_link ?? "/about"}
-            data-tina-field={tinaField(data, "button_text")}
-            className={
-              "mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium text-white hover:bg-ternary-500"
-            }
-            aria-current="page"
-          >
-            {data.button_text}
-          </Link>
+          {isUrlRelative(data.button_link) ? (
+            <Link
+              href={data.button_link ?? "/about"}
+              data-tina-field={tinaField(data, "button_text")}
+              className={
+                "mb-2 focus:outline-none mr-2 rounded-lg bg-ternary px-5 py-2.5 text-sm font-medium text-white hover:bg-ternary-500"
+              }
+              aria-current="page"
+            >
+              {data.button_text}
+            </Link>
+          ) : (
+            <a
+              href={data.button_link}
+              data-tina-field={tinaField(data, "button_text")}
+              target="_blank"
+              className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"
+            >
+              {data.button_text}
+            </a>
+          )}
         </div>
       </div>
     </Section>
