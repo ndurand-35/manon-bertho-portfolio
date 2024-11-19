@@ -174,6 +174,7 @@ blocks:
     _template: testimonial
   - title: Mon univers vous inspire ?
     button_text: Contactez-moi
+    button_link: /contact
     color: link-water
     _template: cta
 ---
