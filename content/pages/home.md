@@ -52,7 +52,7 @@ blocks:
       Que vous soyez particulier ou professionnel, découvrez comment nous
       pouvons travailler ensemble.
     image:
-      src: /uploads/Homepage/PHOTO PROFIL.jpg
+      src: /uploads/Homepage/DSC_0336SITE.jpg
       alt: Manon Bertho
     color: ''
     _template: presentation
