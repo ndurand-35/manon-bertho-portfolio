@@ -9,9 +9,7 @@ blocks:
       src: /uploads/Homepage/SEANCE_COUPLE_B&B_ST_MALO_(62) home test (1).webp
     image:
       src: /uploads/Homepage/LOGO BLANC MB.png
-      alt: >-
-        Photo of palm trees at sunset by Adam Birkett -
-        unsplash.com/photos/75EFpyXu3Wg
+      alt: Photo of palm trees at sunset by Adam Birkett - unsplash.com/photos/75EFpyXu3Wg
     image_top_left:
       src: ''
     image_top_right:
@@ -24,33 +22,16 @@ blocks:
     _template: hero
   - surtitle: Manon Bertho | Studio Creatif
     title: Manon - Graphiste et Photographe Freelance
-    headline: >
-      Bienvenue dans mon univers où créativité et précision se rencontrent. En
-      tant que photographe et graphiste, je façonne des images et des univers
-      graphiques captivants, parfaitement alignés sur votre personnalité.
+    headline: |
+      Bienvenue dans mon univers où créativité et précision se rencontrent. En tant que photographe et graphiste, je façonne des images et des univers graphiques captivants, parfaitement alignés sur votre personnalité.
 
+      En découvrant la photographie et l'illustration, j'ai trouvé un nouvel échappatoire : celui de figer des instants et des émotions dans le temps. J'observe silencieusement depuis les coulisses. C'est l'essence de ma façon de travailler : je laisse les moments se dérouler naturellement sous mes yeux et je capture leur beauté authentique.
 
-      En découvrant la photographie et l'illustration, j'ai trouvé un nouvel
-      échappatoire : celui de figer des instants et des émotions dans le temps.
-      J'observe silencieusement depuis les coulisses. C'est l'essence de ma
-      façon de travailler : je laisse les moments se dérouler naturellement sous
-      mes yeux et je capture leur beauté authentique.
+      Que vous souhaitiez une séance photo pour capturer des moments précieux ou créer des images artistiques, la création de papeterie personnalisée pour des occasions spéciales, ou une refonte complète de votre image de marque avec des visuels percutants, je suis à votre écoute et prête à réaliser vos projets.
 
+      Chaque photo raconte une histoire, et chaque création graphique s'harmonise avec une esthétique douce et mémorable qui reflète votre identité unique.
 
-      Que vous souhaitiez une séance photo pour capturer des moments précieux ou
-      créer des images artistiques, la création de papeterie personnalisée pour
-      des occasions spéciales, ou une refonte complète de votre image de marque
-      avec des visuels percutants, je suis à votre écoute et prête à réaliser
-      vos projets.
-
-
-      Chaque photo raconte une histoire, et chaque création graphique
-      s'harmonise avec une esthétique douce et mémorable qui reflète votre
-      identité unique.
-
-
-      Que vous soyez particulier ou professionnel, découvrez comment nous
-      pouvons travailler ensemble.
+      Que vous soyez particulier ou professionnel, découvrez comment nous pouvons travailler ensemble.
     image:
       src: /uploads/Homepage/Photo manon B (1).jpg
       alt: Manon Bertho
@@ -86,12 +67,6 @@ blocks:
         title: ÉVÉNEMENT
         description: 'Lumière sur Vos Événements :  Mariages, Baptêmes et Séminaires'
       - image:
-          src: /uploads/Homepage/Mockup 2-2.webp
-          alt: Réalisation de faire-part de mariage
-        link: /services/papeterie
-        title: PAPETERIE
-        description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
-      - image:
           src: /uploads/INAE BIJOUX (7).webp
           alt: Réalisation de photo commerciale pour inae bijoux
         link: /services/photos-commerciales
@@ -100,73 +75,51 @@ blocks:
       - image:
           src: /uploads/Homepage/maison suzon.webp
           alt: Travail d'une Identité visuelle pour le compte d'une bijouterie
-        link: /services/identite-visuelle
-        title: IDENTITÉ VISUELLE
-        description: 'Lumière sur Votre Marque :  Création d''Identité Visuelle'
+        link: /services/sport
+        title: Sport & Auto
+        description: 'Lumière sur Vos évènement sportif :  Capturer le mouvement et l''effort'
+      - image:
+          src: /uploads/Homepage/Mockup 2-2.webp
+          alt: Réalisation de faire-part de mariage
+        link: /services/papeterie
+        title: PAPETERIE
+        description: 'Lumière sur Vos Designs :  Créations de Papeterie Élégante'
     color: ''
     _template: prestation
   - title: Pourquoi travailler avec moi ?
     color: lunar-green
     items:
-      - text: >-
-          Je capture l'instant, fige l'émotion. Que ce soit pour des événements
-          spéciaux, des portraits ou des moments du quotidien. Je vous offre, à
-          travers mon objectif, des souvenirs intemporels à chérir pour
-          l'éternité.
+      - text: 'Je capture l''instant, fige l''émotion. Que ce soit pour des événements spéciaux, des portraits ou des moments du quotidien. Je vous offre, à travers mon objectif, des souvenirs intemporels à chérir pour l''éternité.'
         image:
           src: /uploads/Homepage/1701189152201_dot-bleu.svg
           alt: Point 1
-      - text: >-
-          Je combine la photographie, l’illustration et le graphisme pour créer
-          une papeterie exceptionnelle, personnalisée et minutieusement conçue,
-          transformant chaque événement en une expérience inoubliable grâce à
-          des faire-part et des invitations uniques.
+      - text: 'Je combine la photographie, l’illustration et le graphisme pour créer une papeterie exceptionnelle, personnalisée et minutieusement conçue, transformant chaque événement en une expérience inoubliable grâce à des faire-part et des invitations uniques.'
         image:
           src: /uploads/Homepage/1701189182711_dot-rose.svg
           alt: Point 2
-      - text: >-
-          Je fusionne l'art photographique et le design graphique pour créer une
-          identité visuelle distinctive, captivante et mémorable, révélant
-          l'histoire et la personnalité uniques de votre entreprise, afin de
-          marquer une impression durable sur le marché.
+      - text: 'Je fusionne l''art photographique et le design graphique pour créer une identité visuelle distinctive, captivante et mémorable, révélant l''histoire et la personnalité uniques de votre entreprise, afin de marquer une impression durable sur le marché.'
         image:
           src: /uploads/Homepage/1701189191118_dot-rouge.svg
           alt: Point 3
     _template: numberFeatures
   - title: Vos mots doux
     testimonials:
-      - description: >-
-          Nous avons eu la chance de pouvoir faire un shooting couple incroyable
-          avec Manon, de l'accompagnement lors de la séance au rendu tout était
-          absolument parfait ! Nous y retournerons avec grand plaisir, un énorme
-          merci! Hâte de repasser sous son objectif
+      - description: 'Nous avons eu la chance de pouvoir faire un shooting couple incroyable avec Manon, de l''accompagnement lors de la séance au rendu tout était absolument parfait ! Nous y retournerons avec grand plaisir, un énorme merci! Hâte de repasser sous son objectif'
         author: Lauralie
         image:
           src: /uploads/Homepage/Testimonial/lauralie couple (1).webp
           alt: Shooting couple avec Lauralie
-      - description: >-
-          Je remercie Manon pour son travail. D'abord pour cette séance photo
-          grossesse, je ne me suis jamais sentie aussi à l'aise face à un
-          objectif et quels beaux souvenirs elle a immortalisés ! Elle a su
-          s'adapter à ma demande et le rendu est encore mieux que ce que
-          j'imaginais.
+      - description: 'Je remercie Manon pour son travail. D''abord pour cette séance photo grossesse, je ne me suis jamais sentie aussi à l''aise face à un objectif et quels beaux souvenirs elle a immortalisés ! Elle a su s''adapter à ma demande et le rendu est encore mieux que ce que j''imaginais.'
         author: Louise
         image:
           src: /uploads/Homepage/Testimonial/1701206961870_louise2.webp
           alt: Shooting de Louise
-      - description: >-
-          Nous avons eu le plaisir de faire une séance photo avec Manon. Dès le
-          début, elle a su nous mettre à l'aise devant l'objectif. On est
-          enchanté du résultat final et on recommande vivement Manon pour toutes
-          vos séances photo.
+      - description: 'Nous avons eu le plaisir de faire une séance photo avec Manon. Dès le début, elle a su nous mettre à l''aise devant l''objectif. On est enchanté du résultat final et on recommande vivement Manon pour toutes vos séances photo.'
         author: Berenice & Baptiste
         image:
           src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE2.webp
           alt: Shooting de Berenice
-      - description: >-
-          Le Shooting photo s’est très bien déroulé avec Manon. Elle est très
-          professionnelle, réactive et rapide. Le rendu final est d’une qualité
-          incroyable ! On recommande les yeux fermés
+      - description: 'Le Shooting photo s’est très bien déroulé avec Manon. Elle est très professionnelle, réactive et rapide. Le rendu final est d’une qualité incroyable ! On recommande les yeux fermés'
         author: Julie & Estelle
         image:
           src: /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie.webp
