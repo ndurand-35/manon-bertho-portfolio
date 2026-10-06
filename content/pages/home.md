@@ -40,14 +40,14 @@ blocks:
   - marquee:
       text:
         - Packshot
-        - Identité visuelle
+        - Automobile
         - Papeterie
         - Portrait
         - Maternité
         - Couple
         - Famille
         - Mariage
-        - Set Design
+        - Sport
     separator: '· '
     fontSize: text-4xl
     color: ''
