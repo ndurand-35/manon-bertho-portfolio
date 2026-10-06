@@ -26,16 +26,16 @@
         ]
       },
       {
-        "href": "#artisant",
-        "label": "Les artisans",
+        "href": "#pros",
+        "label": "Les pros",
         "nav": [
           {
             "href": "services/photos-commerciales",
             "label": "Photos commerciales"
           },
           {
-            "href": "services/identite-visuelle",
-            "label": "Identité visuelle"
+            "href": "services/sport-auto",
+            "label": "Sport & Auto"
           }
         ]
       },
