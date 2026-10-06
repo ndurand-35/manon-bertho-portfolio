@@ -55,7 +55,7 @@ blocks:
   - title: Mes prestations
     cardList:
       - image:
-          src: /uploads/Homepage/LUCIE ET TIMON  (74).webp
+          src: /uploads/Homepage/SEANCE FAMILLE CHLOE14.jpg
           alt: Portrait
         link: /services/seances-photos
         title: SÉANCES PHOTOS
@@ -73,7 +73,7 @@ blocks:
         title: COMMERCIAL
         description: 'Lumière sur Vos Projets :  Set Design, Packshot et Reportage Métier'
       - image:
-          src: /uploads/Homepage/maison suzon.webp
+          src: /uploads/Homepage/Photo sport.jpg
           alt: Travail d'une Identité visuelle pour le compte d'une bijouterie
         link: /services/sport
         title: SPORT & AUTO
