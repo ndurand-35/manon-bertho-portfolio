@@ -76,8 +76,8 @@ blocks:
           src: /uploads/Homepage/maison suzon.webp
           alt: Travail d'une Identité visuelle pour le compte d'une bijouterie
         link: /services/sport
-        title: Sport & Auto
-        description: 'Lumière sur Vos évènement sportif :  Capturer le mouvement et l''effort'
+        title: SPORT & AUTO
+        description: 'Lumière sur vos évènement sportif :  Capturer le mouvement et l''effort'
       - image:
           src: /uploads/Homepage/Mockup 2-2.webp
           alt: Réalisation de faire-part de mariage
