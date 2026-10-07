@@ -6,10 +6,13 @@ import { tinaField } from "tinacms/dist/react";
 
 const customTheme: CustomFlowbiteTheme = {
   dropdown: {
-    arrowIcon: "ml-2 h-4 w-4",
+    // Le bouton reçoit aria-expanded : la flèche pivote quand le menu est ouvert.
+    arrowIcon:
+      "ml-2 h-4 w-4 transition-transform duration-300 ease-out group-aria-expanded:rotate-180 motion-reduce:transition-none",
     content: "py-1 px-3 space-y-2 text-white bg-lunar-green focus:outline-none",
     floating: {
-      animation: "transition-opacity",
+      // Le menu n'est monté qu'à l'ouverture : animation d'entrée plutôt que transition.
+      animation: "animate-dropdown-in motion-reduce:animate-none",
       base: "z-10 w-fit divide-y divide-gray-100 rounded shadow focus:outline-none !border-lunar-green",
       content: "py-1 text-sm text-gray-700 border-lunar-green",
       divider: "my-1 h-px bg-gray-100 dark:bg-gray-600",
@@ -27,7 +30,7 @@ const customTheme: CustomFlowbiteTheme = {
       },
       target: "w-fit",
     },
-    inlineWrapper: "flex items-center",
+    inlineWrapper: "group flex items-center",
   },
   accordion: {
     root: {
