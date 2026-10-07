@@ -1,10 +1,17 @@
 import { Img } from "../util/img";
 import type { TinaTemplate } from "tinacms";
 import { Section } from "../util/section";
+import type {
+  PageBlocksNumberFeatures,
+  ServicesSeance,
+} from "../../tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-export const NumberFeatures = ({ data }: { data: any }) => {
+export const NumberFeatures = ({
+  data,
+}: {
+  data: PageBlocksNumberFeatures | ServicesSeance;
+}) => {
   return (
     <Section color={data.color}>
       <div className="space-y-16  px-4 py-16 sm:px-8 md:px-16 xl:px-32">

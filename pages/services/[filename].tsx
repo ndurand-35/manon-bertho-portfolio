@@ -18,7 +18,6 @@ export default function BlogPostPage(
   if (data && data.services) {
     return (
       <Layout
-        rawData={data}
         data={data.global}
         seo={{
           title: data.services.seo?.title || data.services.title,

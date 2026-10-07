@@ -1,8 +1,6 @@
 import { Img } from "../util/img";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { ProjetType } from "../../pages/projets";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 
 export const Projets = ({ data }: { data: ProjetType[] }) => {
   return (

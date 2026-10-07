@@ -14,11 +14,16 @@ export const SOCIAL_LINKS = [
   "https://www.linkedin.com/in/manon-bertho-nicolas-342648151/",
 ];
 
+type RichTextNode = { type?: string; text?: string; children?: RichTextNode[] };
+
 /** Texte brut d'un champ rich-text Tina, tronqué pour une meta description. */
-export const richTextToDescription = (node: any, max = 155): string | undefined => {
-  if (typeof node === "string") node = { children: [{ text: node.replace(/[*_#>`]/g, "") }] };
+export const richTextToDescription = (input: unknown, max = 155): string | undefined => {
+  const node: RichTextNode =
+    typeof input === "string"
+      ? { children: [{ text: input.replace(/[*_#>`]/g, "") }] }
+      : (input as RichTextNode);
   const parts: string[] = [];
-  const walk = (n: any) => {
+  const walk = (n: RichTextNode | undefined) => {
     if (!n) return;
     if (typeof n.text === "string") parts.push(n.text);
     if (Array.isArray(n.children)) {

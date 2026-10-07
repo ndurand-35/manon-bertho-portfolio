@@ -3,7 +3,6 @@ import React from "react";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { PageBlocksShop } from "../../tina/__generated__/types";
-import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { tinaField } from "tinacms/dist/react";
 

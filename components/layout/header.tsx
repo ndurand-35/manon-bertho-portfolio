@@ -1,18 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useTheme } from ".";
 import { tinaField } from "tinacms/dist/react";
 import { GlobalHeader } from "../../tina/__generated__/types";
 import { HeaderLink } from "./component/header_link";
-import { Instagram, Linkedin } from "iconoir-react";
 import { MobileMenu } from "./component/mobile_menu";
 
 export const Header = ({ data }: { data: GlobalHeader }) => {
-  const router = useRouter();
-  const theme = useTheme();
-
-  const [isClient, setIsClient] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
 
   const headerColor = {
@@ -21,9 +14,6 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
   };
 
   const headerColorCss = headerColor[data.color];
-  React.useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-white transition ease transform duration-300`;
 

@@ -1,10 +1,9 @@
 import type { TinaTemplate } from "tinacms";
-import { tinaField } from "tinacms/dist/react";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Section } from "../util/section";
+import type { PageBlocksPresentation } from "../../tina/__generated__/types";
 import { TextImage } from "../components/text_image";
 
-export const Presentation = ({ data }: { data: any }) => {
+export const Presentation = ({ data }: { data: PageBlocksPresentation }) => {
   return (
     <Section color={data.color}>
       <TextImage data={data} />

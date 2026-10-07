@@ -1,9 +1,7 @@
 import { Img } from "../util/img";
 import { tinaField } from "tinacms/dist/react";
 import {
-  Components,
   TinaMarkdown,
-  TinaMarkdownContent,
 } from "tinacms/dist/rich-text";
 import React from "react";
 import { CTA } from "../blocks/cta";

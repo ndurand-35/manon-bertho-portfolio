@@ -1,15 +1,12 @@
 import { Img } from "../util/img";
 import { tinaField } from "tinacms/dist/react";
 import {
-  Components,
   TinaMarkdown,
-  TinaMarkdownContent,
 } from "tinacms/dist/rich-text";
 import React from "react";
 import { CTA } from "../blocks/cta";
 import { ServiceType } from "../../pages/services/[filename]";
 import { NumberFeatures } from "../blocks/number_features";
-import Link from "next/link";
 import { Accordion, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import { Gallery } from "../components/gallery";
 import { TextImage } from "../components/text_image";

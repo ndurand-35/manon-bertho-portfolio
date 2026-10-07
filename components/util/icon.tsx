@@ -1,7 +1,6 @@
 import * as React from "react";
 import { ColorPickerInput } from "../../tina/fields/color";
 import { IconPickerInput } from "../../tina/fields/icon";
-import { useTheme } from "../layout";
 import * as BoxIcons from "react-icons/bi";
 
 export const IconOptions = {
@@ -88,7 +87,6 @@ export const Icon = ({
 
   const { name, color, size = "medium", style = "regular" } = data;
 
-  const theme = useTheme();
 
   const IconSVG = IconOptions[name];
 

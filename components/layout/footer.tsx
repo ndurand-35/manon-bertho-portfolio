@@ -5,7 +5,7 @@ import { Section } from "../util/section";
 import { useRouter } from "next/router";
 import { tinaField } from "tinacms/dist/react";
 
-export const Footer = ({ data, icon, rawData }) => {
+export const Footer = ({ data }) => {
   const router = useRouter();
   const [isClient, setIsClient] = React.useState(false);
   React.useEffect(() => {

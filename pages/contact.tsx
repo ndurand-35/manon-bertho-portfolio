@@ -2,11 +2,12 @@ import { Instagram, Linkedin } from "iconoir-react";
 import { useEffect } from "react";
 import { Layout } from "../components/layout";
 import { Section } from "../components/util/section";
-import { Container } from "../components/util/container";
 
 declare global {
   interface Window {
-    hbspt: any;
+    hbspt?: {
+      forms: { create: (options: Record<string, string>) => void };
+    };
   }
 }
 

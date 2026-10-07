@@ -12,8 +12,7 @@ export default function HomePage(
 
   return (
     <Layout
-      rawData={data}
-      data={data.global as any}
+      data={data.global}
       seo={{
         title: data.page.seo?.title,
         description: data.page.seo?.description,
