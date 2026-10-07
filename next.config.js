@@ -3,6 +3,9 @@ module.exports = {
     locales: ["fr"],
     defaultLocale: "fr",
   },
+  // tinacms imports CommonJS deps (color-string) with ESM named imports,
+  // which Node rejects at SSR time unless Next bundles the package itself.
+  transpilePackages: ["tinacms"],
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
