@@ -1,4 +1,8 @@
 ---
+seo:
+  title: "Conditions générales de vente"
+  description: "Conditions générales de vente des prestations photo et graphisme de Manon Bertho Studio."
+  noindex: true
 title: cgv
 blocks:
   - body: >

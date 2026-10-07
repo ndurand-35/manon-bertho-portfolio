@@ -1,4 +1,5 @@
 import { Collection } from "tinacms";
+import { seoField } from "../fields/seo";
 import { ctaBlockSchema } from "../../components/blocks/cta";
 
 export const ProjetType: Collection = {
@@ -231,6 +232,7 @@ const Projet: Collection = {
       ],
     },
     { ...ctaBlockSchema, type: "object" },
+    seoField,
   ],
 };
 

@@ -1,3 +1,4 @@
+import { Img } from "../util/img";
 import { tinaField } from "tinacms/dist/react";
 import {
   Components,
@@ -104,7 +105,7 @@ export const Service = (props: ServiceType) => {
             >
               {props.pricing.column.map((pricingData) => (
                 <div className="flex flex-col items-center shadow h-fit">
-                  <img
+                  <Img
                     loading="lazy"
                     data-tina-field={tinaField(pricingData.img, "src")}
                     src={pricingData?.img?.src}
@@ -147,7 +148,7 @@ export const Service = (props: ServiceType) => {
           )}
         </div>
       )}
-      {props.gallery && <Gallery gallery={props.gallery} />}
+      {props.gallery && <Gallery gallery={props.gallery} altFallback={props.title} />}
 
       {props.cta && (
         <CTA

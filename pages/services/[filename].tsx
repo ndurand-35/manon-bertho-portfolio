@@ -4,6 +4,7 @@ import { useTina } from "tinacms/dist/react";
 import { Layout } from "../../components/layout";
 import { InferGetStaticPropsType } from "next";
 import { Section } from "../../components/util/section";
+import { richTextToDescription } from "../../lib/site";
 
 // Use the props returned by get static props
 export default function BlogPostPage(
@@ -16,7 +17,18 @@ export default function BlogPostPage(
   });
   if (data && data.services) {
     return (
-      <Layout rawData={data} data={data.global}>
+      <Layout
+        rawData={data}
+        data={data.global}
+        seo={{
+          title: data.services.seo?.title || data.services.title,
+          description:
+            data.services.seo?.description ||
+            richTextToDescription(data.services.description),
+          image: data.services.seo?.image || data.services.img?.src,
+          noindex: data.services.seo?.noindex ?? false,
+        }}
+      >
         <Section className="flex-1">
           <Service {...data.services} />
         </Section>
@@ -31,14 +43,19 @@ export default function BlogPostPage(
 }
 
 export const getStaticProps = async ({ params }) => {
-  const tinaProps = await client.queries.serviceQuery({
-    relativePath: `${params.filename}.mdx`,
-  });
-  return {
-    props: {
-      ...tinaProps,
-    },
-  };
+  try {
+    const tinaProps = await client.queries.serviceQuery({
+      relativePath: `${params.filename}.mdx`,
+    });
+    return {
+      props: {
+        ...tinaProps,
+      },
+    };
+  } catch {
+    // Document supprimé ou inexistant : vraie 404 plutôt qu'une erreur 500.
+    return { notFound: true };
+  }
 };
 
 /**

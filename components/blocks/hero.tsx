@@ -1,3 +1,4 @@
+import { Img, optimizedUrl } from "../util/img";
 import * as React from "react";
 import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
@@ -10,10 +11,14 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
     <Section
       color={data.color}
       className="overflow-visible bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url('${data.backgroundImg?.src}')` }}
+      style={
+        data.backgroundImg?.src
+          ? { backgroundImage: `url('${optimizedUrl(data.backgroundImg.src)}')` }
+          : undefined
+      }
     >
       <div className="relative flex h-spe-height justify-center overflow-hidden">
-        <img
+        <Img
           loading="lazy"
           data-tina-field={tinaField(data, "image_top_left")}
           alt={data.image_top_left?.alt}
@@ -21,8 +26,9 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
           className="absolute -top-16 left-4 w-6/12 md:-left-64"
         />
         <div className="relative m-auto text-center">
-          <img
-            loading="lazy"
+          <Img
+            loading="eager"
+            sizes="(min-width: 768px) 66vw, 100vw"
             data-tina-field={tinaField(data, "image")}
             alt={data.image?.alt}
             src={data.image?.src}
@@ -37,7 +43,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
             <TinaMarkdown content={data.headline} />
           </div>
         </div>
-        <img
+        <Img
           loading="lazy"
           data-tina-field={tinaField(data, "image_top_right")}
           alt={data.image_top_right?.alt}
@@ -45,14 +51,14 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
           className="absolute -right-12 w-4/12 rotate-180 sm:-right-24 md:block"
         />
       </div>
-      <img
+      <Img
         loading="lazy"
         data-tina-field={tinaField(data, "image_bottom_left")}
         alt={data.image_bottom_left?.alt}
         src={data.image_bottom_left?.src}
         className="absolute -left-12 bottom-8 z-10 md:-bottom-20 w-64 rotate-90 md:left-0 md:w-96 xl:left-32"
       />
-      <img
+      <Img
         loading="lazy"
         data-tina-field={tinaField(data, "image_bottom_right")}
         alt={data.image_bottom_right?.alt}

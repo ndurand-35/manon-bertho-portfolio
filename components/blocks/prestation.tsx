@@ -1,3 +1,4 @@
+import { Img } from "../util/img";
 import React from "react";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
@@ -24,11 +25,12 @@ export const Prestation = ({ data }: { data: PageBlocksPrestation }) => {
                 key={i}
                 className="bg-white border border-gray-200 rounded shadow hover:-translate-y-2 transition"
               >
-                <img loading="lazy"
+                <Img loading="lazy"
+                  sizes="(min-width: 1024px) 20vw, (min-width: 768px) 50vw, 100vw"
                   className="rounded-t-lg"
                   data-tina-field={tinaField(card, "image")}
                   src={card.image?.src}
-                  alt={card.image?.alt}
+                  alt={card.image?.alt || card.title}
                 />
                 <div className="p-5">
                   <h5

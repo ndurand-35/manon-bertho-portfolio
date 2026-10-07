@@ -1,4 +1,5 @@
 import type { Collection } from "tinacms";
+import { seoField } from "../fields/seo";
 import { heroBlockSchema } from "../../components/blocks/hero";
 import { presentationBlockSchema } from "../../components/blocks/presentation";
 import { contentBlockSchema } from "../../components/blocks/content";
@@ -35,6 +36,7 @@ const Page: Collection = {
       isTitle: true,
       required: true,
     },
+    seoField,
     {
       type: "object",
       list: true,

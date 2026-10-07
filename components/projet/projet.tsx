@@ -1,3 +1,4 @@
+import { Img } from "../util/img";
 import { tinaField } from "tinacms/dist/react";
 import {
   Components,
@@ -32,7 +33,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgGauche?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <Img
               loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgGauche?.src}
@@ -43,7 +44,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgCentre?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <Img
               loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgCentre?.src}
@@ -54,7 +55,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgDroite?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <Img
               loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.mainImg?.imgDroite?.src}
@@ -78,7 +79,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.secondaryImg?.imgGauche?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <Img
               loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.secondaryImg?.imgGauche?.src}
@@ -89,7 +90,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.mainImg?.imgCentre?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <Img
               loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.secondaryImg?.imgCentre?.src}
@@ -100,7 +101,7 @@ export const Projet = (props: ProjetType) => {
             key={`image-${props.secondaryImg?.imgDroite?.alt}`}
             className="flex justify-center"
           >
-            <img
+            <Img
               loading="lazy"
               className="max-h-auto rounded-lg md:max-h-96"
               src={props.secondaryImg?.imgDroite?.src}
@@ -121,7 +122,7 @@ export const Projet = (props: ProjetType) => {
                   key={`other-image-${imgObj.ID}`}
                   className="flex justify-center"
                 >
-                  <img loading="lazy" 
+                  <Img loading="lazy" 
                     className="max-h-auto rounded-lg md:max-h-96"
                     src={`/${imgObj.img}`}
                   />
@@ -137,7 +138,7 @@ export const Projet = (props: ProjetType) => {
           </div>
         </div>
       )}
-      {props.gallery && <Gallery gallery={props.gallery} />}
+      {props.gallery && <Gallery gallery={props.gallery} altFallback={props.title} />}
       {props.cta && (
         <CTA
           data={{
