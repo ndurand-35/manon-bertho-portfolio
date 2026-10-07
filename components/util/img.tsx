@@ -32,16 +32,21 @@ export const optimizedUrl = (src?: string | null): string | undefined => {
 
 type ImgProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   src?: string | null;
+  /** false : l'image ne s'ouvre pas dans la visionneuse (<Lightbox>). */
+  zoom?: boolean;
 };
 
 /**
  * Remplace <img> : sert la version WebP générée par `npm run optimize-images`
  * quand elle existe, sinon l'original. `sizes` indique la largeur affichée.
+ * Au clic, la visionneuse affiche l'original (data-zoom-src).
  */
-export const Img = ({ src, sizes = "100vw", alt, ...rest }: ImgProps) => {
+export const Img = ({ src, sizes = "100vw", alt, zoom = true, ...rest }: ImgProps) => {
   const entry = lookup(src);
+  // Les SVG sont des pictos ou logos : pas d'agrandissement.
+  const zoomSrc = zoom && src && !/\.svg($|\?)/i.test(src) ? src : undefined;
   if (!entry) {
-    return <img src={src ?? undefined} alt={alt ?? ""} {...rest} />;
+    return <img src={src ?? undefined} alt={alt ?? ""} data-zoom-src={zoomSrc} {...rest} />;
   }
   const largest = entry.srcset[entry.srcset.length - 1][1];
   return (
@@ -51,6 +56,7 @@ export const Img = ({ src, sizes = "100vw", alt, ...rest }: ImgProps) => {
       sizes={sizes}
       decoding="async"
       alt={alt ?? ""}
+      data-zoom-src={zoomSrc}
       {...rest}
     />
   );

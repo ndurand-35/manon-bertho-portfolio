@@ -8,6 +8,7 @@ import { Theme } from "./theme";
 import layoutData from "../../content/global/index.json";
 import { Global } from "../../tina/__generated__/types";
 import { Seo, SeoProps } from "../util/seo";
+import { Lightbox } from "../util/lightbox";
 
 export const Layout = ({
   data = layoutData,
@@ -57,6 +58,7 @@ export const Layout = ({
           </div>
           <Footer data={data?.footer} />
         </div>
+        <Lightbox />
         <SpeedInsights />
       </Theme>
     </>

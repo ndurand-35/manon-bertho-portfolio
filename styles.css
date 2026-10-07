@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Images ouvrables dans la visionneuse (hors liens, qui gardent leur curseur). */
+img[data-zoom-src] {
+  cursor: zoom-in;
+}
+a img[data-zoom-src],
+button:not([data-zoom-trigger]) img[data-zoom-src] {
+  cursor: pointer;
+}

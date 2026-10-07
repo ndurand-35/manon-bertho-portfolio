@@ -16,13 +16,12 @@ export const Gallery = ({ gallery, altFallback = "" }) => {
                 {gallery?.img?.map((img, i) => {
                     const alt = img?.alt || `${altFallback || gallery?.title || "Photo"} – Manon Bertho Studio (${i + 1})`;
                     return (
-                        <a
+                        <button
+                            type="button"
+                            data-zoom-trigger
                             className={`${img?.colSpan ?? ""} block`}
                             key={i}
-                            href={img?.src}
-                            target="_blank"
-                            rel="noopener"
-                            title="Voir la photo en taille originale"
+                            aria-label={`Agrandir : ${alt}`}
                         >
                             <Img
                                 loading="lazy"
@@ -32,7 +31,7 @@ export const Gallery = ({ gallery, altFallback = "" }) => {
                                 alt={alt}
                                 sizes={img?.colSpan === "col-span-2" ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 50vw"}
                             />
-                        </a>
+                        </button>
                     );
                 })}
             </div>
