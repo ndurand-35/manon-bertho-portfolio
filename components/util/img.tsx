@@ -10,12 +10,17 @@ type ManifestEntry = {
 
 const images = manifest as unknown as Record<string, ManifestEntry>;
 
+// Une fois déployé, Tina Cloud renvoie les médias en
+// https://assets.tina.io/<clientId>/<chemin> au lieu de /uploads/<chemin>.
+const TINA_ASSETS = /^https:\/\/assets\.tina\.io\/[^/]+\//;
+
 const lookup = (src?: string | null): ManifestEntry | undefined => {
   if (!src) return undefined;
+  const local = src.replace(TINA_ASSETS, "/uploads/");
   try {
-    return images[decodeURI(src)] ?? images[src];
+    return images[decodeURI(local)] ?? images[local];
   } catch {
-    return images[src];
+    return images[local];
   }
 };
 
