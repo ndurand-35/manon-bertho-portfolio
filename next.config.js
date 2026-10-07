@@ -6,15 +6,6 @@ module.exports = {
   // tinacms imports CommonJS deps (color-string) with ESM named imports,
   // which Node rejects at SSR time unless Next bundles the package itself.
   transpilePackages: ["tinacms"],
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ["@svgr/webpack"],
-    });
-
-    return config;
-  },
   async redirects() {
     return [
       // /home est servie sur / : on évite le contenu en double.

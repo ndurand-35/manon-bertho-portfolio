@@ -10,7 +10,6 @@
     "optimize-images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {
-    "@svgr/webpack": "^6.3.1",
     "@tailwindcss/typography": "^0.5.15",
     "@tinacms/cli": "^4.0.1",
     "@types/js-cookie": "^3.0.0",
@@ -34,7 +33,7 @@
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.9.0",
     "iconoir-react": "^7.7.0",
-    "next": "^15.5.27",
+    "next": "^16.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.4",
