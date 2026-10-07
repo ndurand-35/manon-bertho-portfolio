@@ -1,3 +1,4 @@
+import { Img } from "../util/img";
 import React from "react";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
@@ -30,9 +31,9 @@ export const Shop = ({ data }: { data: PageBlocksShop }) => {
           </a>
         </div>
       </div>
-      <img loading="lazy"
+      <Img loading="lazy"
         src={data.image?.src}
-        alt={data.image?.alt}
+        alt={data.image?.alt || data.title}
         className="w-auto md:w-2/5 object-cover"
       />
       {/* <div className="px-4 py-8 sm:py-16 lg:px-6">

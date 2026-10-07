@@ -1,3 +1,4 @@
+import { Img } from "../util/img";
 import React from "react";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
@@ -21,11 +22,11 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
                 className="col-span-1 space-y-4 md:col-span-3 flex flex-col items-center"
                 key={`testimonial_${i}`}
               >
-                <img loading="lazy"
+                <Img loading="lazy"
                   className="rounded-xl"
                   data-tina-field={tinaField(testimonial, "image")}
                   src={testimonial.image?.src}
-                  alt={testimonial.image?.alt}
+                  alt={testimonial.image?.alt || (testimonial.author ? `Photo de ${testimonial.author}` : "")}
                 />
                 <div className="h-full space-y-4 flex flex-col justify-between">
                   <p
