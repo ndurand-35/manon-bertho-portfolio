@@ -11,7 +11,16 @@ export default function HomePage(
   const { data } = useTina(props);
 
   return (
-    <Layout rawData={data} data={data.global as any}>
+    <Layout
+      rawData={data}
+      data={data.global as any}
+      seo={{
+        title: data.page.seo?.title,
+        description: data.page.seo?.description,
+        image: data.page.seo?.image,
+        noindex: data.page.seo?.noindex ?? false,
+      }}
+    >
       <Blocks {...data.page} />
     </Layout>
   );

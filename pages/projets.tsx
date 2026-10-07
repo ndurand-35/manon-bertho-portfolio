@@ -11,7 +11,15 @@ export default function HomePage(
   const projets = props.data.projetsConnection.edges;
 
   return (
-    <Layout>
+    <Layout
+      seo={{
+        title: "Réalisations",
+        description:
+          "Projets de Manon Bertho Studio : identités visuelles, reportages photo et créations graphiques réalisés pour des clients à Rennes et en Bretagne.",
+        // Tant qu'aucun projet n'est publié, la page reste hors de Google.
+        noindex: projets.length === 0,
+      }}
+    >
       <Section className="flex-1">
           <Projets data={projets} />
       </Section>

@@ -29,7 +29,13 @@ export default function Contact() {
   }, []);
 
   return (
-    <Layout>
+    <Layout
+      seo={{
+        title: "Contact – Photographe et graphiste à Rennes",
+        description:
+          "Un projet photo, une identité visuelle ou une papeterie ? Contactez Manon Bertho Studio, photographe et graphiste freelance à Rennes, pour en discuter.",
+      }}
+    >
       <Section className="">
         <div className="grid grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 md:px-16 lg:px-32 mt-24">
           <div className="flex flex-col justify-center">

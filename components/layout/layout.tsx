@@ -7,26 +7,25 @@ import { Footer } from "./footer";
 import { Theme } from "./theme";
 import layoutData from "../../content/global/index.json";
 import { Global } from "../../tina/__generated__/types";
+import { Seo, SeoProps } from "../util/seo";
 
 export const Layout = ({
   rawData = {},
   data = layoutData,
+  seo = {},
   children,
 }: {
   rawData?: object;
+  seo?: SeoProps;
   data?: Omit<Global, "id" | "_sys" | "_values">;
   children: React.ReactNode;
 }) => {
   return (
     <>
       <Analytics />
+      <Seo {...seo} />
       <Head>
-        <title>Manon Bertho Studio - Graphiste et Photographe Freelance</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="description"
-          content="Manon - Graphiste et Photographe Freelance - Je façonne des images et des univers graphiques saisissants, alignés sur votre personnalité."
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
