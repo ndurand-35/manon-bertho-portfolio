@@ -24,6 +24,12 @@ module.exports = {
       { source: "/services", destination: "/#services", permanent: true },
       { source: "/posts", destination: "/", permanent: true },
       { source: "/posts/:slug*", destination: "/", permanent: true },
+      // Service remplacé par « Sport & auto » (octobre 2026).
+      {
+        source: "/services/identite-visuelle",
+        destination: "/#services",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

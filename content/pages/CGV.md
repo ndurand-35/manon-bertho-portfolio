@@ -53,7 +53,7 @@ blocks:
 
       présentes conditions générales, telles que disponibles sur le site web
 
-      [www.manonbertho-studio.fr](www.manonbertho-studio.fr) et mentionnées dans
+      [www.manonbertho-studio.fr](https://www.manonbertho-studio.fr) et mentionnées dans
       le devis.
 
       Aucune condition d'achat ou autre document émanant du client ne peut
@@ -146,7 +146,7 @@ blocks:
       Les prestations de photographie sont soumises aux tarifs indiqués sur le
       site
 
-      [www.manonbertho-studio.fr](www.manonbertho-studio.fr) ou soumises à des
+      [www.manonbertho-studio.fr](https://www.manonbertho-studio.fr) ou soumises à des
       devis personnalisés en fonction des besoins
 
       spécifiques du client. Les prestations graphiques, telles que la création

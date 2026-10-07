@@ -9,7 +9,7 @@ blocks:
       src: /uploads/Homepage/SEANCE_COUPLE_B&B_ST_MALO_(62) home test (1).webp
     image:
       src: /uploads/Homepage/LOGO BLANC MB.png
-      alt: Photo of palm trees at sunset by Adam Birkett - unsplash.com/photos/75EFpyXu3Wg
+      alt: Logo Manon Bertho Studio
     image_top_left:
       src: ''
     image_top_right:
@@ -75,7 +75,7 @@ blocks:
       - image:
           src: /uploads/Homepage/Photo sport.jpg
           alt: Travail d'une Identité visuelle pour le compte d'une bijouterie
-        link: /services/sport
+        link: /services/sport-auto
         title: SPORT & AUTO
         description: 'Lumière sur vos évènement sportif :  Capturer le mouvement et l''effort'
       - image:
