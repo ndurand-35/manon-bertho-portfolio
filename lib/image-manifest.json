@@ -5405,6 +5405,21 @@
       ]
     ]
   },
+  "/uploads/Service/SPORT/20250716-MERMAID-POLE60.jpg": {
+    "bytes": 4037736,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/20250716-mermaid-pole60-b5b7d82e-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/20250716-mermaid-pole60-b5b7d82e-1600.webp"
+      ]
+    ]
+  },
   "/uploads/Service/SPORT/20251122-IMG_1115-2.jpg": {
     "bytes": 3419831,
     "width": 6000,
@@ -5582,6 +5597,51 @@
       [
         1600,
         "/optimized/service/sport/gala-patinage-vern177-5193e69b-1600.webp"
+      ]
+    ]
+  },
+  "/uploads/Service/SPORT/GALA-PATINAGE-VERN178.jpg": {
+    "bytes": 1510511,
+    "width": 2500,
+    "height": 3750,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/gala-patinage-vern178-a4146db7-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/gala-patinage-vern178-a4146db7-1600.webp"
+      ]
+    ]
+  },
+  "/uploads/Service/SPORT/GALA-PATINAGE-VERN179.jpg": {
+    "bytes": 2169040,
+    "width": 3074,
+    "height": 4611,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/gala-patinage-vern179-2b412720-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/gala-patinage-vern179-2b412720-1600.webp"
+      ]
+    ]
+  },
+  "/uploads/Service/SPORT/GALA-PATINAGE-VERN180.jpg": {
+    "bytes": 3507310,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/gala-patinage-vern180-5dc9c368-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/gala-patinage-vern180-5dc9c368-1600.webp"
       ]
     ]
   },
