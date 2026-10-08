@@ -5825,6 +5825,21 @@
       ]
     ]
   },
+  "/uploads/Service/SPORT/MARIE-AMELIE-(4).jpg": {
+    "bytes": 2508067,
+    "width": 3348,
+    "height": 4898,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/marie-amelie-4--d4a0f8b9-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/marie-amelie-4--d4a0f8b9-1600.webp"
+      ]
+    ]
+  },
   "/uploads/Service/SPORT/SHOOTING-MERMAID-POLE24.jpg": {
     "bytes": 3906033,
     "width": 4000,
@@ -5837,6 +5852,36 @@
       [
         1600,
         "/optimized/service/sport/shooting-mermaid-pole24-b81c5209-1600.webp"
+      ]
+    ]
+  },
+  "/uploads/Service/SPORT/SHOOTING-MERMAID-POLE54.jpg": {
+    "bytes": 3237410,
+    "width": 3699,
+    "height": 5549,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/shooting-mermaid-pole54-c306f9e1-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/shooting-mermaid-pole54-c306f9e1-1600.webp"
+      ]
+    ]
+  },
+  "/uploads/Service/SPORT/SHOOTING-MERMAID-POLE56.jpg": {
+    "bytes": 3590005,
+    "width": 3873,
+    "height": 5809,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/shooting-mermaid-pole56-b65d879c-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/shooting-mermaid-pole56-b65d879c-1600.webp"
       ]
     ]
   }
