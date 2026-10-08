@@ -567,6 +567,22 @@
     ],
     "thumb": "/optimized/homepage/testimonial/pole-dcdcc209-thumb.webp"
   },
+  "/uploads/Homepage/Testimonial/SEANCE_GROSESSE_CHLOÉ_-_PIERRE34.jpg": {
+    "bytes": 3585640,
+    "width": 3825,
+    "height": 5738,
+    "srcset": [
+      [
+        800,
+        "/optimized/homepage/testimonial/seance_grosesse_chloe_-_pierre34-a1d9b3ae-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/homepage/testimonial/seance_grosesse_chloe_-_pierre34-a1d9b3ae-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/homepage/testimonial/seance_grosesse_chloe_-_pierre34-a1d9b3ae-thumb.webp"
+  },
   "/uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie (15).jpg": {
     "bytes": 6973448,
     "width": 4000,
@@ -5806,6 +5822,22 @@
       ]
     ],
     "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement25-b3ec69ee-thumb.webp"
+  },
+  "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément26.jpg": {
+    "bytes": 12553794,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement26-0f005278-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement26-0f005278-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement26-0f005278-thumb.webp"
   },
   "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément28.jpg": {
     "bytes": 12737764,
