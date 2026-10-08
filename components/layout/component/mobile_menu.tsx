@@ -1,28 +1,11 @@
-import { Instagram, Linkedin } from "iconoir-react";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { tinaField } from "tinacms/dist/react";
+import { NavLink } from "../../util/nav_link";
+import { SocialLinks } from "../../util/social_links";
 
 export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
-  const router = useRouter();
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => setIsClient(true), []);
-
   const currentYear = new Date().getFullYear();
 
-  const isUrlRelative = (url: string) => {
-    let isRelative = true;
-    if (url.indexOf("http://") === 0 || url.indexOf("https://") === 0)
-      isRelative = false;
-    return isRelative;
-  };
-  const isUrlActive = (url: string) => {
-    return (
-      (url === "" ? router.asPath === "/" : router.asPath.includes(url)) &&
-      isClient
-    );
-  };
   return (
     <>
       {isOpen && (
@@ -34,26 +17,7 @@ export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
             </Link>
             . Tous droits réservés.
           </span>
-          <ul className="flex text-white space-x-4">
-            <li>
-              <a
-                href="https://www.instagram.com/manonberthostudio/"
-                className="hover:text-pink-600 transition ease-in-out"
-                target="_blank"
-              >
-                <Instagram />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/manon-bertho-nicolas-342648151/"
-                className="hover:text-blue-600 transition ease-in-out "
-                target="_blank"
-              >
-                <Linkedin />
-              </a>
-            </li>
-          </ul>
+          <SocialLinks className="text-white" />
           <Link href="/">
             <img
               loading="lazy"
@@ -65,37 +29,19 @@ export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
           </Link>
           <ul className="flex flex-col gap-2 justify-center text-white text-xl">
             {data.nav &&
-              data.nav.map((item, i) => {
-                const isRelative = isUrlRelative(item.href);
-                const activeItem = isUrlActive(item.href);
-                return (
-                  <li key={i}>
-                    {isRelative ? (
-                      <Link
-                        onClick={() => setIsOpen(false)}
-                        data-tina-field={tinaField(item, "href")}
-                        href={`/${item.href}`}
-                        className={`block text-center transition ease-in-out hover:text-secondary md:p-0 ${
-                          activeItem && "text-secondary"
-                        }`}
-                        aria-current="page"
-                      >
-                        {item.label}
-                      </Link>
-                    ) : (
-                      <a
-                        data-tina-field={tinaField(item, "href")}
-                        href={item.href}
-                        onClick={() => setIsOpen(false)}
-                        target="_blank"
-                        className="block text-center transition ease-in-out hover:text-secondary md:p-0"
-                      >
-                        {item.label}
-                      </a>
-                    )}
-                  </li>
-                );
-              })}
+              data.nav.map((item, i) => (
+                <li key={i}>
+                  <NavLink
+                    onClick={() => setIsOpen(false)}
+                    data-tina-field={tinaField(item, "href")}
+                    href={item.href}
+                    className="block text-center transition ease-in-out hover:text-secondary md:p-0"
+                    activeClassName="text-secondary"
+                  >
+                    {item.label}
+                  </NavLink>
+                </li>
+              ))}
           </ul>
         </div>
       )}

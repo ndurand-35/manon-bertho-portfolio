@@ -1,8 +1,6 @@
 import { CustomFlowbiteTheme, Dropdown, Flowbite } from "flowbite-react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import React from "react";
 import { tinaField } from "tinacms/dist/react";
+import { NavLink } from "../../util/nav_link";
 
 const customTheme: CustomFlowbiteTheme = {
   dropdown: {
@@ -66,66 +64,26 @@ const customTheme: CustomFlowbiteTheme = {
 };
 
 export const HeaderLink = ({ item }) => {
-  const router = useRouter();
-
-  const [isClient, setIsClient] = React.useState(false);
-  React.useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const isUrlRelative = (url: string) => {
-    let isRelative = true;
-    if (url.indexOf("http://") === 0 || url.indexOf("https://") === 0)
-      isRelative = false;
-    return isRelative;
-  };
-
-  const isUrlActive = (url: string) => {
+  if (item.nav) {
     return (
-      (url === "" ? router.asPath === "/" : router.asPath.includes(url)) &&
-      isClient
+      <Flowbite theme={{ theme: customTheme, mode: "light" }}>
+        <Dropdown label={item.label} color={"primary"} inline>
+          {item.nav.map((subItem, i) => (
+            <Dropdown.Item key={i} as={HeaderLink} item={subItem}></Dropdown.Item>
+          ))}
+        </Dropdown>
+      </Flowbite>
     );
-  };
-
+  }
   return (
-    <>
-      {item.nav ? (
-        <Flowbite theme={{ theme: customTheme, mode: "light" }}>
-          <Dropdown label={item.label} color={"primary"} inline>
-            {item.nav.map((subItem, i) => (
-              <Dropdown.Item
-                key={i}
-                as={HeaderLink}
-                item={subItem}
-              ></Dropdown.Item>
-            ))}
-          </Dropdown>
-        </Flowbite>
-      ) : (
-        <>
-          {isUrlRelative(item.href) ? (
-            <Link
-              data-tina-field={tinaField(item, "href")}
-              href={`/${item.href}`}
-              className={`block py-2 text-center transition ease-in-out hover:text-secondary md:p-0 ${
-                isUrlActive(item.href) ? "text-secondary" : "text-white"
-              }`}
-              aria-current="page"
-            >
-              {item.label}
-            </Link>
-          ) : (
-            <a
-              data-tina-field={tinaField(item, "href")}
-              href={item.href}
-              target="_blank"
-              className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"
-            >
-              {item.label}
-            </a>
-          )}
-        </>
-      )}
-    </>
+    <NavLink
+      data-tina-field={tinaField(item, "href")}
+      href={item.href}
+      className="block py-2 text-center transition ease-in-out hover:text-secondary md:p-0"
+      activeClassName="text-secondary"
+      inactiveClassName="text-white"
+    >
+      {item.label}
+    </NavLink>
   );
 };

@@ -1,7 +1,8 @@
-import { Instagram, Linkedin } from "iconoir-react";
 import { useEffect } from "react";
 import { Layout } from "../components/layout";
 import { Section } from "../components/util/section";
+import { SocialLinks } from "../components/util/social_links";
+import { CONTACT_EMAIL } from "../lib/site";
 
 declare global {
   interface Window {
@@ -52,34 +53,12 @@ export default function Contact() {
             </h4>
             <p>
               Vous pouvez également me contacter par mail à&nbsp;:&nbsp;
-              <a
-                className="text-primary"
-                href="mailto:contact@manonbertho-studio.fr"
-              >
-                contact@manonbertho-studio.fr
+              <a className="text-primary" href={`mailto:${CONTACT_EMAIL}`}>
+                {CONTACT_EMAIL}
               </a>
               &nbsp; ou via mes réseaux
             </p>
-            <ul className="flex space-x-4 mt-4">
-              <li>
-                <a
-                  href="https://www.instagram.com/manonberthostudio/"
-                  className="hover:text-pink-600"
-                  target="_blank"
-                >
-                  <Instagram />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/manon-bertho-nicolas-342648151/"
-                  className="hover:text-blue-600"
-                  target="_blank"
-                >
-                  <Linkedin />
-                </a>
-              </li>
-            </ul>
+            <SocialLinks className="mt-4" />
           </div>
           <div id="hubspotForm"></div>
         </div>
