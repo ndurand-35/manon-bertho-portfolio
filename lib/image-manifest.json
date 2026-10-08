@@ -5711,6 +5711,22 @@
     ],
     "thumb": "/optimized/service/photographie/shooting-pole-estelle-et-julie-16--de1ac5ca-thumb.webp"
   },
+  "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément17.jpg": {
+    "bytes": 9361892,
+    "width": 3731,
+    "height": 5597,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement17-8d9e40ec-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement17-8d9e40ec-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement17-8d9e40ec-thumb.webp"
+  },
   "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément21.jpg": {
     "bytes": 11898448,
     "width": 4538,
@@ -5726,6 +5742,22 @@
       ]
     ],
     "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement21-7f561f40-thumb.webp"
+  },
+  "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément24.jpg": {
+    "bytes": 11130855,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement24-d3c7e071-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement24-d3c7e071-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement24-d3c7e071-thumb.webp"
   },
   "/uploads/Service/SPORT/20250715-GALA-PATINAGE-VERN146.jpg": {
     "bytes": 2091188,
