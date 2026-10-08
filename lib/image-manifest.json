@@ -6095,6 +6095,22 @@
     ],
     "thumb": "/optimized/service/sport/20251122-img_1495-49b0b476-thumb.webp"
   },
+  "/uploads/Service/SPORT/DSC_0119.jpg": {
+    "bytes": 6470773,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0119-6ed8dfe3-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0119-6ed8dfe3-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0119-6ed8dfe3-thumb.webp"
+  },
   "/uploads/Service/SPORT/GALA-PATINAGE-VERN115.jpg": {
     "bytes": 4093116,
     "width": 6000,
@@ -6222,6 +6238,38 @@
       ]
     ],
     "thumb": "/optimized/service/sport/img_0945-aabea199-thumb.webp"
+  },
+  "/uploads/Service/SPORT/IMG_0958.jpg": {
+    "bytes": 9579398,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/img_0958-811f6c08-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/img_0958-811f6c08-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/img_0958-811f6c08-thumb.webp"
+  },
+  "/uploads/Service/SPORT/IMG_1165.jpg": {
+    "bytes": 8151473,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/img_1165-3e67bd68-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/img_1165-3e67bd68-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/img_1165-3e67bd68-thumb.webp"
   },
   "/uploads/Service/SPORT/JOURNEE_AGENTS_VELODROME_LOUDEAC_2026_(68).jpg": {
     "bytes": 2895285,
@@ -6478,5 +6526,69 @@
       ]
     ],
     "thumb": "/optimized/service/sport/shooting-mermaid-pole56-b65d879c-thumb.webp"
+  },
+  "/uploads/Service/SPORT/TRACK_DAY_ALPINE__(110).jpg": {
+    "bytes": 8154660,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/track_day_alpine__-110--52011d86-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/track_day_alpine__-110--52011d86-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/track_day_alpine__-110--52011d86-thumb.webp"
+  },
+  "/uploads/Service/SPORT/TRACK_DAY_ALPINE__(34).jpg": {
+    "bytes": 7483697,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/track_day_alpine__-34--8a8b7ccc-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/track_day_alpine__-34--8a8b7ccc-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/track_day_alpine__-34--8a8b7ccc-thumb.webp"
+  },
+  "/uploads/Service/SPORT/TRACK_DAY_ALPINE__(90).jpg": {
+    "bytes": 8418204,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/track_day_alpine__-90--9c8002b4-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/track_day_alpine__-90--9c8002b4-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/track_day_alpine__-90--9c8002b4-thumb.webp"
+  },
+  "/uploads/Service/SPORT/TRACK_DAY_ALPINE__(95).jpg": {
+    "bytes": 10305190,
+    "width": 3481,
+    "height": 5221,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/track_day_alpine__-95--b9b4a729-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/track_day_alpine__-95--b9b4a729-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/track_day_alpine__-95--b9b4a729-thumb.webp"
   }
 }
