@@ -5647,6 +5647,22 @@
     ],
     "thumb": "/optimized/service/photographie/seance-grosesse-chloe-pierre17-b761e486-thumb.webp"
   },
+  "/uploads/Service/Photographie/SEANCE-GROSESSE-CHLOÉ-PIERRE21.jpg": {
+    "bytes": 5339118,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/seance-grosesse-chloe-pierre21-e53ffa9e-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/seance-grosesse-chloe-pierre21-e53ffa9e-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/seance-grosesse-chloe-pierre21-e53ffa9e-thumb.webp"
+  },
   "/uploads/Service/Photographie/SHOOTING FAMILLE LAURINE PICOUL2.jpg": {
     "bytes": 6052873,
     "width": 6000,
@@ -5774,6 +5790,22 @@
       ]
     ],
     "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement24-d3c7e071-thumb.webp"
+  },
+  "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément25.jpg": {
+    "bytes": 11081501,
+    "width": 5745,
+    "height": 3830,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement25-b3ec69ee-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement25-b3ec69ee-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement25-b3ec69ee-thumb.webp"
   },
   "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément28.jpg": {
     "bytes": 12737764,
