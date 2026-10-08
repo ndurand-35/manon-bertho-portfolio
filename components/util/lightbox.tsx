@@ -1,7 +1,7 @@
 import React from "react";
 import { HiChevronLeft, HiChevronRight, HiX } from "react-icons/hi";
 
-type Slide = { full: string; preview: string; alt: string };
+type Slide = { full: string; preview: string; thumb: string; alt: string };
 
 // Les images rendues par <Img> portent data-zoom-src (l'original). Un seul écouteur
 // sur le document ouvre la visionneuse : pas besoin de modifier chaque bloc.
@@ -13,9 +13,14 @@ const isZoomable = (img: HTMLImageElement) =>
   img.clientWidth >= MIN_WIDTH &&
   (!!img.closest("[data-zoom-trigger]") || !img.closest("a, button"));
 
+// La plus petite version du srcset (le manifeste les trie par largeur croissante).
+const smallestSrc = (img: HTMLImageElement) =>
+  img.getAttribute("srcset")?.split(",")[0].trim().split(/\s+/)[0] || img.src;
+
 const toSlide = (img: HTMLImageElement): Slide => ({
   full: img.dataset.zoomSrc!,
   preview: img.currentSrc || img.src,
+  thumb: smallestSrc(img),
   alt: img.alt,
 });
 
@@ -26,6 +31,7 @@ export const Lightbox = () => {
   const closeRef = React.useRef<HTMLButtonElement>(null);
   const returnFocus = React.useRef<HTMLElement | null>(null);
   const touchX = React.useRef<number | null>(null);
+  const activeThumb = React.useRef<HTMLButtonElement>(null);
 
   const isOpen = index !== null;
   const count = slides.length;
@@ -88,6 +94,11 @@ export const Lightbox = () => {
 
   React.useEffect(() => setLoaded(false), [slide?.full]);
 
+  // Garde la vignette courante visible dans le bandeau.
+  React.useEffect(() => {
+    activeThumb.current?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [index]);
+
   if (!slide) return null;
 
   const navButton =
@@ -98,9 +109,13 @@ export const Lightbox = () => {
       role="dialog"
       aria-modal="true"
       aria-label="Visionneuse de photos"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 animate-dropdown-in motion-reduce:animate-none"
+      className="fixed inset-0 z-50 flex flex-col bg-black/95 animate-dropdown-in motion-reduce:animate-none"
       onClick={(e) => e.target === e.currentTarget && close()}
-      onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
+      onTouchStart={(e) => {
+        // Le bandeau de vignettes défile au doigt : pas de changement de photo.
+        const inThumbs = (e.target as Element).closest("[data-thumbs]");
+        touchX.current = inThumbs ? null : e.touches[0].clientX;
+      }}
       onTouchEnd={(e) => {
         if (touchX.current === null) return;
         const dx = e.changedTouches[0].clientX - touchX.current;
@@ -110,7 +125,7 @@ export const Lightbox = () => {
     >
       {/* Aperçu optimisé affiché immédiatement, l'original le recouvre une fois chargé. */}
       <div
-        className="relative flex h-full w-full items-center justify-center p-4 md:p-12"
+        className="relative flex min-h-0 w-full flex-1 items-center justify-center p-4 md:p-12"
         onClick={(e) => e.target === e.currentTarget && close()}
       >
         <img
@@ -131,15 +146,35 @@ export const Lightbox = () => {
         />
       </div>
 
-      {!loaded && (
-        <div
-          className="pointer-events-none absolute bottom-6 left-1/2 h-6 w-6 -translate-x-1/2 animate-spin rounded-full border-2 border-white/30 border-t-white"
-          aria-label="Chargement de la photo en haute qualité"
-        />
-      )}
-
       {count > 1 && (
         <>
+          <div data-thumbs className="w-full shrink-0 overflow-x-auto">
+            <div className="mx-auto flex w-max gap-2 px-4 pt-1 pb-4">
+              {slides.map((s, i) => (
+                <button
+                  key={`${i}-${s.full}`}
+                  ref={i === index ? activeThumb : undefined}
+                  type="button"
+                  aria-label={`Photo ${i + 1}${s.alt ? ` : ${s.alt}` : ""}`}
+                  aria-current={i === index ? "true" : undefined}
+                  onClick={() => setIndex(i)}
+                  className={`h-14 w-14 shrink-0 overflow-hidden rounded transition focus:outline-none focus-visible:ring-2 focus-visible:ring-white md:h-16 md:w-16 ${
+                    i === index
+                      ? "opacity-100 ring-2 ring-white"
+                      : "opacity-50 hover:opacity-100"
+                  }`}
+                >
+                  <img
+                    src={s.thumb}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
+          </div>
           <p className="absolute top-5 left-5 text-sm text-white/80" aria-live="polite">
             {index + 1} / {count}
           </p>
