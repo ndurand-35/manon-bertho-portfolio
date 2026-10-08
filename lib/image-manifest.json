@@ -5344,5 +5344,20 @@
         "/optimized/service/photographie/shooting-pole-estelle-et-julie-16--de1ac5ca-1600.webp"
       ]
     ]
+  },
+  "/uploads/Service/SPORT/JOURNEE_AGENTS_VELODROME_LOUDEAC_2026_(68).jpg": {
+    "bytes": 2895285,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/journee_agents_velodrome_loudeac_2026_-68--9029dd1e-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/journee_agents_velodrome_loudeac_2026_-68--9029dd1e-1600.webp"
+      ]
+    ]
   }
 }
