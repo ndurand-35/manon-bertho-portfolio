@@ -4,10 +4,33 @@ import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { PageBlocksTestimonial } from "../../tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
+import { BUSINESS_ID } from "../util/seo";
+
+const stripHtml = (html: string) =>
+  html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+
+// Données structurées Review pour que Google et les outils d'audit identifient ces textes comme des avis.
+const reviewsJsonLd = (data: PageBlocksTestimonial) =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": (data.testimonials || [])
+      .filter((t) => t?.description && t?.author)
+      .map((t) => ({
+        "@type": "Review",
+        itemReviewed: { "@id": BUSINESS_ID },
+        author: { "@type": "Person", name: t.author },
+        reviewBody: stripHtml(t.description),
+        inLanguage: "fr-FR",
+      })),
+  }).replace(/</g, "\\u003c");
 
 export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
   return (
     <Section color={data.color}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: reviewsJsonLd(data) }}
+      />
       <div className="py-8 space-y-8">
         <h3
           className="font-title text-3xl text-center font-semibold"
@@ -18,7 +41,7 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
         <div className="grid grid-cols-1 gap-8 px-16 sm:px-32 md:grid-cols-12">
           {data.testimonials &&
             data.testimonials.map((testimonial, i) => (
-              <div
+              <figure
                 className="col-span-1 space-y-4 md:col-span-3 flex flex-col items-center"
                 key={`testimonial_${i}`}
               >
@@ -29,22 +52,22 @@ export const Testimonial = ({ data }: { data: PageBlocksTestimonial }) => {
                   alt={testimonial.image?.alt || (testimonial.author ? `Photo de ${testimonial.author}` : "")}
                 />
                 <div className="h-full space-y-4 flex flex-col justify-between">
-                  <p
+                  <blockquote
                     className="text-center"
                     data-tina-field={tinaField(testimonial, "description")}
                     dangerouslySetInnerHTML={{
                       __html: testimonial.description,
                     }}
-                  ></p>
-                  <p
+                  ></blockquote>
+                  <figcaption
                     className="text-end text-gray-400 "
                     style={{ fontVariant: "small-caps" }}
                     data-tina-field={tinaField(testimonial, "author")}
                   >
                     {testimonial.author}
-                  </p>
+                  </figcaption>
                 </div>
-              </div>
+              </figure>
             ))}
         </div>
       </div>

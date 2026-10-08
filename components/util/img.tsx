@@ -6,6 +6,7 @@ type ManifestEntry = {
   width: number;
   height: number;
   srcset: [number, string][];
+  thumb?: string;
 };
 
 const images = manifest as unknown as Record<string, ManifestEntry>;
@@ -57,6 +58,7 @@ export const Img = ({ src, sizes = "100vw", alt, zoom = true, ...rest }: ImgProp
       decoding="async"
       alt={alt ?? ""}
       data-zoom-src={zoomSrc}
+      data-zoom-thumb={zoomSrc && entry.thumb}
       {...rest}
     />
   );

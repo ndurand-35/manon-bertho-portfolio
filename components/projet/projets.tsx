@@ -1,6 +1,7 @@
 import { Img } from "../util/img";
 import { ProjetType } from "../../pages/projets";
 import Link from "next/link";
+import { SOCIAL } from "../../lib/site";
 
 export const Projets = ({ data }: { data: ProjetType[] }) => {
   return (
@@ -24,9 +25,9 @@ export const Projets = ({ data }: { data: ProjetType[] }) => {
           sur{" "}
           <a
             className="text-primary underline"
-            href="https://www.instagram.com/manonberthostudio/"
+            href={SOCIAL.instagram}
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Instagram
           </a>{" "}

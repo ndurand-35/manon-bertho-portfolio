@@ -5,6 +5,7 @@ import type { TinaTemplate } from "tinacms";
 import { PageBlocksShop } from "../../tina/__generated__/types";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { tinaField } from "tinacms/dist/react";
+import { SOCIAL } from "../../lib/site";
 
 export const Shop = ({ data }: { data: PageBlocksShop }) => {
   return (
@@ -21,8 +22,9 @@ export const Shop = ({ data }: { data: PageBlocksShop }) => {
         </div>
         <div>
           <a
-            href="https://www.etsy.com/fr/shop/ManonBerthoStudio"
+            href={SOCIAL.shop}
             target="_blank"
+            rel="noopener noreferrer"
             className="mb-2 focus:outline-none mr-2 rounded-lg px-5 border border-white py-2.5 text-sm 
           font-medium text-white hover:bg-white hover:text-primary transition duration-150 ease-in-out "
           >

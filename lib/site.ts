@@ -9,10 +9,14 @@ export const DEFAULT_IMAGE =
   "/uploads/Homepage/SEANCE_COUPLE_B&B_ST_MALO_(62) home test (1).webp";
 
 export const CONTACT_EMAIL = "contact@manonbertho-studio.fr";
-export const SOCIAL_LINKS = [
-  "https://www.instagram.com/manonberthostudio/",
-  "https://www.linkedin.com/in/manon-bertho-nicolas-342648151/",
-];
+export const SOCIAL = {
+  instagram: "https://www.instagram.com/manonberthostudio/",
+  linkedin: "https://www.linkedin.com/in/manon-bertho-nicolas-342648151/",
+  shop: "https://manonberthostudio.bigcartel.com/",
+};
+export const SOCIAL_LINKS = Object.values(SOCIAL);
+// Fiche Google Business Profile : hors de SOCIAL pour ne pas apparaître dans les icônes réseaux.
+export const GOOGLE_BUSINESS_URL = "https://maps.app.goo.gl/izXroc2uyoTGCKY6A";
 
 type RichTextNode = { type?: string; text?: string; children?: RichTextNode[] };
 
