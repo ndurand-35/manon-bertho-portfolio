@@ -27,6 +27,8 @@ const MANIFEST = path.join(ROOT, "lib", "image-manifest.json");
 
 const WIDTHS = [800, 1600];
 const QUALITY = 78;
+// Vignette carrée du bandeau de la visionneuse (64 px affichés, x2 pour les écrans denses).
+const THUMB = 160;
 const EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
 // En dessous de ce poids et de cette largeur, l'original est déjà adapté au web.
 const SKIP_UNDER_BYTES = 300 * 1024;
@@ -54,6 +56,21 @@ function outputBase(rel) {
   return `${slug}-${hash}`;
 }
 
+const exists = (url) =>
+  fs.access(path.join(ROOT, "public", url)).then(() => true, () => false);
+
+async function writeThumb(file, rel) {
+  const url = `/optimized/${outputBase(rel)}-thumb.webp`;
+  const out = path.join(ROOT, "public", url);
+  await fs.mkdir(path.dirname(out), { recursive: true });
+  await sharp(file)
+    .rotate()
+    .resize({ width: THUMB, height: THUMB, fit: "cover" })
+    .webp({ quality: QUALITY })
+    .toFile(out);
+  return url;
+}
+
 async function readManifest() {
   try {
     return JSON.parse(await fs.readFile(MANIFEST, "utf8"));
@@ -79,13 +96,12 @@ for (const file of files) {
   const prev = previous[key];
 
   if (prev && prev.bytes === stat.size) {
-    const allExist = await Promise.all(
-      prev.srcset.map(([, url]) =>
-        fs.access(path.join(ROOT, "public", url)).then(() => true, () => false)
-      )
-    );
+    const allExist = await Promise.all(prev.srcset.map(([, url]) => exists(url)));
     if (allExist.every(Boolean)) {
-      manifest[key] = prev;
+      // Entrées antérieures aux vignettes : seule la vignette est générée.
+      const thumb =
+        prev.thumb && (await exists(prev.thumb)) ? prev.thumb : await writeThumb(file, rel);
+      manifest[key] = { ...prev, thumb };
       reused++;
       continue;
     }
@@ -124,7 +140,8 @@ for (const file of files) {
       .toFile(out);
     srcset.push([w, url]);
   }
-  manifest[key] = { bytes: stat.size, width, height, srcset };
+  const thumb = await writeThumb(file, rel);
+  manifest[key] = { bytes: stat.size, width, height, srcset, thumb };
   created++;
   console.log(`✓ ${key}`);
 }
@@ -132,7 +149,7 @@ for (const file of files) {
 // Supprime les fichiers optimisés dont l'original a disparu.
 const keep = new Set(
   Object.values(manifest).flatMap((m) =>
-    m.srcset.map(([, url]) => path.join(ROOT, "public", url))
+    [...m.srcset.map(([, url]) => url), m.thumb].map((url) => path.join(ROOT, "public", url))
   )
 );
 let removed = 0;

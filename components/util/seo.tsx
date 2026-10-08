@@ -8,6 +8,7 @@ import {
   DEFAULT_TITLE,
   SITE_NAME,
   SITE_URL,
+  GOOGLE_BUSINESS_URL,
   SOCIAL_LINKS,
 } from "../../lib/site";
 
@@ -16,40 +17,73 @@ export type SeoProps = {
   description?: string | null;
   image?: string | null;
   noindex?: boolean;
+  /** Nœuds JSON-LD propres à la page, ajoutés au @graph du site. */
+  jsonLd?: JsonLdBlock[];
 };
 
 const absolute = (url: string) =>
   url.startsWith("http") ? url : SITE_URL + encodeURI(decodeURI(url));
 
-const localBusiness = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: SITE_NAME,
-  description: DEFAULT_DESCRIPTION,
-  url: SITE_URL,
-  email: CONTACT_EMAIL,
-  image: absolute(optimizedUrl(DEFAULT_IMAGE)),
-  logo: absolute("/uploads/Homepage/LOGO PRINCIPAL.png"),
-  founder: { "@type": "Person", name: "Manon Bertho" },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Rennes",
-    addressRegion: "Bretagne",
-    addressCountry: "FR",
-  },
-  areaServed: { "@type": "AdministrativeArea", name: "Bretagne" },
-  sameAs: SOCIAL_LINKS,
-  knowsAbout: [
-    "Photographie",
-    "Photographie de mariage",
-    "Photographie d'événements",
-    "Photographie commerciale",
-    "Identité visuelle",
-    "Papeterie",
-  ],
-};
+// Identifiants partagés : les nœuds du graphe (et les avis du bloc testimonial) s'y réfèrent.
+export const BUSINESS_ID = SITE_URL + "/#business";
+export const PERSON_ID = SITE_URL + "/#person";
+export const WEBSITE_ID = SITE_URL + "/#website";
 
-export const Seo = ({ title, description, image, noindex }: SeoProps) => {
+export type JsonLdBlock = Record<string, unknown>;
+
+const siteGraph: JsonLdBlock[] = [
+  {
+    "@type": "ProfessionalService",
+    "@id": BUSINESS_ID,
+    name: SITE_NAME,
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+    email: CONTACT_EMAIL,
+    image: absolute(optimizedUrl(DEFAULT_IMAGE)),
+    logo: absolute("/uploads/Homepage/LOGO PRINCIPAL.png"),
+    founder: { "@id": PERSON_ID },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Rennes",
+      addressRegion: "Bretagne",
+      addressCountry: "FR",
+    },
+    areaServed: { "@type": "AdministrativeArea", name: "Bretagne" },
+    hasMap: GOOGLE_BUSINESS_URL,
+    sameAs: [...SOCIAL_LINKS, GOOGLE_BUSINESS_URL],
+    knowsAbout: [
+      "Photographie",
+      "Photographie de mariage",
+      "Photographie d'événements",
+      "Photographie commerciale",
+      "Identité visuelle",
+      "Papeterie",
+    ],
+  },
+  {
+    "@type": "Person",
+    "@id": PERSON_ID,
+    name: "Manon Bertho",
+    jobTitle: "Graphiste et photographe freelance",
+    url: SITE_URL,
+    worksFor: { "@id": BUSINESS_ID },
+    sameAs: SOCIAL_LINKS,
+  },
+  {
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    url: SITE_URL,
+    name: SITE_NAME,
+    inLanguage: "fr-FR",
+    publisher: { "@id": BUSINESS_ID },
+  },
+];
+
+// "<" échappé pour qu'un texte du CMS ne puisse pas fermer la balise <script>.
+const serializeJsonLd = (data: unknown) =>
+  JSON.stringify(data).replace(/</g, "\\u003c");
+
+export const Seo = ({ title, description, image, noindex, jsonLd = [] }: SeoProps) => {
   const router = useRouter();
   const path = (router.asPath || "/").split(/[?#]/)[0];
   const canonical = SITE_URL + (path === "/home" ? "/" : path);
@@ -58,7 +92,6 @@ export const Seo = ({ title, description, image, noindex }: SeoProps) => {
   const fullTitle = title && suffixed.length > 65 ? title : suffixed;
   const desc = description || DEFAULT_DESCRIPTION;
   const ogImage = absolute(optimizedUrl(image || DEFAULT_IMAGE));
-  const isHome = canonical === SITE_URL + "/";
 
   return (
     <Head>
@@ -77,12 +110,16 @@ export const Seo = ({ title, description, image, noindex }: SeoProps) => {
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
       <meta name="twitter:card" content="summary_large_image" />
-      {isHome && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
-        />
-      )}
+      {/* Graphe émis sur chaque page : les @id référencés (avis, services) doivent y être résolus. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd({
+            "@context": "https://schema.org",
+            "@graph": [...siteGraph, ...jsonLd],
+          }),
+        }}
+      />
     </Head>
   );
 };

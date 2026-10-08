@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { Layout } from "../components/layout";
 import { Section } from "../components/util/section";
 import { SocialLinks } from "../components/util/social_links";
-import { CONTACT_EMAIL } from "../lib/site";
+import { CONTACT_EMAIL, SITE_URL } from "../lib/site";
+import { BUSINESS_ID, WEBSITE_ID } from "../components/util/seo";
 
 declare global {
   interface Window {
@@ -36,6 +37,17 @@ export default function Contact() {
         title: "Contact – Photographe et graphiste à Rennes",
         description:
           "Un projet photo, une identité visuelle ou une papeterie ? Contactez Manon Bertho Studio, photographe et graphiste freelance à Rennes, pour en discuter.",
+        jsonLd: [
+          {
+            "@type": "ContactPage",
+            "@id": SITE_URL + "/contact#webpage",
+            url: SITE_URL + "/contact",
+            name: "Contact – Manon Bertho Studio",
+            inLanguage: "fr-FR",
+            isPartOf: { "@id": WEBSITE_ID },
+            about: { "@id": BUSINESS_ID },
+          },
+        ],
       }}
     >
       <Section className="">

@@ -1,83 +1,107 @@
-# Tina Starter 🦙
+# Manon Bertho Studio
 
-![tina-cloud-starter-demo](https://user-images.githubusercontent.com/103008/130587027-995ccc45-a852-4f90-b658-13e8e0517339.gif)
+Site vitrine de Manon Bertho, graphiste et photographe freelance à Rennes : [manonbertho-studio.fr](https://www.manonbertho-studio.fr).
 
-This Next.js starter is powered by [TinaCMS](https://app.tina.io) for you and your team to visually live edit the structured content of your website. ✨
+Le site est construit avec Next.js et [TinaCMS](https://tina.io). Le contenu (pages, services, projets, réglages globaux) est stocké en Markdown/MDX et JSON dans ce dépôt, et se modifie visuellement depuis `/admin`.
 
-The content is managed through Markdown and JSON files stored in your GitHub repository, and queried through Tina GraphQL API.
+## Stack
 
-### Features
+- [Next.js 15](https://nextjs.org) (Pages Router), React 18, TypeScript
+- [TinaCMS 3](https://tina.io) avec Tina Cloud pour l'édition en ligne
+- Tailwind CSS, Flowbite, Headless UI
+- Hébergement sur [Vercel](https://vercel.com) (Analytics et Speed Insights activés)
 
-- [Tina Headless CMS](https://app.tina.io) for authentication, content modeling, visual editing and team management.
-- [Vercel](https://vercel.com) deployment to visually edit your site from the `/admin` route.
-- Local development workflow from the filesystem with a local GraqhQL server.
+## Prérequis
 
-## Requirements
+- Node.js 24 (voir `engines` dans `package.json`)
+- Yarn 1
+- Un accès au projet sur [app.tina.io](https://app.tina.io) pour l'édition en ligne et le build
 
-- Git, [Node.js Active LTS](https://nodejs.org/en/about/releases/), Yarn installed for local development.
-- A [TinaCMS](https://app.tina.io) account for live editing.
+## Démarrer en local
 
-## Local Development
-
-Install the project's dependencies:
-
-```
+```bash
 yarn install
-```
-
-Run the project locally:
-
-```
+cp .env.example .env
 yarn dev
 ```
 
-### Local URLs
-
-- http://localhost:3000 : browse the website
-- http://localhost:3000/admin : connect to Tina Cloud and go in edit mode
-- http://localhost:3000/exit-admin : log out of Tina Cloud
-- http://localhost:4001/altair/ : GraphQL playground to test queries and browse the API documentation
-
-### Building the Starter Locally (Using the hosted content API)
-
-Replace the `.env.example`, with `.env`
+Variables d'environnement (`.env`) :
 
 ```
-NEXT_PUBLIC_TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
-TINA_TOKEN=<get this from the project you create at app.tina.io>
-NEXT_PUBLIC_TINA_BRANCH=<Specify the branch with Tina configured>
+NEXT_PUBLIC_TINA_CLIENT_ID=<depuis app.tina.io>
+TINA_TOKEN=<depuis app.tina.io>
+NEXT_PUBLIC_TINA_BRANCH=<branche configurée dans Tina>
 ```
 
-Build the project:
+`yarn dev` lance le serveur GraphQL local de Tina, qui lit le contenu directement depuis le disque.
+
+URLs locales :
+
+- http://localhost:3000 : le site
+- http://localhost:3000/admin : l'éditeur Tina
+- http://localhost:4001/altair/ : playground GraphQL
+
+## Scripts
+
+| Commande               | Rôle                                                       |
+| ---------------------- | ---------------------------------------------------------- |
+| `yarn dev`             | Serveur de développement (Tina + Next)                     |
+| `yarn build`           | Build Tina puis build Next (nécessite les variables Tina)  |
+| `yarn start`           | Build Tina puis serveur Next de production                 |
+| `yarn lint`            | ESLint sur les fichiers `.ts` / `.tsx`                     |
+| `yarn optimize-images` | Génère les versions WebP des images (voir plus bas)        |
+
+## Structure
+
+```
+content/
+  global/       Réglages globaux (header, footer, thème)
+  pages/        Pages construites par blocs (home, CGV…)
+  services/     Une fiche par prestation (MDX)
+  projetType/   Projets du portfolio
+tina/
+  config.tsx    Configuration Tina
+  collection/   Schémas des collections (page, service, projet, global)
+  fields/       Champs personnalisés (icône, couleur)
+pages/          Routes Next : /[filename], /services/[filename], /projets, /contact, sitemap.xml
+components/
+  blocks/       Blocs utilisables dans les pages (hero, presentation, features, shop…)
+  layout/       Header, footer, layout
+  util/         Img, Seo, Section, Container, Icon
+lib/
+  site.ts       Constantes du site (URL, titre, description, contact, réseaux)
+  image-manifest.json
+scripts/
+  optimize-images.mjs
+```
+
+La page d'accueil est servie depuis `content/pages/home.md` (réécriture `/` → `/home` dans `next.config.js`, `/home` redirige vers `/`). Les anciennes URLs sont redirigées dans ce même fichier.
+
+## SEO
+
+- Titre et description par page via `components/util/seo.tsx`, avec des valeurs par défaut dans `lib/site.ts`
+- Sitemap dynamique sur `/sitemap.xml`, `robots.txt` dans `public/`
+
+## Images
+
+Les images ajoutées via Tina sont stockées dans `public/uploads`. Le script `scripts/optimize-images.mjs` en génère des versions WebP légères (800 et 1600 px) dans `public/optimized` et met à jour `lib/image-manifest.json`, utilisé par le composant `<Img>`. Les originaux ne sont jamais modifiés et restent accessibles au clic.
+
+Le traitement est incrémental. En local, `sharp` doit être installé une fois :
 
 ```bash
-yarn build
+npm install --no-save sharp@0.33.5
+yarn optimize-images
 ```
 
-## Getting Help
+Le workflow GitHub `optimize-images.yml` l'exécute automatiquement à chaque push sur `main` qui touche `public/uploads`, puis commit le résultat.
 
-To get help with any TinaCMS challenges you may have:
+## Branches et déploiement
 
-- Visit the [documentation](https://tina.io/docs/) to learn about Tina.
-- [Join our Discord](https://discord.gg/zumN63Ybpf) to share feedback.
-- Visit the [community forum](https://community.tinacms.org/) to ask questions.
-- Get support through the chat widget on the TinaCMS Dashboard
-- [Email us](mailto:support@tina.io) to schedule a call with our team and share more about your context and what you're trying to achieve.
-- [Search or open an issue](https://github.com/tinacms/tinacms/issues) if something is not working.
-- Reach out on Twitter at [@tina_cms](https://twitter.com/tina_cms).
+- `main` : production
+- `preprod` : préproduction
 
-## Development tips
+Vercel déploie chaque branche. Les modifications faites depuis l'admin Tina sont commitées directement dans le dépôt (commits « TinaCMS content update »).
 
-### Visual Studio Code GraphQL extension
+## Licence
 
-[Install the GraphQL extension](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql) to benefit from type auto-completion.
-
-### Typescript
-
-A good way to ensure your components match the shape of your data is to leverage the auto-generated TypeScript types.
-These are rebuilt when your `tina` config changes.
-
-## LICENSE
-
-Licensed under the [Apache 2.0 license](./LICENSE).
-"# manon-bertho-projet"
+Code basé sur le [Tina Starter](https://github.com/tinacms/tina-cloud-starter), sous [licence Apache 2.0](./LICENSE).

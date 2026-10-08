@@ -5,7 +5,7 @@ import { presentationBlockSchema } from "../../components/blocks/presentation";
 import { contentBlockSchema } from "../../components/blocks/content";
 import { testimonialBlockSchema } from "../../components/blocks/testimonial";
 import { ctaBlockSchema } from "../../components/blocks/cta";
-import { featureBlockSchema } from "../../components/blocks/features";
+import { featureBlockSchema } from "../blocks/features";
 import { numberFeatureBlockSchema } from "../../components/blocks/number_features";
 import { shopBlockSchema } from "../../components/blocks/shop";
 import { prestationBlockSchema } from "../../components/blocks/prestation";

@@ -4,7 +4,69 @@ import { useTina } from "tinacms/dist/react";
 import { Layout } from "../../components/layout";
 import { InferGetStaticPropsType } from "next";
 import { Section } from "../../components/util/section";
-import { richTextToDescription } from "../../lib/site";
+import { SITE_URL, richTextToDescription } from "../../lib/site";
+import { BUSINESS_ID, JsonLdBlock } from "../../components/util/seo";
+
+const plainText = (input: unknown) => richTextToDescription(input, Infinity) || "";
+
+// Les tarifs sont du texte libre ("A partir de 80€", "5 photos - 120€"…) : on en extrait les montants.
+const offerFromText = (name: string, text: string, url: string): JsonLdBlock => {
+  const prices = [...text.matchAll(/(\d+(?:[.,]\d+)?)\s*€/g)].map((m) =>
+    Number(m[1].replace(",", "."))
+  );
+  const offer: JsonLdBlock = { "@type": "Offer", name, url };
+  if (!prices.length) return offer;
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  if (/partir de/i.test(text) || min !== max) {
+    offer.priceSpecification = {
+      "@type": "PriceSpecification",
+      priceCurrency: "EUR",
+      minPrice: min,
+      ...(/partir de/i.test(text) ? {} : { maxPrice: max }),
+    };
+  } else {
+    offer.price = min;
+    offer.priceCurrency = "EUR";
+  }
+  return offer;
+};
+
+const serviceJsonLd = (service: ServiceType, url: string): JsonLdBlock => {
+  const columns = (service.pricing?.column || []).filter(Boolean);
+  const offers = columns.length
+    ? columns.map((col) =>
+        offerFromText(
+          col.title || service.title,
+          [
+            col.title,
+            plainText(col.description),
+            ...(col.subitem || []).flatMap((sub) => [sub?.title, plainText(sub?.description)]),
+          ].join(" "),
+          url
+        )
+      )
+    : // Pas de colonnes : le tarif est dans la description ou la précision (ex. mini séance Noël).
+      [
+        offerFromText(
+          service.title,
+          `${plainText(service.description)} ${service.pricing?.subtitle || ""}`,
+          url
+        ),
+      ].filter((offer) => offer.price || offer.priceSpecification);
+
+  return {
+    "@type": "Service",
+    "@id": url + "#service",
+    name: service.title,
+    serviceType: service.title,
+    description: richTextToDescription(service.description, 500),
+    url,
+    provider: { "@id": BUSINESS_ID },
+    areaServed: { "@type": "AdministrativeArea", name: "Bretagne" },
+    ...(offers.length ? { offers } : {}),
+  };
+};
 
 // Use the props returned by get static props
 export default function BlogPostPage(
@@ -16,6 +78,7 @@ export default function BlogPostPage(
     data: props.data,
   });
   if (data && data.services) {
+    const url = `${SITE_URL}/services/${props.variables.relativePath.replace(/\.mdx$/, "")}`;
     return (
       <Layout
         data={data.global}
@@ -26,6 +89,7 @@ export default function BlogPostPage(
             richTextToDescription(data.services.description),
           image: data.services.seo?.image || data.services.img?.src,
           noindex: data.services.seo?.noindex ?? false,
+          jsonLd: [serviceJsonLd(data.services, url)],
         }}
       >
         <Section className="flex-1">

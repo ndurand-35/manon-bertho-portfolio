@@ -1,7 +1,7 @@
+import dynamic from "next/dynamic";
 import type { Page, PageBlocks } from "../tina/__generated__/types";
 import { Content } from "./blocks/content";
 import { CTA } from "./blocks/cta";
-import { Features } from "./blocks/features";
 import { Hero } from "./blocks/hero";
 import { Marquee } from "./blocks/marquee";
 import { NumberFeatures } from "./blocks/number_features";
@@ -10,6 +10,11 @@ import { Prestation } from "./blocks/prestation";
 import { Shop } from "./blocks/shop";
 import { Testimonial } from "./blocks/testimonial";
 import { tinaField } from "tinacms/dist/react";
+
+// Embarque tout react-icons/bi : chargé seulement si une page utilise ce bloc.
+const Features = dynamic(() =>
+  import("./blocks/features").then((m) => m.Features)
+);
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
