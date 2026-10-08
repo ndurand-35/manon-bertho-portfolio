@@ -112,7 +112,7 @@ blocks:
         image:
           src: /uploads/Homepage/Testimonial/SEANCE_GROSESSE_CHLOÉ_-_PIERRE34.jpg
           alt: Shooting couple avec Lauralie
-      - description: 'Je remercie Manon pour son travail. D''abord pour cette séance photo grossesse, je ne me suis jamais sentie aussi à l''aise face à un objectif et quels beaux souvenirs elle a immortalisés ! Elle a su s''adapter à ma demande et le rendu est encore mieux que ce que j''imaginais.'
+      - description: '"Je remercie Manon pour son travail. D''abord pour cette séance photo grossesse, je ne me suis jamais sentie aussi à l''aise face à un objectif et quels beaux souvenirs elle a immortalisés ! Elle a su s''adapter à ma demande et le rendu est encore mieux que ce que j''imaginais."'
         author: Louise
         image:
           src: /uploads/Homepage/Testimonial/1701206961870_louise2.webp
