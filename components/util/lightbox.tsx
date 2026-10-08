@@ -13,14 +13,16 @@ const isZoomable = (img: HTMLImageElement) =>
   img.clientWidth >= MIN_WIDTH &&
   (!!img.closest("[data-zoom-trigger]") || !img.closest("a, button"));
 
-// La plus petite version du srcset (le manifeste les trie par largeur croissante).
-const smallestSrc = (img: HTMLImageElement) =>
+// Vignette dédiée du manifeste, sinon la plus petite version du srcset
+// (le manifeste les trie par largeur croissante).
+const thumbSrc = (img: HTMLImageElement) =>
+  img.dataset.zoomThumb ||
   img.getAttribute("srcset")?.split(",")[0].trim().split(/\s+/)[0] || img.src;
 
 const toSlide = (img: HTMLImageElement): Slide => ({
   full: img.dataset.zoomSrc!,
   preview: img.currentSrc || img.src,
-  thumb: smallestSrc(img),
+  thumb: thumbSrc(img),
   alt: img.alt,
 });
 
@@ -133,6 +135,7 @@ export const Lightbox = () => {
           src={slide.preview}
           alt=""
           aria-hidden
+          decoding="async"
           className="max-h-full max-w-full object-contain"
         />
         <img
@@ -140,6 +143,7 @@ export const Lightbox = () => {
           src={slide.full}
           alt={slide.alt}
           onLoad={() => setLoaded(true)}
+          decoding="async"
           className={`absolute max-h-[calc(100%-2rem)] max-w-[calc(100%-2rem)] object-contain transition-opacity duration-300 md:max-h-[calc(100%-6rem)] md:max-w-[calc(100%-6rem)] ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
