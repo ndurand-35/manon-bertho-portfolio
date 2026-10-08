@@ -125,9 +125,9 @@ blocks:
           src: /uploads/Service/Photographie/SEANCE_COUPLE_B&B_ST_MALO_(30).webp
           alt: Shooting de Berenice
       - description: |-
-          Nous avons contacté Manon pour notre mariage, elle a été extraordinaire !
+          "Nous avons contacté Manon pour notre mariage, elle a été extraordinaire !
           Discrète, joyeuse et très professionnelle. Nous avons déjà reçu quelques photos et le résultat est bien au dessus de nos attentes !
-          Nous la recommandons vivement et avons hâte de faire de nouveaux shooting avec elle 
+          Nous la recommandons vivement et avons hâte de faire de nouveaux shooting avec elle."
         author: Capucine
         image:
           src: /uploads/Service/EVENEMENT/MARIAGE%20CAPUCINE%20&%20ADRIEN180.jpg
