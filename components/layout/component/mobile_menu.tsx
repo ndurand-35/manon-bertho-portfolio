@@ -9,7 +9,7 @@ export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
   return (
     <>
       {isOpen && (
-        <div className="bg-lunar-green h-screen z-10 w-screen fixed pt-8 pb-32 flex flex-col items-center justify-between ">
+        <div className="bg-lunar-green h-screen z-10 w-screen fixed overflow-y-auto pt-8 pb-32 flex flex-col items-center justify-between gap-6">
           <span className="block text-sm text-gray-300 px-4 sm:text-center">
             © {currentYear}{" "}
             <Link href="/" className="hover:underline">
@@ -24,7 +24,7 @@ export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
               src={data.logo?.src}
               alt={data.logo?.alt}
               data-tina-field={tinaField(data, "logo")}
-              className={`h-48 py-2}`}
+              className="h-32 py-2"
             />
           </Link>
           <ul className="flex flex-col gap-2 justify-center text-white text-xl">
@@ -40,6 +40,23 @@ export const MobileMenu = ({ isOpen, setIsOpen, data }) => {
                   >
                     {item.label}
                   </NavLink>
+                  {item.nav?.length > 0 && (
+                    <ul className="mt-1 mb-2 flex flex-col gap-1 text-base text-gray-300">
+                      {item.nav.map((subItem, j) => (
+                        <li key={j}>
+                          <NavLink
+                            onClick={() => setIsOpen(false)}
+                            data-tina-field={tinaField(subItem, "href")}
+                            href={subItem.href}
+                            className="block text-center transition ease-in-out hover:text-secondary"
+                            activeClassName="text-secondary"
+                          >
+                            {subItem.label}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
           </ul>

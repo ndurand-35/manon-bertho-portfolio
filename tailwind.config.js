@@ -14,16 +14,6 @@ module.exports = {
       height: { "spe-height": "calc(100vh - 4rem)" },
       minHeight: { "spe-height": "calc(100vh - 4rem)" },
       fontFamily: { title: ["Bad Script", "Georgia"], body: "Montserrat" },
-      // `translate` (et non `transform`) : Floating UI positionne les menus avec transform.
-      keyframes: {
-        "dropdown-in": {
-          from: { opacity: "0", translate: "0 -6px" },
-          to: { opacity: "1", translate: "0 0" },
-        },
-      },
-      animation: {
-        "dropdown-in": "dropdown-in 200ms ease-out",
-      },
       colors: {
         "lunar-green": {
           DEFAULT: "#3B4F43",
