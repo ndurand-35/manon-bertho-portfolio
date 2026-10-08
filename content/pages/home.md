@@ -105,10 +105,9 @@ blocks:
   - title: Vos mots doux
     testimonials:
       - description: |-
-          Nous avons fait appel à Manon pour réaliser nos photos de grossesse et nous sommes vraiment ravis de cette expérience ! 
-          Dès le début, Manon a su nous mettre à l’aise devant l’objectif et nous guider avec beaucoup de douceur. Elle nous a également donné de très bons conseils, que ce soit pour le choix du lieu, les tenues ou les différentes poses.
-          Le résultat est à la hauteur de nos attentes : des photos magnifiques, naturelles et pleines d’émotion, qui nous laisseront un très beau souvenir de cette période si particulière.
-          Merci encore Manon pour ton talent, ta bienveillance et ce joli moment partagé ! Nous recommandons les yeux fermés 
+          "Nous avons fait appel à Manon pour réaliser nos photos de grossesse et nous sommes vraiment ravis de cette expérience ! 
+          Dès le début, Manon a su nous mettre à l’aise devant l’objectif et nous guider avec beaucoup de douceur. 
+          Le résultat est à la hauteur de nos attentes : des photos magnifiques, naturelles et pleines d’émotion, qui nous laisseront un très beau souvenir de cette période si particulière. "
         author: Chloé
         image:
           src: /uploads/Homepage/Testimonial/SEANCE_GROSESSE_CHLOÉ_-_PIERRE34.jpg
