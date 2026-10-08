@@ -5824,5 +5824,20 @@
         "/optimized/service/sport/journee_agents_velodrome_loudeac_2026_-91--b88722f5-1600.webp"
       ]
     ]
+  },
+  "/uploads/Service/SPORT/SHOOTING-MERMAID-POLE24.jpg": {
+    "bytes": 3906033,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/shooting-mermaid-pole24-b81c5209-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/shooting-mermaid-pole24-b81c5209-1600.webp"
+      ]
+    ]
   }
 }
