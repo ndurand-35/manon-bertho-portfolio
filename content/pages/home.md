@@ -119,7 +119,7 @@ blocks:
           alt: Shooting de Louise
       - description: |-
           Nous avons fait confiance à Manon pour immortaliser notre mariage. Elle a su capturer chaque moments, chaque émotions. Elle a été très discrète et très professionnel ! Nous regardons en boucle la galerie. La qualité des photos est dingue et nous attendons le shooting à la mer avec impatiente. Merci à elle, elle a été incroyable et nous en sommes tellement reconnaissants 
-          Si vous cherchez une photographe je ne peux que vous la recommander 
+          Si vous cherchez une photographe je ne peux que vous la recommander "
         author: Berenice & Baptiste
         image:
           src: /uploads/Service/Photographie/SEANCE_COUPLE_B&B_ST_MALO_(30).webp
