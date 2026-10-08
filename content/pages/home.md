@@ -104,10 +104,14 @@ blocks:
     _template: numberFeatures
   - title: Vos mots doux
     testimonials:
-      - description: 'Nous avons eu la chance de pouvoir faire un shooting couple incroyable avec Manon, de l''accompagnement lors de la séance au rendu tout était absolument parfait ! Nous y retournerons avec grand plaisir, un énorme merci! Hâte de repasser sous son objectif'
-        author: Lauralie
+      - description: |-
+          Nous avons fait appel à Manon pour réaliser nos photos de grossesse et nous sommes vraiment ravis de cette expérience ! 
+          Dès le début, Manon a su nous mettre à l’aise devant l’objectif et nous guider avec beaucoup de douceur. Elle nous a également donné de très bons conseils, que ce soit pour le choix du lieu, les tenues ou les différentes poses.
+          Le résultat est à la hauteur de nos attentes : des photos magnifiques, naturelles et pleines d’émotion, qui nous laisseront un très beau souvenir de cette période si particulière.
+          Merci encore Manon pour ton talent, ta bienveillance et ce joli moment partagé ! Nous recommandons les yeux fermés 
+        author: Chloé
         image:
-          src: /uploads/Homepage/Testimonial/lauralie couple (1).webp
+          src: /uploads/Homepage/Testimonial/SEANCE_GROSESSE_CHLOÉ_-_PIERRE34.jpg
           alt: Shooting couple avec Lauralie
       - description: 'Je remercie Manon pour son travail. D''abord pour cette séance photo grossesse, je ne me suis jamais sentie aussi à l''aise face à un objectif et quels beaux souvenirs elle a immortalisés ! Elle a su s''adapter à ma demande et le rendu est encore mieux que ce que j''imaginais.'
         author: Louise
