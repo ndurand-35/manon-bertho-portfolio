@@ -6207,6 +6207,22 @@
     ],
     "thumb": "/optimized/service/sport/gala-patinage-vern78-1046e8e9-thumb.webp"
   },
+  "/uploads/Service/SPORT/IMG_0945.jpg": {
+    "bytes": 5269054,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/img_0945-aabea199-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/img_0945-aabea199-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/img_0945-aabea199-thumb.webp"
+  },
   "/uploads/Service/SPORT/JOURNEE_AGENTS_VELODROME_LOUDEAC_2026_(68).jpg": {
     "bytes": 2895285,
     "width": 6000,
