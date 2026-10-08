@@ -5631,6 +5631,22 @@
     ],
     "thumb": "/optimized/service/photographie/seance_couple_b-b_st_malo_-21--4efbb91f-thumb.webp"
   },
+  "/uploads/Service/Photographie/SEANCE-GROSESSE-CHLOÉ-PIERRE17.jpg": {
+    "bytes": 5769828,
+    "width": 5630,
+    "height": 3753,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/seance-grosesse-chloe-pierre17-b761e486-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/seance-grosesse-chloe-pierre17-b761e486-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/seance-grosesse-chloe-pierre17-b761e486-thumb.webp"
+  },
   "/uploads/Service/Photographie/SHOOTING FAMILLE LAURINE PICOUL2.jpg": {
     "bytes": 6052873,
     "width": 6000,
@@ -5758,6 +5774,22 @@
       ]
     ],
     "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement24-d3c7e071-thumb.webp"
+  },
+  "/uploads/Service/Photographie/Shooting-Grossesse-Audrey-et-clément28.jpg": {
+    "bytes": 12737764,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement28-df25858d-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/shooting-grossesse-audrey-et-clement28-df25858d-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement28-df25858d-thumb.webp"
   },
   "/uploads/Service/SPORT/20250715-GALA-PATINAGE-VERN146.jpg": {
     "bytes": 2091188,
