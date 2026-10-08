@@ -118,16 +118,21 @@ blocks:
         image:
           src: /uploads/Homepage/Testimonial/1701206961870_louise2.webp
           alt: Shooting de Louise
-      - description: 'Nous avons eu le plaisir de faire une séance photo avec Manon. Dès le début, elle a su nous mettre à l''aise devant l''objectif. On est enchanté du résultat final et on recommande vivement Manon pour toutes vos séances photo.'
+      - description: |-
+          Nous avons fait confiance à Manon pour immortaliser notre mariage. Elle a su capturer chaque moments, chaque émotions. Elle a été très discrète et très professionnel ! Nous regardons en boucle la galerie. La qualité des photos est dingue et nous attendons le shooting à la mer avec impatiente. Merci à elle, elle a été incroyable et nous en sommes tellement reconnaissants 
+          Si vous cherchez une photographe je ne peux que vous la recommander 
         author: Berenice & Baptiste
         image:
-          src: /uploads/Homepage/Testimonial/BERENICE-BAPTISTE2.webp
+          src: /uploads/Service/Photographie/SEANCE_COUPLE_B&B_ST_MALO_(30).webp
           alt: Shooting de Berenice
-      - description: 'Le Shooting photo s’est très bien déroulé avec Manon. Elle est très professionnelle, réactive et rapide. Le rendu final est d’une qualité incroyable ! On recommande les yeux fermés'
-        author: Julie & Estelle
+      - description: |-
+          Nous avons contacté Manon pour notre mariage, elle a été extraordinaire !
+          Discrète, joyeuse et très professionnelle. Nous avons déjà reçu quelques photos et le résultat est bien au dessus de nos attentes !
+          Nous la recommandons vivement et avons hâte de faire de nouveaux shooting avec elle 
+        author: Capucine
         image:
-          src: /uploads/Homepage/Testimonial/Shooting Pole - Estelle et julie.webp
-          alt: Shooting pole dance julie et estelle
+          src: /uploads/Service/EVENEMENT/MARIAGE%20CAPUCINE%20&%20ADRIEN180.jpg
+          alt: ''
     _template: testimonial
   - title: Mon univers vous inspire ?
     button_text: Contactez-moi
