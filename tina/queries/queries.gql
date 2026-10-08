@@ -63,3 +63,10 @@ query serviceQuery($relativePath: String!) {
     ...ServicesParts
   }
 }
+
+query zoneQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  zones(relativePath: $relativePath) {
+    ...ZonesParts
+  }
+}

@@ -21,10 +21,11 @@ ${entries
 `;
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  const [pages, services, projets] = await Promise.all([
+  const [pages, services, projets, zones] = await Promise.all([
     client.queries.pageConnection(),
     client.queries.servicesConnection(),
     client.queries.projetsConnection(),
+    client.queries.zonesConnection(),
   ]);
 
   const entries: Entry[] = [
@@ -35,6 +36,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   for (const edge of services.data.servicesConnection.edges ?? []) {
     if (edge?.node && !edge.node.seo?.noindex) {
       entries.push({ path: `/services/${edge.node._sys.filename}`, priority: "0.9" });
+    }
+  }
+
+  // Pages locales : hors menu, le sitemap est leur principal moyen d'être découvertes.
+  for (const edge of zones.data.zonesConnection.edges ?? []) {
+    if (edge?.node && !edge.node.seo?.noindex) {
+      entries.push({ path: `/${edge.node._sys.filename}`, priority: "0.8" });
     }
   }
 
