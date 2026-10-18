@@ -6095,6 +6095,54 @@
     ],
     "thumb": "/optimized/service/sport/20251122-img_1495-49b0b476-thumb.webp"
   },
+  "/uploads/Service/SPORT/DSC_0086.jpg": {
+    "bytes": 6344728,
+    "width": 3909,
+    "height": 5863,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0086-cf0394b5-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0086-cf0394b5-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0086-cf0394b5-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0099.jpg": {
+    "bytes": 3773812,
+    "width": 3102,
+    "height": 4653,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0099-e769d6c5-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0099-e769d6c5-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0099-e769d6c5-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0112.jpg": {
+    "bytes": 4972759,
+    "width": 3331,
+    "height": 4996,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0112-88bb02cb-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0112-88bb02cb-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0112-88bb02cb-thumb.webp"
+  },
   "/uploads/Service/SPORT/DSC_0119.jpg": {
     "bytes": 6470773,
     "width": 4000,
@@ -6110,6 +6158,22 @@
       ]
     ],
     "thumb": "/optimized/service/sport/dsc_0119-6ed8dfe3-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0589.jpg": {
+    "bytes": 4814480,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0589-e2178de9-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0589-e2178de9-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0589-e2178de9-thumb.webp"
   },
   "/uploads/Service/SPORT/GALA-PATINAGE-VERN115.jpg": {
     "bytes": 4093116,
