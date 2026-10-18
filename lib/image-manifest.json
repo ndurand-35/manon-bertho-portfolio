@@ -6159,6 +6159,38 @@
     ],
     "thumb": "/optimized/service/sport/dsc_0119-6ed8dfe3-thumb.webp"
   },
+  "/uploads/Service/SPORT/DSC_0480.jpg": {
+    "bytes": 4299715,
+    "width": 3705,
+    "height": 5558,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0480-1ab99aad-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0480-1ab99aad-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0480-1ab99aad-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0511.jpg": {
+    "bytes": 5078010,
+    "width": 3539,
+    "height": 5308,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0511-d29a47e2-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0511-d29a47e2-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0511-d29a47e2-thumb.webp"
+  },
   "/uploads/Service/SPORT/DSC_0526.jpg": {
     "bytes": 5966588,
     "width": 4774,
@@ -6174,6 +6206,34 @@
       ]
     ],
     "thumb": "/optimized/service/sport/dsc_0526-b82cbc5f-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0554.jpg": {
+    "bytes": 3882292,
+    "width": 5239,
+    "height": 3493,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0554-56959af8-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0554-56959af8-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0554-56959af8-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0556.jpg": {
+    "bytes": 615165,
+    "width": 1379,
+    "height": 2068,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0556-1b0a9633-800.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0556-1b0a9633-thumb.webp"
   },
   "/uploads/Service/SPORT/DSC_0589.jpg": {
     "bytes": 4814480,
