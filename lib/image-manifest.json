@@ -6159,6 +6159,22 @@
     ],
     "thumb": "/optimized/service/sport/dsc_0119-6ed8dfe3-thumb.webp"
   },
+  "/uploads/Service/SPORT/DSC_0526.jpg": {
+    "bytes": 5966588,
+    "width": 4774,
+    "height": 3183,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0526-b82cbc5f-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0526-b82cbc5f-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0526-b82cbc5f-thumb.webp"
+  },
   "/uploads/Service/SPORT/DSC_0589.jpg": {
     "bytes": 4814480,
     "width": 6000,
