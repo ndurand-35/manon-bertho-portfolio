@@ -5855,6 +5855,22 @@
     ],
     "thumb": "/optimized/service/photographie/shooting-grossesse-audrey-et-clement28-df25858d-thumb.webp"
   },
+  "/uploads/Service/Photographie/Shooting-Grossesse-Olivia28.jpg": {
+    "bytes": 6121794,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/photographie/shooting-grossesse-olivia28-fd857470-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/photographie/shooting-grossesse-olivia28-fd857470-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/photographie/shooting-grossesse-olivia28-fd857470-thumb.webp"
+  },
   "/uploads/Service/SPORT/20250715-GALA-PATINAGE-VERN146.jpg": {
     "bytes": 2091188,
     "width": 3625,
@@ -6174,6 +6190,22 @@
       ]
     ],
     "thumb": "/optimized/service/sport/dsc_0480-1ab99aad-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0497.jpg": {
+    "bytes": 4123200,
+    "width": 3775,
+    "height": 5662,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0497-98cab4e2-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0497-98cab4e2-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0497-98cab4e2-thumb.webp"
   },
   "/uploads/Service/SPORT/DSC_0511.jpg": {
     "bytes": 5078010,
