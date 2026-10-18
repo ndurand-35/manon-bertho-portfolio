@@ -6175,6 +6175,86 @@
     ],
     "thumb": "/optimized/service/sport/dsc_0589-e2178de9-thumb.webp"
   },
+  "/uploads/Service/SPORT/DSC_0603.jpg": {
+    "bytes": 4317397,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0603-0ab163bd-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0603-0ab163bd-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0603-0ab163bd-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0607.jpg": {
+    "bytes": 5534959,
+    "width": 6000,
+    "height": 4000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0607-7865c2d2-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0607-7865c2d2-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0607-7865c2d2-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0617.jpg": {
+    "bytes": 4530995,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0617-c8e595c5-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0617-c8e595c5-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0617-c8e595c5-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0623.jpg": {
+    "bytes": 4526100,
+    "width": 4000,
+    "height": 6000,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0623-f044d1c5-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0623-f044d1c5-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0623-f044d1c5-thumb.webp"
+  },
+  "/uploads/Service/SPORT/DSC_0627.jpg": {
+    "bytes": 3235989,
+    "width": 3648,
+    "height": 5472,
+    "srcset": [
+      [
+        800,
+        "/optimized/service/sport/dsc_0627-2eea776d-800.webp"
+      ],
+      [
+        1600,
+        "/optimized/service/sport/dsc_0627-2eea776d-1600.webp"
+      ]
+    ],
+    "thumb": "/optimized/service/sport/dsc_0627-2eea776d-thumb.webp"
+  },
   "/uploads/Service/SPORT/GALA-PATINAGE-VERN115.jpg": {
     "bytes": 4093116,
     "width": 6000,
